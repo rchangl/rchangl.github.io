@@ -93,33 +93,54 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="本地准备"><a href="#本地准备" class="headerlink" title="本地准备"></a>本地准备</h2><h3 id="环境需要的软件安装"><a href="#环境需要的软件安装" class="headerlink" title="环境需要的软件安装"></a>环境需要的软件安装</h3><p>首先我们需要安装一些软件在电脑： Node.js npm git </p>
-<p>Node.js 就是运行在服务端的 JavaScript<br>NPM Node.js的包管理工具，同NodeJS一起安装了<br>Git 是开源的分布式版本控制系统，用作项目版本管理</p>
-<p>去 Node.js 和 Git 官网分别下载安装包安装即可</p>
-<p>安装完成后，打开 cmd （命令提示符） ，分别输入命令检查是否安装成功<br>node -v npm -v git -v </p>
-<p>输入命令：<br>npm install hexo-cli -g 使用 npm 安装 Hexo （这里-g 是全局安装）<br>hexo -v 检查 Hexo 安装是否成功<br>npm install hexo-deployer-git –save 安装hexo-deployer-git 自动部署发布工具 </p>
-<h2 id="本地生成博客"><a href="#本地生成博客" class="headerlink" title="本地生成博客"></a>本地生成博客</h2><p>创建一个文件夹作为博客文件夹，用于放置项目文件，右键该文件夹的空白处进入 Git Bash Here<br>输入命令：<br>hexo init 初始化 Hexo ，服务器在国外，可能会失败，如果失败了需要多试几次或使用其他手段</p>
-<p>hexo s 打开本地服务器<br>根据提示信息可以通过在浏览器中打开<a target="_blank" rel="noopener" href="http://localhost:4000/%EF%BC%8C%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E6%AC%A2%E8%BF%8E%E9%A1%B5%E9%9D%A2%EF%BC%8C%E6%A0%B9%E6%8D%AE%E6%8F%90%E7%A4%BA%E6%8C%89">http://localhost:4000/，可以看到欢迎页面，根据提示按</a> Ctrl + c 可以关闭<br>将本地的博客发布到Github<br>上面已经在本地搭建好了一个可以运行的博客，现在我们把它发布到Github上<br>在 Github 上搭建仓库<br>新建一个仓库 repository<br>仓库名字一定是需要自己的用户名加上 .github.io 即 name.github.io ，否则无法成功</p>
-<h2 id="Github-与本地绑定"><a href="#Github-与本地绑定" class="headerlink" title="Github 与本地绑定"></a>Github 与本地绑定</h2><p>在任意一个文件夹中右键空白处进入 Git Bash Here<br>输入ssh检查是否安装了SSH，默认在Git安装时已安装<br>生成 SSH ： ssh-keygen -t rsa -C “电子邮箱地址” 电子邮箱地址 是注册时的电子邮箱地址<br>接下来的提示信息让你输入什么的，不用输入直接按回车直到成功就可<br>上一步过后，在Windows用户文件夹下生成.ssh目录和其内部的文件，打开文件id_rsa.pub复制内容（SSH key）<br>打开 Github -&gt; Setting -&gt; SSH keys -&gt; New SSH key 在 key 中输入上一步复制的内容（SSH key）， Titlle 任意起，Add添加<br>在Git命令行中，输入命令测试是否绑定成功：ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;">&#x67;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;</a> 如有提问要输入回答，yes即可，成功了会有 successfully 字样（同样因为网络等原因可能需要多式几次）</p>
+        <h2 id="本地准备"><a href="#本地准备" class="headerlink" title="本地准备"></a>本地准备</h2><h3 id="需要安装的软件"><a href="#需要安装的软件" class="headerlink" title="需要安装的软件"></a>需要安装的软件</h3><p>首先我们需要在电脑安装一些软件：</p>
+<p><code>Node.js</code> 就是运行在服务端的 JavaScript</p>
+<p><code>NPM Node.js</code>的包管理工具，同NodeJS一起安装了</p>
+<p><code>Git</code> 是开源的分布式版本控制系统，用作项目版本管理</p>
+<p>进入 <a target="_blank" rel="noopener" href="http://nodejs.cn/">Node.js 官网</a> 和 <a target="_blank" rel="noopener" href="https://git-scm.com/">Git 官网</a> 分别下载安装包安装即可，安装步骤就是下一步下一步没什么好说的</p>
+<p>安装完成后，打开 cmd （命令提示符） ，分别输入命令检查是否安装成功：<br><code>node -v</code><br><code>npm -v</code><br><code>git -v </code></p>
+<p>输入命令：<br><code>npm install hexo-cli -g</code> 使用 npm 安装 Hexo （这里-g 是全局安装）<br><code>hexo -v</code> 检查 Hexo 安装是否成功<br><code>npm install hexo-deployer-git --save</code> 安装hexo-deployer-git 自动部署发布工具 </p>
+<h3 id="本地生成博客"><a href="#本地生成博客" class="headerlink" title="本地生成博客"></a>本地生成博客</h3><p>创建一个文件夹作为<strong>博客文件夹</strong>，用于放置项目文件，右键博客文件夹的空白处点击 Git Bash Here ，进入Git 命令行</p>
+<p>输入命令：</p>
+<p><code>hexo init</code> 初始化 Hexo ，服务器在国外，可能会失败，如果失败了需要多试几次或使用其他手段</p>
+<p><code>hexo s</code> 打开本地预览服务，可以在浏览器中打开 <code>http://localhost:4000/</code>访问本地博客了！，按 Ctrl + c 关闭</p>
+<h2 id="将本地的博客发布到Github"><a href="#将本地的博客发布到Github" class="headerlink" title="将本地的博客发布到Github"></a>将本地的博客发布到Github</h2><p>上面已经在本地搭建好了一个可以运行的博客，现在我们把它发布到Github上<br>在 Github 上搭建仓库<br>新建一个仓库 repository<br>仓库名字一定是需要自己的用户名加上 .github.io 即 name.github.io ，否则无法成功</p>
+<h3 id="Github-与本地绑定"><a href="#Github-与本地绑定" class="headerlink" title="Github 与本地绑定"></a>Github 与本地绑定</h3><p>在任意一个文件夹中右键空白处，点击 Git Bash Here 进入 Git 命令行</p>
+<p>可以输入命令：<code>ssh</code> 检查是否安装了SSH，默认在Git安装时已安装 </p>
+<p>输入命令： <code>ssh-keygen -t rsa -C &quot;电子邮箱地址&quot;</code> 生成 SSH 这里的“电子邮箱地址”是注册Github的电子邮箱地址。<br>接下来的几个输入提示信息，直接按回车即可</p>
+<p>此时，<code>.ssh</code>目录和目录里的文件在 Windows 用户文件夹（C:\Users\用户名）下生成，打开文件 <code>id_rsa.pub</code> 复制内容作为 <strong>SSH key</strong></p>
+<p>打开 Github -&gt; Setting -&gt; SSH and GPG keys -&gt; SSH keys -&gt; New SSH key 在 key 中输入上一步复制的SSH key， Titlle 任意起，Add添加，至此共钥添加完成</p>
+<p>Git命令行中，输入命令： <code>ssh -T git@github.com</code> 测试是否绑定成功 如有需要确认的提示，输入yes即可，看到 successfully 字样说明已经成功（因为网络等原因可能第一次会失败，需要多式几次）</p>
 <h3 id="配置-config-yml-文件"><a href="#配置-config-yml-文件" class="headerlink" title="配置 _config.yml 文件"></a>配置 <code>_config.yml</code> 文件</h3><p>上面创建的本地项目文件里有一个 _config.yml 文件，用文本编辑器打开，编辑最后面的部分，改成：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">github地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
 
-<p>github地址 就是github项目的网址加上.git github项目页面会有提示的<br>注意冒号后面是有一个空格的，这是yaml的语法要求<br>文件修改完成了，可以将其关闭了</p>
-<p>在博客文件夹空白处右击鼠标进入 Git Bash Here<br>输入命令：<br>hexo g 生成文件</p>
-<p>git config –global user.email “电子邮箱地址” 配置email<br>git config –global user.name “rchangl” 配置用户名</p>
-<p>设置令牌：<br>进入页面 ithub -&gt; Setttings -&gt; Developer settings -&gt; Personal access tokens -&gt; Generate new token<br>Note 随便起一个名字，Expiration 有效期自行看着选，Select scopes 令牌权限全选（有些用不到但是全选也没事），点击生成令牌<br>成功后跳转的页面有一串字符，一定将他记下，只能看到这一次，再次打开页面后无法再看到</p>
-<p>Git 命令行输入命令：<br>hexo d 本地文件上传到Github上面，会弹出一个账号密码页面，可以跳转到浏览器登录（同样因为网络问题可能需要多式几次）密码是上面设置的令牌密码<br>（如果这里 报错ERROR Deployer not found: git ，这是因为没安装hexo-deployer-git插件）<br>完成后github上的仓库会有已上传好的文件<br>完成部署<br>这时候已经可以用创建好的网址 即 用户名.github.io 访问博客内容了，但是现在还无法发布自己写的文章</p>
+<p>github地址 就是github项目的网址加上.git github项目页面会有提示的</p>
+<p>注意冒号后面是有一个空格的，这是yaml的语法要求</p>
+<p>在博客文件夹空白处右击鼠标 点击 Git Bash Here 进入 Git 命令行</p>
+<p>输入命令：</p>
+<p><code>hexo g</code> 生成文件</p>
+<p><code>git config --global user.email &quot;电子邮箱地址&quot;</code> 配置email</p>
+<p><code>git config --global user.name &quot;rchangl&quot;</code> 配置用户名</p>
+<h4 id="设置令牌："><a href="#设置令牌：" class="headerlink" title="设置令牌："></a>设置令牌：</h4><p>进入网页 Github -&gt; Setttings -&gt; Developer settings -&gt; Personal access tokens -&gt; Generate new token</p>
+<p>Note 随便起一个名字，Expiration 有效期自己看着选，Select scopes 令牌权限全选（有些用不到但是全选也没事），点击生成令牌</p>
+<p>成功后跳转的页面有一串字符，一定将他记下，只能看到这一次，再次打开页面后<strong>无法再看到</strong></p>
+<p>Git 命令行输入命令：</p>
+<p><code>hexo d</code> 本地文件上传到Github上面，会弹出一个登录页面，登录即可，密码是上面生成的令牌</p>
+<p>（如果这里 报错ERROR Deployer not found: git ，这是因为没安装hexo-deployer-git插件）</p>
+<p>完成后github上的仓库会有已上传好的文件。这时候已经可以在互联网访问创建好的博客 <code>用户名.github.io</code> ，但是现在还无法发布自己写的文章</p>
 <h2 id="在博客当中添加内容"><a href="#在博客当中添加内容" class="headerlink" title="在博客当中添加内容"></a>在博客当中添加内容</h2><p>在博客当中添加内容，思路是在本地添加好内容，再用 Git 同步至 Github 仓库上</p>
-<h3 id="本地博客中添加内容"><a href="#本地博客中添加内容" class="headerlink" title="本地博客中添加内容"></a>本地博客中添加内容</h3><p>在我们的博客文件夹中有很多文件和文件夹，现在我们只关注一个文件夹 source 里面存放的就是我们的个人文件，所有的个人文件都在里面。source文件夹下面还有一个 _posts 文件夹，这个文件夹里存放的就是我们的博客文件，里面有一个默认生成的 hello-world.md 文件，他会被生成一个我们之前看到的默认欢迎页面。<br>要添加我们自己的博客文件，只需要写好 Markdown 文件就可以了。 </p>
-<p>Markdown 文件的编写非常的简单，知乎、简书等很多平台都支持直接使用 Markdown 编辑，在搜索引擎中搜索 Markdown 教程，对着敲没几分钟就能学会；在Blibili上搜 Markdown ，视频教程也不过几分钟而已，这里不再讲解了。</p>
-<h3 id="将写好的md文件生成博客并发表到Github"><a href="#将写好的md文件生成博客并发表到Github" class="headerlink" title="将写好的md文件生成博客并发表到Github"></a>将写好的md文件生成博客并发表到Github</h3><p>像上面一样，进入 Git 命令行，然后输入命令：</p>
+<h3 id="本地博客中添加内容"><a href="#本地博客中添加内容" class="headerlink" title="本地博客中添加内容"></a>本地博客中添加内容</h3><p>在我们的博客文件夹中有很多文件和文件夹，现在我们只关注一个文件夹 <code>source</code> 里面存放的就是我们的个人文件，所有的个人文件都在里面。<br><code>source</code> 文件夹下面还有一个 <code>_posts</code> 文件夹，这个文件夹里存放的就是我们的博客文件，里面有一个默认生成的 <code>hello-world.md</code> 文件，他会被生成一个我们之前看到的默认欢迎页面。<br>要添加我们自己的博客文件，只需要写好 Markdown 文件就可以了。 </p>
+<p>Markdown 文件的编写非常的简单，知乎、简书等很多平台都支持直接使用 Markdown 编辑，在搜索引擎中搜索 Markdown 教程，对着敲两下就能学会；在Blibili上搜 Markdown ，视频教程也不过几分钟而已。</p>
+<p>这里的 Markdown 换行会直接解析为换行，而不是像其他的 Markdown 解析器一样需要多空一行才能换行。根据所使用的主题，还会有额外的 Front-matter 语法，在开头以YAML形式分隔线结尾，现在先不管，使用主题时再看相应的文档即可</p>
+<h3 id="将写好的-Markdown-文件生成博客并发表到-Github"><a href="#将写好的-Markdown-文件生成博客并发表到-Github" class="headerlink" title="将写好的 Markdown 文件生成博客并发表到 Github"></a>将写好的 Markdown 文件生成博客并发表到 Github</h3><p>写完博客内容的 Markdown 文件后，更新到 Github</p>
+<p>进入 Git 命令行，然后输入命令：</p>
 <p><code>hexo cl</code> 用于清除缓存文件（db.json）和已生成的静态文件（public）<br><code>hexo g</code> 生成文件<br><code>hexo d</code> 同步至Github</p>
 <p>网站实例：<a target="_blank" rel="noopener" href="https://rchangl.github.io/">https://rchangl.github.io/</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/13/hexo_blog/" data-id="cl5jq58py00010suv3qx38oi2" data-title="个人博客攻略 - 无需编程知识，使用 Hexo 和 Github 搭建个人博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/07/13/hexo_blog/" data-id="cl5jt1kp100014kuvb3sufd9e" data-title="个人博客攻略 - 无需编程知识，使用 Hexo 和 Github 搭建个人博客" class="article-share-link">Share</a>
       
       
       
@@ -170,7 +191,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/13/hello-world/" data-id="cl5jq58pr00000suvcum53gqs" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/07/13/hello-world/" data-id="cl5jt1koq00004kuv0ww86t9i" data-title="Hello World" class="article-share-link">Share</a>
       
       
       

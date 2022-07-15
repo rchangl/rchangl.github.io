@@ -25,7 +25,7 @@
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="RC 的博客">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="RC">
 <meta name="twitter:card" content="summary">
 
 
@@ -109,7 +109,7 @@
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
+  <p class="site-author-name" itemprop="name">RC</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
@@ -163,7 +163,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="RC">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -187,9 +187,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2022-07-14 18:48:01 / 修改时间：21:19:08" itemprop="dateCreated datePublished" datetime="2022-07-14T18:48:01+08:00">2022-07-14</time>
+      <time title="创建时间：2022-07-14 18:48:01" itemprop="dateCreated datePublished" datetime="2022-07-14T18:48:01+08:00">2022-07-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-07-15 12:39:12" itemprop="dateModified" datetime="2022-07-15T12:39:12+08:00">2022-07-15</time>
     </span>
 
   
@@ -202,21 +208,22 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>主题的安装一般主题的说明文档会有介绍，现在我们来安装一个最流行的主题——NexT</p>
+          <p>主题的安装一般主题的说明文档会有介绍，现在我们来安装一个最流行的主题——<strong>NexT</strong></p>
 <p><a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/">NexT的安装文档</a></p>
-<h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>可以通过 Git 和 npm 安装，我们选用<code>Git</code>：</p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>可以通过 Git 和 npm 安装，我们选用<code>Git</code>：</p>
 <p>在博客根目录打开Git命令行，输入命令：</p>
 <p><code>git clone https://github.com/next-theme/hexo-theme-next themes/next</code></p>
 <p>这时 themes 文件夹下就多了一个next文件夹</p>
 <p>（如果网络不好可以手动去Github用下载器下载）</p>
-<h3 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h3><p>打开根目录文件 <code>_config.yml</code> </p>
-<p>找到 <code>theme: </code> 字样，改为：</p>
-<p><code>theme: next</code> 注意冒号后有空格</p>
-<p>现在已可以使用主题了</p>
-<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>在博客根目录打开Git命令行：</p>
-<p><code>$ cd themes/next</code> 由根目录进入到主题的目录</p>
-<p><code>$ git pull origin master</code> 更新</p>
-
+<h2 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h2><p>打开根目录文件 <code>_config.yml</code> </p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/07/14/p3/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -246,7 +253,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="RC">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -272,7 +279,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-07-14 14:25:03 / 修改时间：21:19:03" itemprop="dateCreated datePublished" datetime="2022-07-14T14:25:03+08:00">2022-07-14</time>
+      <time title="创建时间：2022-07-14 14:25:03 / 修改时间：23:59:31" itemprop="dateCreated datePublished" datetime="2022-07-14T14:25:03+08:00">2022-07-14</time>
     </span>
 
   
@@ -289,28 +296,18 @@
 <p>在博客当中添加文章，思路是在本地写好内容，再用 Git 同步至 Github 仓库上</p>
 <h2 id="在本地博客中添加文章"><a href="#在本地博客中添加文章" class="headerlink" title="在本地博客中添加文章"></a>在本地博客中添加文章</h2><p><strong>博客根目录</strong>中有很多文件和文件夹，现在我们只关注一个文件夹 <code>source</code> 里面存放的就是我们的个人文件，所有的个人文件都在里面。 </p>
 <p><code>source</code> 文件夹下面还有一个 <code>_posts</code> 文件夹，这个文件夹里存放的就是我们的博客文件。我们刚建立博客之后，会有一个 Hello World 页面，他就是由这个文件夹里的 <code>hello-world.md</code> 文件生成的。</p>
-<h3 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h3><p><code>.md</code> 文件就是 Markdown 文件，我们的博客内容就写在 Markdown 文件里，再由 Hexo 生成网页文件。</p>
+<h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><p><code>.md</code> 文件就是 Markdown 文件，我们的博客内容就写在 Markdown 文件里，再由 Hexo 生成网页文件。</p>
 <p>Markdown 文件的编写非常的简单，知乎、简书等很多平台都支持直接使用 Markdown 编辑，在搜索引擎中搜索 Markdown 教程，对着敲两下就能学会；在Bilibili上搜 Markdown ，视频教程也不过几分钟而已。</p>
 <p>这里的 Markdown 换行会直接解析为换行，而不是像其他的 Markdown 解析器一样需要多空一行才能换行。</p>
-<h3 id="添加博客"><a href="#添加博客" class="headerlink" title="添加博客"></a>添加博客</h3><p>要添加我们自己的博客文件，只需要在 <code>_posts</code> 文件夹里写好 Markdown 文件。</p>
-<p>可以在Git命令行中输入 <code>hexo n &quot;博客名&quot;</code> ，这个命令会在 <code>_posts</code> 生成 <code>博客名.md</code> 文件，文件的开头自带了一些不是 Markdown 的东西，这些东西叫做 <code>Front-matter</code> 可以指定网页的标题之类的。</p>
-<p>当然也可以直接在 <code>_posts</code> 文件夹手动新建一个 <code>.md</code> 文件，同样可以作为博客文件</p>
-<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p>在 <code>_config.yml</code> 开启资源文件夹：</p>
-<p><code>post_asset_folder: true</code></p>
-<p>这样，在 _posts 目录下会生成一个与文章同名的文件夹。把需要插入到文章中的图片放到该文件夹中，并在写文章时通过如下标签引用即可。</p>
-<p><code>&#123;% asset_img <图片名> [图片标题] %&#125;</code></p>
-<h3 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a><code>Front-matter</code></h3><p><code>Front-matter</code> 是在博客 Markdown 文件的开头，以 <code>---</code> 来划分的部分，用 <code>YAML</code> 来编写，YAML 是用来写配置文件的语言，不用专门去学，照着样子自己写就可以了，就像下面这样：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">这是标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2022-07-14 21:18:17</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">markdown</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">tutorial</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">markdown</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-<p>顾名思义，<code>title</code>是标题，<code>date</code>是日期，<code>tag</code>是标签，<code>categories</code>是分类</p>
-<p>不需要的部分就不写</p>
-<p>分类具有层级结构，像文件夹一样可以有包含关系；而标签没有，是扁平化的结构</p>
-<h2 id="将写好的-Markdown-文件生成博客并发表到-Github"><a href="#将写好的-Markdown-文件生成博客并发表到-Github" class="headerlink" title="将写好的 Markdown 文件生成博客并发表到 Github"></a>将写好的 Markdown 文件生成博客并发表到 Github</h2><p>写完博客内容的 Markdown 文件后，更新到 Github</p>
-<p>进入 Git 命令行，然后输入命令：</p>
-<p><code>hexo cl</code> 用于清除缓存文件（db.json）和已生成的静态文件（public）</p>
-<p><code>hexo g</code> 生成网页文件</p>
-<p><code>hexo d</code> 同步至Github （也可以使用<code>hexo s</code> 先在本地运行查看效果）</p>
-
+<h2 id="添加博客"><a href="#添加博客" class="headerlink" title="添加博客"></a>添加博客</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/07/14/p2/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -340,7 +337,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="RC">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -393,49 +390,14 @@
 <p>安装完成后，打开 cmd （命令提示符） ，输入命令检查是否安装成功：</p>
 <p><code>node -v</code></p>
 <p><code>npm -v</code></p>
-<p><code>git -v </code></p>
-<p>输入命令：</p>
-<p><code>npm install hexo-cli -g</code> 使用 npm 安装 Hexo （这里-g 是全局安装）</p>
-<p><code>hexo -v</code> 检查 Hexo 安装是否成功</p>
-<p><code>npm install hexo-deployer-git --save</code> 安装 hexo-deployer-git 部署发布插件</p>
-<h3 id="本地生成博客"><a href="#本地生成博客" class="headerlink" title="本地生成博客"></a>本地生成博客</h3><p>创建一个文件夹作为<strong>博客根目录</strong>，用于放置项目文件，右键<strong>博客根目录</strong>的空白处点击 Git Bash Here ，进入<strong>Git 命令行</strong></p>
-<p>输入命令：</p>
-<p><code>hexo init</code> 初始化 Hexo ，服务器在国外，可能会失败，如果失败了需要多试几次或使用其他手段</p>
-<p><code>hexo g</code> 生成相关的网页文件</p>
-<p><code>hexo s</code> 打开本地预览服务，可以在浏览器中打开 <code>http://localhost:4000/</code>访问本地博客了！，按 Ctrl + c 关闭</p>
-<h2 id="将本地的博客发布到Github"><a href="#将本地的博客发布到Github" class="headerlink" title="将本地的博客发布到Github"></a>将本地的博客发布到Github</h2><p>上面已经在本地搭建好了一个可以运行的博客，现在我们把它发布到Github上</p>
-<p>首先去 <a target="_blank" rel="noopener" href="https://github.com/">Github</a> 上注册一个账号，然后新建一个仓库 (repository)</p>
-<p>仓库名字一定是 <code>username.github.io</code> username 是你 Github 注册的用户名</p>
-<h3 id="Github-与本地绑定"><a href="#Github-与本地绑定" class="headerlink" title="Github 与本地绑定"></a>Github 与本地绑定</h3><p>打开 Windows 用户文件夹（<code>C:\Users\用户名</code>），如果有 <code>.ssh</code>  文件夹将他删除</p>
-<p>在 Git 命令行中，输入命令：</p>
-<p><code>ssh-keygen -t rsa -C &quot;电子邮箱地址&quot;</code> 生成 SSH。（ “电子邮箱地址” 是注册Github的电子邮箱地址。）接下来的几个输入提示信息，直接按回车即可</p>
-<p>此时，<code>.ssh</code>目录在 Windows 用户文件夹 下被产生，打开文件 <code>id_rsa.pub</code> 复制内容作为 <strong>SSH key</strong></p>
-<p>打开 Github -&gt; Setting -&gt; SSH and GPG keys -&gt; SSH keys -&gt; New SSH key 在 key 中输入上一步复制的<strong>SSH key</strong>， Titlle 任意起，Add添加，至此公钥添加完成</p>
-<p>Git命令行中，输入命令：</p>
-<p><code>ssh -T git@github.com</code> 测试是否绑定成功 如有需要确认的提示，输入yes即可，看到 successfully 字样说明已经成功（因为网络等原因可能会失败，可以多试几次）</p>
-<h3 id="配置-config-yml-文件"><a href="#配置-config-yml-文件" class="headerlink" title="配置 _config.yml 文件"></a>配置 <code>_config.yml</code> 文件</h3><p>上面创建的本地项目文件里有一个 <code>_config.yml</code> 文件，用文本编辑器打开，编辑最后面的部分，改成：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">github地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
-
-<p>github地址 就是项目的git地址 是github项目的网址加上 <code>.git</code> 在Github项目页面可以看得到</p>
-<p>注意冒号后面是有一个空格的，这是yaml的语法要求</p>
-<p>Git 命令行中，输入命令：</p>
-<p><code>hexo g</code> 生成文件</p>
-<p><code>git config --global user.email &quot;电子邮箱地址&quot;</code> 配置email</p>
-<p><code>git config --global user.name &quot;rchangl&quot;</code> 配置用户名</p>
-<h4 id="设置令牌："><a href="#设置令牌：" class="headerlink" title="设置令牌："></a>设置令牌：</h4><p>进入网页 Github -&gt; Setttings -&gt; Developer settings -&gt; Personal access tokens -&gt; Generate new token</p>
-<p>Note 随便起一个名字，Expiration 有效期自己看着选，Select scopes 令牌权限全选（有些用不到但是全选也没事），点击生成令牌</p>
-<p>成功后跳转的页面有一串字符，一定将他记下，只能看到这一次，再次打开页面后<strong>无法再看到</strong></p>
-<p>Git 命令行输入命令：</p>
-<p><code>hexo d</code> 本地文件上传到Github上面，会弹出一个登录页面，登录即可，密码是上面生成的令牌</p>
-<p>（如果报错 ERROR Deployer not found: git ，这是因为没安装 hexo-deployer-git 插件，文章开头的环境配置已说明需要安装）</p>
-<p>完成后github上的仓库会有已上传好的文件。这时候可以在互联网访问博客了！网址：<code>用户名.github.io</code></p>
-<h2 id="开始写博客"><a href="#开始写博客" class="headerlink" title="开始写博客"></a>开始写博客</h2><p>博客已经搭建好了，我们可以开始写博客了！</p>
-<p><a target="_blank" rel="noopener" href="https://rchangl.github.io/2022/07/14/p2/">个人博客攻略（二） - 开始写博客</a></p>
-<hr>
-<p>博客默认的样式的功能性或美观上有所不足，像是排版不够清晰、有些小功能没有，这时我们可以安装其他的主题。主题是别人已经写好的代码，只需要做一些简单的配置就可以使用，不用自己再去写代码来实现。</p>
-<hr>
-<p>网站实例：<a target="_blank" rel="noopener" href="https://rchangl.github.io/">https://rchangl.github.io/</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/07/13/p1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -465,7 +427,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="RC">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -511,12 +473,14 @@
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/07/13/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -548,7 +512,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">RC</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>

@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Servlet生命周期 - Java Web | RC 的博客</title>
+    
+    
+        <meta name="keywords" content="Servlet生命周期 - Java Web" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="生命周期 类加载  实例、初始化：第一次访问会查找servlet，不存在则创建并初始化。init()  调用：service() doGet() doPost()  销毁：容器关闭时会执行销毁。destroy()   Methodinit(ServletConfig config) 创建时 service(ServletRequest req, ServletResponse res) 此方法替代">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Servlet生命周期 - Java Web">
+<meta property="og:url" content="https://rchangl.github.io/page/Programming/Main/Java/Java%20Web/Servlet/Servlet%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html">
+<meta property="og:site_name" content="RC 的博客">
+<meta property="og:description" content="生命周期 类加载  实例、初始化：第一次访问会查找servlet，不存在则创建并初始化。init()  调用：service() doGet() doPost()  销毁：容器关闭时会执行销毁。destroy()   Methodinit(ServletConfig config) 创建时 service(ServletRequest req, ServletResponse res) 此方法替代">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-06-16T02:55:33.663Z">
+<meta property="article:modified_time" content="2023-03-04T08:59:22.551Z">
+<meta property="article:author" content="RC">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="RC 的博客" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">RC 的博客</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>分类</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Computer Use
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Hexo blog
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Computer%20Use/Hexo%20blog/Hexo%20%E7%9A%84%20Wikitten%20%E4%B8%BB%E9%A2%98.html">Hexo 的 Wikitten 主题 - 适用于个人知识管理的主题</a></li>  <li class="file"><a href="/page/Computer%20Use/Hexo%20blog/Hexo%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6%E7%9A%84%E6%96%B9%E6%B3%95.html">Hexo 文章置顶的方法</a></li>  <li class="file"><a href="/page/Computer%20Use/Hexo%20blog/Hexo%E6%9B%B4%E6%94%B9%E9%93%BE%E6%8E%A5%E7%9A%84%E5%BD%A2%E5%BC%8F.html">Hexo更改链接的形式</a></li>  <li class="file"><a href="/page/Computer%20Use/Hexo%20blog/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%94%BB%E7%95%A5%EF%BC%88%E4%B8%89%EF%BC%89%20-%20Hexo%20%E4%B8%BB%E9%A2%98.html">个人博客攻略（三） - Hexo 主题</a></li>  <li class="file"><a href="/page/Computer%20Use/Hexo%20blog/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%94%BB%E7%95%A5%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2.html">个人博客攻略（二） - 开始写博客</a></li>  <li class="file"><a href="/page/Computer%20Use/Hexo%20blog/%E5%9C%A8Hexo%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%9B%BE%E7%89%87.html">在Hexo中使用图片</a></li>  <li class="file"><a href="/page/Computer%20Use/Hexo%20blog/%E4%B8%80%E3%80%81%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html">个人博客攻略（一） - 搭建个人博客</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Linux
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            命令
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Computer%20Use/Linux/%E5%91%BD%E4%BB%A4/curl.html">curl - Linux command</a></li>  <li class="file"><a href="/page/Computer%20Use/Linux/%E5%91%BD%E4%BB%A4/%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.html">Linux 基本命令 - Ubuntu / Xubuntu</a></li>  <li class="file"><a href="/page/Computer%20Use/Linux/%E5%91%BD%E4%BB%A4/Linux%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bip%E5%9C%B0%E5%9D%80.html">Linux如何查看ip地址</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            VSCode
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Computer%20Use/VSCode/VSCode%20Markdown%E4%B8%AD%E5%BF%AB%E9%80%9F%E7%B2%98%E8%B4%B4%E5%9B%BE%E7%89%87.html">VSCode Markdown中快速粘贴图片</a></li>  <li class="file"><a href="/page/Computer%20Use/VSCode/VSCode%20%E5%8F%98%E9%87%8F%20Variables%20Reference.html">VSCode 变量 Variables Reference</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Windows
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Computer%20Use/Windows/Win10%20%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%A6%81%E7%94%A8%E8%87%AA%E5%B8%A6%E9%94%AE%E7%9B%98%EF%BC%88%E5%8F%AA%E4%BD%BF%E7%94%A8%E5%A4%96%E7%BD%AE%E9%94%AE%E7%9B%98%EF%BC%89.html">Win10 笔记本禁用自带键盘（只使用外置键盘）</a></li>  <li class="file"><a href="/page/Computer%20Use/Windows/Windows%20cmd%20%E5%91%BD%E4%BB%A4.html">Windows cmd 命令.md</a></li>  <li class="file"><a href="/page/Computer%20Use/Windows/%E5%85%B3%E9%97%ADAlt+Tab%E7%BB%84%E5%90%88%E9%94%AE%E5%88%87%E6%8D%A2Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%9A%E7%AA%97%E5%8F%A3.html">关闭Alt+Tab组合键切换Edge浏览器多窗口</a></li>  <li class="file"><a href="/page/Computer%20Use/Windows/%E4%BF%AE%E5%A4%8D%20Windows%20%E7%94%B5%E8%84%91%E5%BC%95%E5%AF%BC%EF%BC%88UEFI%EF%BC%89.html">修复 Windows 电脑引导（UEFI）</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Computer%20Use/floccus%20-%20%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5%E4%B9%A6%E7%AD%BE%E6%8F%92%E4%BB%B6.html">floccus - 多平台同步书签插件</a></li>  <li class="file"><a href="/page/Computer%20Use/%E4%BB%80%E4%B9%88%E6%98%AFRSS%EF%BC%9F%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%BB%96%EF%BC%9F.html">什么是RSS？如何使用他？</a></li>  <li class="file"><a href="/page/Computer%20Use/%E7%94%B5%E8%84%91%E6%B5%8B%E8%AF%95.html">电脑测试</a></li>  <li class="file"><a href="/page/Computer%20Use/Temux.html">Temux</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            English
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            从句
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/English/%E4%BB%8E%E5%8F%A5/%E5%AE%9A%E4%BA%8E%E4%BB%8E%E5%8F%A5.html">定于从句</a></li>  <li class="file"><a href="/page/English/%E4%BB%8E%E5%8F%A5/%E7%8A%B6%E8%AF%AD%E4%BB%8E%E5%8F%A5.html">状语从句</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/English/Tenses.html">Tenses</a></li>  <li class="file"><a href="/page/English/%E4%BB%8E%E5%8F%A5.html">从句 - 英语语法</a></li>  <li class="file"><a href="/page/English/%E5%8A%A8%E8%AF%8D%E8%AF%AD%E6%B0%94%EF%BC%88%E8%99%9A%E6%8B%9F%E8%AF%AD%E6%B0%94%EF%BC%89.html">动词语气（虚拟语气）</a></li>  <li class="file"><a href="/page/English/%E5%BD%A2%E5%BC%8F%E4%B8%BB%E8%AF%AD%E3%80%81%E5%BD%A2%E5%BC%8F%E5%AE%BE%E8%AF%AD.html">形式主语、形式宾语</a></li>  <li class="file"><a href="/page/English/%E6%A6%82%E8%A7%88.html">概览 - 英语语法</a></li>  <li class="file"><a href="/page/English/%E6%97%B6%E6%80%81.html">时态 - 英语语法</a></li>  <li class="file"><a href="/page/English/%E9%9D%9E%E8%B0%93%E8%AF%AD.html">非谓语</a></li>  <li class="file"><a href="/page/English/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86.html">句子成分</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Game
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Game/Cheat%20Engine.html">Cheat Engine</a></li>  <li class="file"><a href="/page/Game/%E6%95%B0%E5%AD%97%E7%BC%96%E7%A0%81.html">数字编码</a></li>  <li class="file"><a href="/page/Game/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A.html">泰拉瑞亚</a></li>  <li class="file"><a href="/page/Game/%E9%A5%A5%E8%8D%92.html">饥荒</a></li>  <li class="file"><a href="/page/Game/%E8%A1%A5%E8%90%A5%E5%85%BB.html">补营养</a></li>  <li class="file"><a href="/page/Game/%E9%AA%91%E9%A9%AC%E4%B8%8E%E7%A0%8D%E6%9D%80.html">骑马与砍杀</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Phyloshophy
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            小分析小批判
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Phyloshophy/%E5%B0%8F%E5%88%86%E6%9E%90%E5%B0%8F%E6%89%B9%E5%88%A4/%E6%A0%87%E9%A2%98%E5%85%9A%E7%88%B1%E6%AC%B2%E5%88%86%E6%9E%90%EF%BC%9A%E3%80%8A%E7%9B%91%E7%8B%B1%EF%BC%8C%E7%94%B7%E4%BA%BA%E6%9C%80%E5%A5%BD%E7%9A%84%E5%8C%BB%E7%BE%8E%E3%80%8B.html">标题党爱欲分析：《监狱，男人最好的医美》</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Phyloshophy/%E4%B8%BB%E4%BD%93%E4%B8%8E%E5%AE%9E%E4%BD%93.html">主体 subject 与 实体 substance</a></li>  <li class="file"><a href="/page/Phyloshophy/%E5%A4%A7%E4%BB%96%E8%80%85%E4%B8%8D%E5%AD%98%E5%9C%A8.html">大他者不存在</a></li>  <li class="file"><a href="/page/Phyloshophy/%E5%87%A0%E7%A7%8D%E6%97%B6%E9%97%B4%E6%80%A7.html">几种时间性</a></li>  <li class="file"><a href="/page/Phyloshophy/%E5%AD%98%E5%9C%A8%E9%97%AE%E9%A2%98.html">存在问题</a></li>  <li class="file"><a href="/page/Phyloshophy/%E6%8B%89%E5%BA%B7%E7%9A%84%E6%AC%B2%E6%9C%9B.html">拉康的欲望</a></li>  <li class="file"><a href="/page/Phyloshophy/%E6%8B%89%E5%BA%B7%E7%9A%84%E7%AC%A6%E5%8F%B7%E5%AD%A6.html">拉康的符号学</a></li>  <li class="file"><a href="/page/Phyloshophy/%E4%B8%89%E7%95%8C%E5%9B%BE.html">三界图</a></li>  <li class="file"><a href="/page/Phyloshophy/%E5%B0%8F%E5%AE%A2%E4%BD%93a.html">小客体a</a></li>  <li class="file"><a href="/page/Phyloshophy/%E6%8B%89%E5%BA%B7%E8%AE%BA%E7%88%B1-%E8%A7%86%E9%A2%91%E6%80%BB%E7%BB%93.html">拉康论爱-视频总结</a></li>  <li class="file"><a href="/page/Phyloshophy/%E8%87%AA%E6%88%91%E8%AE%A4%E5%90%8C.html">自我认同</a></li>  <li class="file"><a href="/page/Phyloshophy/%E6%84%8F%E8%AF%86%E5%BD%A2%E6%80%81.html">意识形态</a></li>  <li class="file"><a href="/page/Phyloshophy/%E6%AC%B2%E6%9C%9B%E7%9A%84%E7%BB%93%E6%9E%84.html">欲望的结构</a></li>  <li class="file"><a href="/page/Phyloshophy/%E5%AF%BC%E8%AF%BB%E6%8B%89%E5%BA%B7.html">导读拉康</a></li>  <li class="file"><a href="/page/Phyloshophy/philosophy.html">philosophy</a></li>  <li class="file"><a href="/page/Phyloshophy/%E5%BA%93%E6%81%A9%E3%80%8A%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%E7%9A%84%E7%BB%93%E6%9E%84%E3%80%8B.html">库恩《科学革命的结构》</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Programming
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Main
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Android
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            控件样式
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Android/%E6%8E%A7%E4%BB%B6%E6%A0%B7%E5%BC%8F/TextView%20%E6%A0%B7%E5%BC%8F.html">TextView 样式</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            界面
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Android/%E7%95%8C%E9%9D%A2/%E6%A8%AA%E5%B1%8F%E8%AE%BE%E7%BD%AE.html">横屏设置</a></li>  <li class="file"><a href="/page/Programming/Main/Android/%E7%95%8C%E9%9D%A2/%E5%85%A8%E5%B1%8F%E6%98%BE%E7%A4%BA.html">全屏显示</a></li>  <li class="file"><a href="/page/Programming/Main/Android/%E7%95%8C%E9%9D%A2/styles.xml%20%E6%96%87%E4%BB%B6.html">styles.xml 文件</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Main/Android/Debug%E7%9B%B8%E5%85%B3.html">Debug相关</a></li>  <li class="file"><a href="/page/Programming/Main/Android/Drawable.html">Drawable</a></li>  <li class="file"><a href="/page/Programming/Main/Android/Manifest.html">Manifest</a></li>  <li class="file"><a href="/page/Programming/Main/Android/View.html">View</a></li>  <li class="file"><a href="/page/Programming/Main/Android/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%92%8C%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html">环境配置和创建项目</a></li>  <li class="file"><a href="/page/Programming/Main/Android/Gradle.html">Gradle</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            CSS
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/CSS/flex.html">CSS flex</a></li>  <li class="file"><a href="/page/Programming/Main/CSS/%E4%BC%AA%E5%85%83%E7%B4%A0%EF%BC%88%E5%8F%8C%E5%86%92%E5%8F%B7%EF%BC%89.html">伪元素（双冒号） - CSS</a></li>  <li class="file"><a href="/page/Programming/Main/CSS/%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D%E5%8E%BB%E9%99%A4%E6%89%80%E5%8D%A0%E7%A9%BA%E9%97%B4.html">相对定位去除所占空间 - CSS</a></li>  <li class="file"><a href="/page/Programming/Main/CSS/%E6%B5%AE%E5%8A%A8%E6%B8%85%E9%99%A4.html">清除浮动 - CSS</a></li>  <li class="file"><a href="/page/Programming/Main/CSS/%E9%95%BF%E5%BA%A6%E5%8D%95%E4%BD%8D.html">CSS 长度单位</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Git
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4.html"></a></li>  <li class="file"><a href="/page/Programming/Main/Git/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">Git</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Java
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Java SE
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Base and Grammer
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            IO流
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/IO%E6%B5%81/0%E6%A6%82%E5%BF%B5%E3%80%81%E7%90%86%E8%AE%BA.html">IO 流 - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/IO%E6%B5%81/PrintWriter.html">PrintWriter - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/IO%E6%B5%81/InputStream.html">InputStream - Java</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            报错
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E6%8A%A5%E9%94%99/Prohibited%20package%20name.html">SecurityException Prohibited package name java</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            集合
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E9%9B%86%E5%90%88/ArrayList.html">ArrayList</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E9%9B%86%E5%90%88/Collection.html">Collection</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E9%9B%86%E5%90%88/HashMap.html"></a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E9%9B%86%E5%90%88/LinkedHashMap.html">LinkedHashMap</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E9%9B%86%E5%90%88/Set.html">Set - Java</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/Scanner.html">Scanner - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/Array%20%E6%95%B0%E7%BB%84.html">数组 Array - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/Java%20Bean.html">Java Bean</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/ArrayList.html">ArrayList - Java SE</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/Java%20Scanner.html">Java Scanner</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/Java%20%E7%9A%84%E5%90%84%E7%A7%8D%E8%BF%90%E7%AE%97%E7%AC%A6.html">Java 的各种运算符</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/Java%20%E7%BB%A7%E6%89%BF%E3%80%81%E6%8E%A5%E5%8F%A3.html">Java 继承、接口</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/String.html">String - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/char%20%E5%AD%97%E7%AC%A6.html">char 字符 - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E6%8E%A7%E5%88%B6%E6%B5%81.html">Java 控制流</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/StringJoiner.html">StringJoiner</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/StringBuilder.html">StringBuilder</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/switch%20JDK14%E6%96%B0%E7%89%B9%E6%80%A7.html">switch JDK14新特性</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E5%8C%85%E8%A3%85%E7%B1%BB.html">包装类 - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html">基本数据类型</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%85%A5%20Scanner.html">控制台输入 Scanner - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E7%B1%BB%E3%80%81%E5%AF%B9%E8%B1%A1%20Class%20Object.html">类、对象 Class Object</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2.html">数据类型转换 - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6.html">逻辑运算符</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E9%9B%86%E5%90%88.html">集合 - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E9%9A%8F%E6%9C%BA%E6%95%B0%20Random.html">随机数 Random</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/Base%20and%20Grammer/%E9%BB%98%E8%AE%A4%E5%88%9D%E5%A7%8B%E5%8C%96%E7%9A%84%E5%80%BC.html">默认初始化的值 - Java</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            JVM
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/JVM/%E5%8F%98%E9%87%8F%E3%80%81%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%86%85%E5%AD%98.html">变量、对象的内存 - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD.html">类加载 - Java</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            包使用
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E5%8C%85%E4%BD%BF%E7%94%A8/XML%E8%A7%A3%E6%9E%90%20Dom4j.html">XML解析 Dom4j.md</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            常用的内置类
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E5%B8%B8%E7%94%A8%E7%9A%84%E5%86%85%E7%BD%AE%E7%B1%BB/Math.html">Math</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E5%B8%B8%E7%94%A8%E7%9A%84%E5%86%85%E7%BD%AE%E7%B1%BB/Ramdom.html">Ramdom</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            网络
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E7%BD%91%E7%BB%9C/0Java%E7%BD%91%E7%BB%9C.html">网络 - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E7%BD%91%E7%BB%9C/InetSocketAddress.html">InetSocketAddress</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E7%BD%91%E7%BB%9C/InetAddress.html">InetAddress</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E7%BD%91%E7%BB%9C/Socket.html">Socket - Java 网络</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E7%BD%91%E7%BB%9C/ServerSocket.html">ServerSocket - Java 网络</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.html">单元测试 - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/JDBC.html">JDBC - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E5%A4%9A%E7%BA%BF%E7%A8%8B.html">多线程 - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E6%97%A5%E5%BF%97%20logback.html">日志 logback.md</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E6%9E%9A%E4%B8%BE%20Enum.html"></a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E6%B3%9B%E5%9E%8B.html">泛型 - Java</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20SE/%E5%A4%9A%E4%B8%AAJava%E7%89%88%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">多个Java版本环境配置</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Java Swing
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            窗口
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20Swing/%E7%AA%97%E5%8F%A3/JDialog.html">JDialog - Java Swing</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Swing/%E7%AA%97%E5%8F%A3/JFrame.html">JFrame 窗口 - Java Swing</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Swing/%E7%AA%97%E5%8F%A3/Window.html">Window - Java Swing</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            面板
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20Swing/%E9%9D%A2%E6%9D%BF/JPanel.html">JPanel - Java Swing</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Java Web
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Servlet
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Cookie
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/Cookie/Cookie.html">Cookie</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/Cookie/Session.html">Session</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            会话
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/%E4%BC%9A%E8%AF%9D/HttpSession.html">HttpSession</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/%E4%BC%9A%E8%AF%9D/Session%E7%90%86%E8%A7%A3.html">Session理解 - Java Web</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            请求 响应
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/%E8%AF%B7%E6%B1%82%20%E5%93%8D%E5%BA%94/HttpServletRequest.html">HttpServletRequest</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/%E8%AF%B7%E6%B1%82%20%E5%93%8D%E5%BA%94/HttpServletResponse.html">HttpServletResponse</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/%E8%AF%B7%E6%B1%82%20%E5%93%8D%E5%BA%94/service%E6%96%B9%E6%B3%95%E3%80%81doGet%E6%96%B9%E6%B3%95%E5%92%8CdoPost%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB.html">service方法、doGet方法和doPost方法的区别</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/%E8%AF%B7%E6%B1%82%20%E5%93%8D%E5%BA%94/ServletResponse.html">ServletResponse</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/Enumeration%E6%8E%A5%E5%8F%A3.html">Enumeration接口</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/ServletConfig.html">ServletConfig 对象</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/Servlet.html">Servlet</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/Servlet%E6%98%AF%E5%90%A6%E9%9C%80%E8%A6%81%E6%89%8B%E5%8A%A8%E5%85%B3%E9%97%AD%E8%BE%93%E5%87%BA%E6%B5%81%EF%BC%9F.html">Servlet是否需要手动关闭输出流？</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/ServletContext.html">ServletContext</a></li>  <li class="file active"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/Servlet%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html">Servlet生命周期 - Java Web</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98.html">乱码问题</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Servlet/%E9%85%8D%E7%BD%AE%20Servlet%20%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%82%E6%95%B0.html">配置 Servlet 初始化参数 - JavaWeb</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Spring Boot
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            三层架构
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Controller
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Spring%20Boot/%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84/Controller/%E8%AF%B7%E6%B1%82.html">请求</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Spring%20Boot/%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84/Controller/%E5%93%8D%E5%BA%94.html">响应</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Spring%20Boot/%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84/%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84.html">三层架构</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Spring%20Boot/%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84/IOC.html">IOC</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Spring%20Boot/%E5%88%9B%E5%BB%BA%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE.html">创建运行项目</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Spring%20Boot/properties%E9%85%8D%E7%BD%AE.html">properties配置</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/webxml.html">webxml</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Idea%20%E5%88%9B%E5%BB%BA%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE.html">Idea 创建运行项目</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/Tomcat.html">Tomcat</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Java%20Web/HTTP%E5%8D%8F%E8%AE%AE.html">HTTP协议</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            JavaFX
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Java/JavaFX/Hello%20JavaFX.html">Hello JavaFX</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Main/Java/Idea.html">idea</a></li>  <li class="file"><a href="/page/Programming/Main/Java/gradle.html">gradle</a></li>  <li class="file"><a href="/page/Programming/Main/Java/Maven.html">Maven - Java</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            JavaScript
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            BOM
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/JavaScript/BOM/BOM%E5%AF%B9%E8%B1%A1.html">BOM对象 - JS</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/BOM/Window.html">Window - JS BOM</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Basic
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/Array.html">Array 数组</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/Destructuring%20assignment%20%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC.html">Destructuring assignment 解构赋值</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/ES6+%20%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E4%B8%8E%E6%96%B9%E6%B3%95%E7%AE%80%E5%86%99.html">ES6+ 对象属性与方法简写</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/ES%E8%A7%84%E8%8C%83.html">ES规范 - JavaScript</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/Event%20%E4%BA%8B%E4%BB%B6.html">Event 事件 - JavaScript</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/Function's%20property%20and%20method.html">JS 函数 的 属性 和 方法</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/Function.html">Functions 函数 - JavaScript</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/String%20%E5%AD%97%E7%AC%A6%E4%B8%B2.html">String 字符串 - JavaScript</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/object%20%E5%AF%B9%E8%B1%A1.html">object 对象</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/this%20%E5%85%B3%E9%94%AE%E5%AD%97.html">this 关键字 - JavaScript</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/prototype%EF%BC%88%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1%EF%BC%89.html">JavaScript prototype（原型对象）</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/%E4%B8%80%E4%BA%9B%E5%87%BD%E6%95%B0.html">JavaScript 的一些函数</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F.html">严格模式</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/%E4%BC%AA%E6%95%B0%E7%BB%84.html">伪数组（类数组）</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/%E5%8F%98%E9%87%8F.html">变量 - JavaScript</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/%E6%A8%A1%E5%9D%97%E5%8C%96.html">模块化 - JavaScript</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html">数据类型 - JavaScript</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic/%E8%BF%90%E7%AE%97%E7%AC%A6.html">运算符 - JavaScript</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Basic Use
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic%20Use/Math.html">Math - JavaScript</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic%20Use/Audio.html">Audio - JavaScript</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic%20Use/document%20%E5%AF%B9%E8%B1%A1.html">document 对象</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/Basic%20Use/window.html">window - JavaScript</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            DOM
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/JavaScript/DOM/DOM.html">DOM - JS</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/DOM/document.html">document - JS DOM</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/DOM/Element.html">Element - JS DOM</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            异步
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/JavaScript/%E5%BC%82%E6%AD%A5/Axios.html">Axios</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/%E5%BC%82%E6%AD%A5/Promise.html">Promise</a></li>  <li class="file"><a href="/page/Programming/Main/JavaScript/%E5%BC%82%E6%AD%A5/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B.html">异步编程</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            MySQL
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            SQL
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/MySQL/SQL/%E5%AE%9A%E4%B9%89%20SQL%20DDL.html">SQL DDL</a></li>  <li class="file"><a href="/page/Programming/Main/MySQL/SQL/%E6%93%8D%E4%BD%9C%20DML.html">DML 数据库操作</a></li>  <li class="file"><a href="/page/Programming/Main/MySQL/SQL/%E6%9F%A5%E8%AF%A2-DQL.html">查询 DQL</a></li>  <li class="file"><a href="/page/Programming/Main/MySQL/SQL/%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2.html">多表查询</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Main/MySQL/MySQL%20%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%E5%92%8C%E4%BB%A3%E7%A0%81.html">MySQL 基本命令和代码</a></li>  <li class="file"><a href="/page/Programming/Main/MySQL/MySQL%20%E5%A4%96%E9%94%AE.html">MySQL 外键</a></li>  <li class="file"><a href="/page/Programming/Main/MySQL/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html">字段数据类型</a></li>  <li class="file"><a href="/page/Programming/Main/MySQL/%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B.html"></a></li>  <li class="file"><a href="/page/Programming/Main/MySQL/MySQL%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html">MySQL 环境配置和基本概念</a></li>  <li class="file"><a href="/page/Programming/Main/MySQL/%E5%A4%96%E9%94%AE%E7%BA%A6%E6%9D%9F.html">外键约束</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            PHP
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/PHP/0-PHP%E7%BB%93%E6%9E%84.html">PHP 结构</a></li>  <li class="file"><a href="/page/Programming/Main/PHP/PHP%E6%A0%87%E8%AE%B0.html">PHP标记</a></li>  <li class="file"><a href="/page/Programming/Main/PHP/%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F.html">PHP 变量作用域</a></li>  <li class="file"><a href="/page/Programming/Main/PHP/%E6%8E%A7%E5%88%B6%E6%B5%81.html">PHP 控制流</a></li>  <li class="file"><a href="/page/Programming/Main/PHP/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C.html">PHP 字符串操作</a></li>  <li class="file"><a href="/page/Programming/Main/PHP/%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2.html">PHP 类型转换</a></li>  <li class="file"><a href="/page/Programming/Main/PHP/%E8%A1%A8%E5%8D%95.html">表单</a></li>  <li class="file"><a href="/page/Programming/Main/PHP/%E8%BE%93%E5%87%BA.html">PHP输出</a></li>  <li class="file"><a href="/page/Programming/Main/PHP/%E8%BF%90%E7%AE%97%E7%AC%A6.html">运算符</a></li>  <li class="file"><a href="/page/Programming/Main/PHP/%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF.html">PHP 错误信息</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Vue
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            0开始之前
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Vue/0%E5%BC%80%E5%A7%8B%E4%B9%8B%E5%89%8D/Vue3%20%E9%A1%B9%E7%9B%AE.html">Vue3 项目的 创建 运行 打包</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/0%E5%BC%80%E5%A7%8B%E4%B9%8B%E5%89%8D/vue%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6.html">vue后缀文件</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/0%E5%BC%80%E5%A7%8B%E4%B9%8B%E5%89%8D/%E5%8D%95%E6%96%87%E4%BB%B6%E7%BB%84%E4%BB%B6.html">单文件组件</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/0%E5%BC%80%E5%A7%8B%E4%B9%8B%E5%89%8D/%E6%8C%82%E8%BD%BD%E5%88%B0%E7%BD%91%E9%A1%B5.html">挂载到网页 - Vue</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Bascal
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Vue/Bascal/Creating%20a%20Vue%20Application%20%E5%88%9B%E5%BB%BA%20Vue%20%E5%BA%94%E7%94%A8.html">Creating a Vue Application 创建 Vue 应用</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/Bascal/computed%20%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7.html">computed 计算属性</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/Bascal/reactive.html">reactive</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/Bascal/%E5%93%8D%E5%BA%94%E5%BC%8F.html">响应式</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/Bascal/watch%20%E7%9B%91%E8%A7%86%E5%B1%9E%E6%80%A7.html">watch 监视属性</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/Bascal/%E6%8C%87%E4%BB%A4.html">指令 - Vue</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/Bascal/%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95.html">模板语法</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/Bascal/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%92%8C%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html">Vue 环境配置和创建项目</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            组件
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/Vue/%E7%BB%84%E4%BB%B6/Element.html">Element 安装引入</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/%E7%BB%84%E4%BB%B6/Pinia.html">Pinia</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Main/Vue/0-Vue%E7%BB%93%E6%9E%84.html">Vue 结构</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/mainjs%E6%96%87%E4%BB%B6.html">mainjs文件</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/Vue%E5%9F%BA%E7%A1%80.html">Vue基础</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html">生命周期</a></li>  <li class="file"><a href="/page/Programming/Main/Vue/%E7%BB%84%E4%BB%B6.html">组件 - Vue</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            nodejs
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/nodejs/npm.html">npm</a></li>  <li class="file"><a href="/page/Programming/Main/nodejs/%E6%A8%A1%E5%9D%97%E5%8C%96.html">模块化</a></li>  <li class="file"><a href="/page/Programming/Main/nodejs/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">环境配置</a></li>  <li class="file"><a href="/page/Programming/Main/nodejs/%E9%95%9C%E5%83%8F.html">Nodejs npm 镜像</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            零散的
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/%E9%9B%B6%E6%95%A3%E7%9A%84/HTTP.html">HTTP</a></li>  <li class="file"><a href="/page/Programming/Main/%E9%9B%B6%E6%95%A3%E7%9A%84/XML.html">XML</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            项目开发
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Main/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B.html">软件开发流程</a></li>  <li class="file"><a href="/page/Programming/Main/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/Postman.html">Postman</a></li>  <li class="file"><a href="/page/Programming/Main/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html">设计模式</a></li>  <li class="file"><a href="/page/Programming/Main/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/Java%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84.html">Java三层架构</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Secondary
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            C
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Secondary/C/C%E8%AF%AD%E8%A8%80Clion%20Windows%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98.html">C语言Clion Windows控制台乱码问题</a></li>  <li class="file"><a href="/page/Programming/Secondary/C/Clion%20Debug%E6%A8%A1%E5%BC%8F%E8%BE%93%E5%87%BA%E9%A1%BA%E5%BA%8F%E9%97%AE%E9%A2%98.html">Clion Debug模式输出顺序问题</a></li>  <li class="file"><a href="/page/Programming/Secondary/C/%E7%BB%93%E6%9E%84%E4%BD%93.html">结构体 - C 语言</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Nework
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            HTTP
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Secondary/Nework/HTTP/%E5%93%8D%E5%BA%94%E5%A4%B4%20response-header.html">HTML响应头</a></li>  <li class="file"><a href="/page/Programming/Secondary/Nework/HTTP/HTTP%20%E5%93%8D%E5%BA%94%E7%8A%B6%E6%80%81%E7%A0%81.html">HTTP 响应状态码</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Secondary/Nework/OSI%E5%88%86%E5%B1%82%E6%A8%A1%E5%9E%8B.html"></a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Python
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Secondary/Python/Pdb%20Python%20debugger.html">Pdb Python debugger</a></li>  <li class="file"><a href="/page/Programming/Secondary/Python/Python%E6%90%AD%E5%BB%BAHTTP%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB.html">Python搭建HTTP文件共享</a></li>  <li class="file"><a href="/page/Programming/Secondary/Python/yt-dlp.html">yt-dlp</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Rust
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            开始之前
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Secondary/Rust/%E5%BC%80%E5%A7%8B%E4%B9%8B%E5%89%8D/Cargo.html">Cargo - Rust</a></li>  <li class="file"><a href="/page/Programming/Secondary/Rust/%E5%BC%80%E5%A7%8B%E4%B9%8B%E5%89%8D/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">环境配置</a></li>  <li class="file"><a href="/page/Programming/Secondary/Rust/%E5%BC%80%E5%A7%8B%E4%B9%8B%E5%89%8D/%E4%BF%AE%E6%94%B9%20Rust%20%E7%9A%84%E4%B8%8B%E8%BD%BD%E9%95%9C%E5%83%8F%E4%B8%BA%E5%9B%BD%E5%86%85%E7%9A%84%E9%95%9C%E5%83%8F.html">修改 Rust 的下载镜像为国内的镜像</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/Programming/Secondary/Rust/Rust%20Crate.html">Rust Crate</a></li>  <li class="file"><a href="/page/Programming/Secondary/Rust/Rust%20%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA.html">Rust 输入输出</a></li>  <li class="file"><a href="/page/Programming/Secondary/Rust/range.html">range - Rust</a></li>  <li class="file"><a href="/page/Programming/Secondary/Rust/%E5%86%85%E7%BD%AE%E6%9E%9A%E4%B8%BE.html">Rust 内置枚举</a></li>  <li class="file"><a href="/page/Programming/Secondary/Rust/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html">Rust 数据类型</a></li>  <li class="file"><a href="/page/Programming/Secondary/Rust/%E7%BB%93%E6%9E%84%E4%BD%93%20struct.html">结构体 struct - Rust</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            信息安全
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Programming/Secondary/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/%E6%B5%B7%E6%98%8E%E7%A0%81.html">海明码</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            T
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/T/COVID-19.html">新型冠状病毒肺炎 COVID-19</a></li>  <li class="file"><a href="/page/T/%E6%95%8F%E6%84%9F%E8%AF%8DList.html">敏感词List</a></li>  <li class="file"><a href="/page/T/%E9%B8%BF%E8%92%99.html">关于鸿蒙</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Tools
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/Tools/%E6%95%B0%E5%AD%97%E7%BC%96%E7%A0%81.html">数字编码</a></li>  <li class="file"><a href="/page/Tools/Photoshop%20%E4%BD%BF%E7%94%A8Note.html">Photoshop 使用Note</a></li>  <li class="file"><a href="/page/Tools/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95.html">费曼学习法</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            劳动
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            劳动与法律
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E4%B8%8E%E6%B3%95%E5%BE%8B/%E5%8A%B3%E5%8A%A8%E6%B3%95.html">劳动法</a></li>  <li class="file"><a href="/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E4%B8%8E%E6%B3%95%E5%BE%8B/%E5%A6%82%E4%BD%95%E4%BA%86%E8%A7%A3%E4%B8%80%E5%AE%B6%E5%85%AC%E5%8F%B8.html">如何了解一家公司</a></li>  <li class="file"><a href="/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E4%B8%8E%E6%B3%95%E5%BE%8B/%E7%A7%9F%E6%88%BF.html">租房</a></li>  <li class="file"><a href="/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E4%B8%8E%E6%B3%95%E5%BE%8B/%E7%A6%BB%E8%81%8C.html">离职</a></li>  <li class="file"><a href="/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E4%B8%8E%E6%B3%95%E5%BE%8B/%E8%AF%95%E7%94%A8%E6%9C%9F.html">试用期</a></li>  <li class="file"><a href="/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E4%B8%8E%E6%B3%95%E5%BE%8B/%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C.html">劳动合同</a></li>  <li class="file"><a href="/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E4%B8%8E%E6%B3%95%E5%BE%8B/%E7%A4%BE%E4%BF%9D.html">社保</a></li>  <li class="file"><a href="/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E4%B8%8E%E6%B3%95%E5%BE%8B/%E5%B7%A5%E8%B5%84.html">工资</a></li>  <li class="file"><a href="/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E4%B8%8E%E6%B3%95%E5%BE%8B/%E5%8A%B3%E5%8A%A8%E4%BB%B2%E8%A3%81.html">劳动仲裁</a></li>  <li class="file"><a href="/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E4%B8%8E%E6%B3%95%E5%BE%8B/%E6%B3%95%E5%BE%8B%E6%9F%A5%E8%AF%A2%E7%BD%91%E7%AB%99.html">法律查询网站</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            吃的
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/%E5%8A%B3%E5%8A%A8/%E5%90%83%E7%9A%84/%E7%82%92%E8%8C%84%E5%AD%90.html">炒茄子</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            考试
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            23年上期末
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/23%E5%B9%B4%E4%B8%8A%E6%9C%9F%E6%9C%AB/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.html">操作系统</a></li>  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/23%E5%B9%B4%E4%B8%8A%E6%9C%9F%E6%9C%AB/PHP.html">PHP</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            软考
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/%E8%BD%AF%E8%80%83/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95.html">开发方法（结构化于面向对象）</a></li>  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/%E8%BD%AF%E8%80%83/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.html">操作系统</a></li>  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/%E8%BD%AF%E8%80%83/%E6%95%B0%E5%80%BC%E8%A1%A8%E7%A4%BA.html">数值表示</a></li>  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/%E8%BD%AF%E8%80%83/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.html">数据结构</a></li>  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/%E8%BD%AF%E8%80%83/%E6%95%B0%E6%8D%AE%E5%BA%93.html">数据库</a></li>  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/%E8%BD%AF%E8%80%83/%E6%B3%95%E5%BE%8B.html">法律</a></li>  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/%E8%BD%AF%E8%80%83/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80.html">程序语言</a></li>  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/%E8%BD%AF%E8%80%83/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86.html">计算机组成原理</a></li>  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/%E8%BD%AF%E8%80%83/%E7%BD%91%E7%BB%9C%E5%92%8C%E5%AE%89%E5%85%A8.html">网络和安全</a></li>  <li class="file"><a href="/page/%E8%80%83%E8%AF%95/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B.html">软件工程</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            音乐
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            歌词
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/Chandelier.html">Chandelier - Sia</a></li>  <li class="file"><a href="/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/%E5%81%9A%E4%B8%AA%E7%9C%9F%E7%9A%84%E6%88%91.html">做个真的我</a></li>  <li class="file"><a href="/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/%E6%97%A9%E7%8F%AD%E7%81%AB%E8%BD%A6.html">早班火车 - Beyond</a></li>  <li class="file"><a href="/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/%E6%B5%81%E6%B0%B4%E8%A1%8C%E4%BA%91.html">流水行云</a></li>  <li class="file"><a href="/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/%E7%9C%9F%E6%83%85%E6%B5%81%E9%9C%B2-%E9%99%88%E6%85%A7%E5%A8%B4.html">真情流露-陈慧娴</a></li>  <li class="file"><a href="/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/%E7%AC%91%E7%BA%A2%E5%B0%98.html">笑红尘</a></li>  <li class="file"><a href="/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/%E9%9A%94%E4%B8%96%E6%84%9F%E8%A7%89.html">隔世感觉 - 刘小慧</a></li>  <li class="file"><a href="/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/%E6%83%8A%E6%A2%A6-%E5%88%98%E5%B0%8F%E6%85%A7.html">惊梦-刘小慧</a></li>  <li class="file"><a href="/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/Hey%20Jude.html">Hey Jude</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/page/%E9%9F%B3%E4%B9%90/%E5%92%8C%E5%BC%A6.html">和弦</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-Programming/Main/Java/Java Web/Servlet/Servlet生命周期" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Programming/">Programming</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Main/">Main</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Main/Java/">Java</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Main/Java/Java-Web/">Java Web</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Programming/Main/Java/Java-Web/Servlet/">Servlet</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/page/Programming/Main/Java/Java%20Web/Servlet/Servlet%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html">
+            <time datetime="2023-06-16T02:55:33.663Z" itemprop="datePublished">2023-06-16</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/Programming/Main/Java/Java Web/Servlet/Servlet生命周期.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/Programming/Main/Java/Java Web/Servlet/Servlet生命周期.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/Programming/Main/Java/Java Web/Servlet/Servlet生命周期.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Servlet生命周期 - Java Web
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><ol>
+<li><p>类加载</p>
+</li>
+<li><p>实例、初始化：第一次访问会查找servlet，不存在则创建并初始化。<code>init()</code></p>
+</li>
+<li><p>调用：service() doGet() doPost()</p>
+</li>
+<li><p>销毁：容器关闭时会执行销毁。<code>destroy()</code></p>
+</li>
+</ol>
+<h3 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h3><p><code>init(ServletConfig config)</code> 创建时</p>
+<p><code>service(ServletRequest req, ServletResponse res)</code> 此方法替代 重写 doGet doPost 方法</p>
+<p><code>destroy()</code> 销毁时</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/page/Programming/Main/Java/Java%20Web/Servlet/ServletContext.html" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    ServletContext
+                
+            </div>
+        </a>
+    
+    
+        <a href="/page/Programming/Main/Java/Java%20Web/Servlet/%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98.html" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">乱码问题</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            RC &copy; 2023 
+            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a target="_blank" rel="noopener" href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>

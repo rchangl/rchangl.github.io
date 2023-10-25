@@ -6,7 +6,7 @@
   <link href="https://rchangl.github.io/atom.xml" rel="self"/>
   
   <link href="https://rchangl.github.io/"/>
-  <updated>2023-10-13T11:47:42.981Z</updated>
+  <updated>2023-10-24T15:36:27.098Z</updated>
   <id>https://rchangl.github.io/</id>
   
   <author>
@@ -17,21 +17,205 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>AOP</title>
-    <link href="https://rchangl.github.io/page/Devolop/%E5%90%8E%E7%AB%AF/Spring%20Boot/AOP.html"/>
-    <id>https://rchangl.github.io/page/Devolop/%E5%90%8E%E7%AB%AF/Spring%20Boot/AOP.html</id>
-    <published>2023-10-13T11:41:21.763Z</published>
-    <updated>2023-10-13T11:47:42.981Z</updated>
+    <title>调度算法</title>
+    <link href="https://rchangl.github.io/page/Computer_Theory/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95.html"/>
+    <id>https://rchangl.github.io/page/Computer_Theory/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95.html</id>
+    <published>2023-10-24T14:17:14.445Z</published>
+    <updated>2023-10-24T15:36:27.098Z</updated>
     
-    <content type="html"><![CDATA[<p>面向切面编程</p><p>基本原理：动态代理技术</p><p>在不改变原函数的情况下增加函数功能。</p><p>与设计模式里的“代理模式”思想一样</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="FCFS-First-Come-First-Serve"><a href="#FCFS-First-Come-First-Serve" class="headerlink" title="FCFS - First Come First Serve"></a>FCFS - First Come First Serve</h2><h2 id="SJF-Shortest-Job-First"><a href="#SJF-Shortest-Job-First" class="headerlink" title="SJF - Shortest Job First"></a>SJF - Shortest Job First</h2><h2 id="RR-Round-Robin"><a href="#RR-Round-Robin" class="headerlink" title="RR - Round Robin"></a>RR - Round Robin</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;面向切面编程&lt;/p&gt;
-&lt;p&gt;基本原理：动态代理技术&lt;/p&gt;
-&lt;p&gt;在不改变原函数的情况下增加函数功能。&lt;/p&gt;
-&lt;p&gt;与设计模式里的“代理模式”思想一样&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;FCFS-First-Come-First-Serve&quot;&gt;&lt;a href=&quot;#FCFS-First-Come-First-Serve&quot; class=&quot;headerlink&quot; title=&quot;FCFS - First Come First Serve&quot;&gt;&lt;/a&gt;FCF</summary>
+      
+    
+    
+    
+    <category term="Computer_Theory" scheme="https://rchangl.github.io/categories/Computer-Theory/"/>
+    
+    <category term="操作系统" scheme="https://rchangl.github.io/categories/Computer-Theory/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>遥远的她-张学友</title>
+    <link href="https://rchangl.github.io/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/%E9%81%A5%E8%BF%9C%E7%9A%84%E5%A5%B9-%E5%BC%A0%E5%AD%A6%E5%8F%8B.html"/>
+    <id>https://rchangl.github.io/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/%E9%81%A5%E8%BF%9C%E7%9A%84%E5%A5%B9-%E5%BC%A0%E5%AD%A6%E5%8F%8B.html</id>
+    <published>2023-10-24T13:06:42.239Z</published>
+    <updated>2023-10-24T15:43:29.388Z</updated>
+    
+    <content type="html"><![CDATA[<p>让晚风轻轻吹送了落霞<br>我已习惯每个傍晚去想她<br>在远方的她 此刻可知道<br>这段情在我心始终记挂<br>在这半山<br>那天我知我知快将要别离没说话<br>望向她 却听到她说不要相约<br>纵使分隔 相爱不会害怕<br>遥遥万里 心声有否偏差<br>正是让这爱试出真与假<br>遥远的她 仿佛借风声跟我话<br>热情若无变 哪管它沧桑变化  </p><p>但这天收到她爸爸的一封信<br>信里面说血癌已带走她<br>但觉得空虚的心 仿佛已僵化<br>过去事像炮弹 心中爆炸<br>在这半山<br>这天我悲痛悲痛不已 在胡乱说话<br>夜雨中似听到 她说不要相约<br>纵使分隔 相爱不会害怕<br>人无觅处 心声有否偏差<br>正是让这爱试出真与假<br>遥远的她 仿佛借风声跟我话<br>热情若无变 哪管它沧桑变化<br>遥远的她 不可以再归家<br>我在梦里却始终只有她<br>遥远的她 可知我心中的说话<br>热情并冇变 哪管它沧桑变化<br>遥远的她 不可以再归家<br>我在梦里却始终只有她<br>遥远的她 可知我心中的说话<br>热情并冇变 哪管它沧桑变化</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;让晚风轻轻吹送了落霞&lt;br&gt;我已习惯每个傍晚去想她&lt;br&gt;在远方的她 此刻可知道&lt;br&gt;这段情在我心始终记挂&lt;br&gt;在这半山&lt;br&gt;那天我知我知快将要别离没说话&lt;br&gt;望向她 却听到她说不要相约&lt;br&gt;纵使分隔 相爱不会害怕&lt;br&gt;遥遥万里 心声有否偏差&lt;br&gt;正是让这爱试</summary>
+      
+    
+    
+    
+    <category term="音乐" scheme="https://rchangl.github.io/categories/%E9%9F%B3%E4%B9%90/"/>
+    
+    <category term="歌词" scheme="https://rchangl.github.io/categories/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>org.json</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Third_party_packages/org.json.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Third_party_packages/org.json.html</id>
+    <published>2023-10-22T16:57:41.414Z</published>
+    <updated>2023-10-24T08:43:34.798Z</updated>
+    
+    <content type="html"><![CDATA[<p>Doc: <a href="http://stleary.github.io/JSON-java/index.html">http://stleary.github.io/JSON-java/index.html</a></p><p>一个流行的JSON库，另一个流行的JSON库是 <code>org.json.simple</code> <a href="https://cliftonlabs.github.io/json-simple/">https://cliftonlabs.github.io/json-simple/</a> Maven仓库最后更新时间为2019年</p><p>Maven: </p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.json/json --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.json<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>json<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>20231013<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="JSONObject"><a href="#JSONObject" class="headerlink" title="JSONObject"></a>JSONObject</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">myString = <span class="keyword">new</span> <span class="title class_">JSONObject</span>()</span><br><span class="line">        .put(<span class="string">&quot;JSON&quot;</span>, <span class="string">&quot;Hello, World!&quot;</span>).toString();</span><br><span class="line"><span class="comment">// &#123;&quot;JSON&quot;: &quot;Hello, World&quot;&#125;</span></span><br></pre></td></tr></table></figure><h3 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h3><p><code>put(String key, value)</code> 添加一个键值对</p><p>value 可以是 <code>boolean</code> <code>Collection&lt;?&gt;</code> <code>double</code> <code>float</code> <code>int</code> <code>long</code> <code>Map&lt;?,?&gt;</code> <code>Object</code></p><p><code>toString()</code> 返回无 whitespace 的JSON字符串</p><p><code>toString(int indentFactor)</code> 返回 pretty-printed JSON 字符串<br>indentFactor 每个层级的缩进空格数</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Doc: &lt;a href=&quot;http://stleary.github.io/JSON-java/index.html&quot;&gt;http://stleary.github.io/JSON-java/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一个流行的JSON库，另一个流行的JS</summary>
+      
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    
+    <category term="Third_party_packages" scheme="https://rchangl.github.io/categories/Devolop/Java/Third-party-packages/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>项目依赖管理</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/Base%20and%20Grammer/%E9%A1%B9%E7%9B%AE%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/Base%20and%20Grammer/%E9%A1%B9%E7%9B%AE%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86.html</id>
+    <published>2023-10-22T15:13:33.480Z</published>
+    <updated>2023-10-22T16:41:25.828Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="使用第三方包"><a href="#使用第三方包" class="headerlink" title="使用第三方包"></a>使用第三方包</h2><h3 id="classpath"><a href="#classpath" class="headerlink" title="classpath"></a>classpath</h3><p>修改 CLASSPATH 系统环境变量，使其包含所需的 JAR</p><p>或在命令行上执行操作：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -classpath C:\java\thirdpartjars\thirdparty.jar MyProgram</span><br></pre></td></tr></table></figure><p>也可以在 <code>javac</code> 命令中使用</p><h3 id="使用-Maven-项目"><a href="#使用-Maven-项目" class="headerlink" title="使用 Maven 项目"></a>使用 Maven 项目</h3><p>IDEA 中 右键项目，  <code>Add Framework</code> -&gt; <code>Maven</code> 可将普通项目转为 Maven 项目</p><h3 id="IDEA中使用第三方包"><a href="#IDEA中使用第三方包" class="headerlink" title="IDEA中使用第三方包"></a>IDEA中使用第三方包</h3><h4 id="右键添加"><a href="#右键添加" class="headerlink" title="右键添加"></a>右键添加</h4><p>将 Jar 文件放入工程中，右键添加</p><h4 id=""><a href="#" class="headerlink" title=""></a></h4><p><code>File</code> -&gt; <code>Project Structure</code><br>-&gt; <code>Modules</code> -&gt; <code>Dependencies</code> -&gt; <code>+</code> -&gt; <code>Jars or directories</code></p><p>选择 Jar 包所在的目录</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;使用第三方包&quot;&gt;&lt;a href=&quot;#使用第三方包&quot; class=&quot;headerlink&quot; title=&quot;使用第三方包&quot;&gt;&lt;/a&gt;使用第三方包&lt;/h2&gt;&lt;h3 id=&quot;classpath&quot;&gt;&lt;a href=&quot;#classpath&quot; class=&quot;headerlink</summary>
+      
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
+    
+    <category term="Base and Grammer" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/Base-and-Grammer/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>StringUtils</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Spring_Framework/StringUtils.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Spring_Framework/StringUtils.html</id>
+    <published>2023-10-22T14:43:42.586Z</published>
+    <updated>2023-10-22T14:56:08.445Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/StringUtils.html">StringUtils (Spring Framework 6.0.13 API)</a></p><p>Spring 提供的对 String 的工具类</p><h2 id="判空"><a href="#判空" class="headerlink" title="判空"></a>判空</h2><p><code>boolean hasLength(CharSequence str)</code></p><p><code>boolean hasLength(String str)</code></p><p>neither null nor of length 0<br>不是 null 也不是 长度为0</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/StringUtils.html&quot;&gt;StringUtils (Spring </summary>
+      
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    
+    <category term="Spring_Framework" scheme="https://rchangl.github.io/categories/Devolop/Java/Spring-Framework/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>包装类</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/Base%20and%20Grammer/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E5%8C%85%E8%A3%85%E7%B1%BB.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/Base%20and%20Grammer/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E5%8C%85%E8%A3%85%E7%B1%BB.html</id>
+    <published>2023-10-21T08:35:18.014Z</published>
+    <updated>2023-10-24T16:37:20.990Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="包装类间的关系"><a href="#包装类间的关系" class="headerlink" title="包装类间的关系"></a>包装类间的关系</h2><p><img src="/%E5%8C%85%E8%A3%85%E7%B1%BB/image-1.png" alt="包装类间的关系"></p><h2 id="自动装箱和自动拆箱"><a href="#自动装箱和自动拆箱" class="headerlink" title="自动装箱和自动拆箱"></a>自动装箱和自动拆箱</h2><p>JDK1.5以后，基础类型和包装类可以自动转换</p><p>自动装箱：基本-&gt;包装 ； 调用 <code>包装类.valueOf(基本类型)</code><br>自动拆箱：包装-&gt;基本 ； 调用 <code>**Value()</code></p><h3 id="自动拆装箱的原理"><a href="#自动拆装箱的原理" class="headerlink" title="自动拆装箱的原理"></a>自动拆装箱的原理</h3><p>自动调用方法转换</p><p>自动装箱： <code>Integer.valueOf(1)</code></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer integer=<span class="number">1</span>;</span><br><span class="line">Integer integer=Integer.valueOf(<span class="number">1</span>);</span><br></pre></td></tr></table></figure><p>自动拆箱： <code>integer.intValue();</code></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i=integer;</span><br><span class="line"><span class="type">int</span> i=integer.intValue();</span><br></pre></td></tr></table></figure><h3 id="触发自动拆装箱"><a href="#触发自动拆装箱" class="headerlink" title="触发自动拆装箱"></a>触发自动拆装箱</h3><h3 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h3><p>包装类与基础类型的对应关系及其<strong>缓存范围</strong>：</p><p><img src="/%E5%8C%85%E8%A3%85%E7%B1%BB/image.png" alt="包装类与基础类型的对应关系及其缓存范围"></p><p>包装类在缓存范围内时，会调用缓存。比较两个包装类相等，如果使用 <code>==</code> ，包装类不会自动拆箱，在缓存范围内外的结果可能会不一致。</p><p>比较两个包装类不使用 <code>==</code> ， 使用 <code>equals(obj)</code> 。<code>==</code> 比较的是<strong>地址</strong>，在缓存之外地址不同；而 equals 比较的始终是<strong>具体值</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;包装类间的关系&quot;&gt;&lt;a href=&quot;#包装类间的关系&quot; class=&quot;headerlink&quot; title=&quot;包装类间的关系&quot;&gt;&lt;/a&gt;包装类间的关系&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/%E5%8C%85%E8%A3%85%E7%B1%BB/image-1.png</summary>
+      
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
+    
+    <category term="Base and Grammer" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/Base-and-Grammer/"/>
+    
+    <category term="数据类型" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/Base-and-Grammer/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>内存模型</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/JVM/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/JVM/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.html</id>
+    <published>2023-10-21T07:39:50.621Z</published>
+    <updated>2023-10-21T08:16:33.709Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="内存区域"><a href="#内存区域" class="headerlink" title="内存区域"></a>内存区域</h2><h3 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h3><p>方法运行时进栈，执行完毕出栈</p><h3 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h3><p>new 出来的对象</p><h3 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h3><p>字节码文件</p><h2 id="字符串-内存"><a href="#字符串-内存" class="headerlink" title="字符串 内存"></a>字符串 内存</h2><h3 id="String-Table-串池"><a href="#String-Table-串池" class="headerlink" title="String Table 串池"></a>String Table 串池</h3><p>JDK7 开始，串池在堆内存当中</p><p>使用<strong>字符串常量</strong>时，先在串池当中找是否有需要的字符串，若没有则创建，有则直接使用</p><h3 id="字符串对象"><a href="#字符串对象" class="headerlink" title="字符串对象"></a>字符串对象</h3><p>new String 的方式创建字符串，在堆内存当中，不会复用</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;内存区域&quot;&gt;&lt;a href=&quot;#内存区域&quot; class=&quot;headerlink&quot; title=&quot;内存区域&quot;&gt;&lt;/a&gt;内存区域&lt;/h2&gt;&lt;h3 id=&quot;栈&quot;&gt;&lt;a href=&quot;#栈&quot; class=&quot;headerlink&quot; title=&quot;栈&quot;&gt;&lt;/a&gt;栈&lt;/h3&gt;&lt;p</summary>
+      
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
+    
+    <category term="JVM" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/JVM/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>新特性</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/Java9-18%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/%E6%96%B0%E7%89%B9%E6%80%A7.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/Java9-18%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/%E6%96%B0%E7%89%B9%E6%80%A7.html</id>
+    <published>2023-10-21T06:29:24.508Z</published>
+    <updated>2023-10-21T06:29:55.757Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/390679021">java9到18版本中的新特性 - 知乎</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/390679021&quot;&gt;java9到18版本中的新特性 - 知乎&lt;/a&gt;&lt;/p&gt;
 </summary>
       
     
@@ -39,488 +223,57 @@
     
     <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
     
-    <category term="后端" scheme="https://rchangl.github.io/categories/Devolop/%E5%90%8E%E7%AB%AF/"/>
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
     
-    <category term="Spring Boot" scheme="https://rchangl.github.io/categories/Devolop/%E5%90%8E%E7%AB%AF/Spring-Boot/"/>
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
+    
+    <category term="Java9-18的新特性" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/Java9-18%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/"/>
     
     
   </entry>
   
   <entry>
-    <title>Cookie</title>
-    <link href="https://rchangl.github.io/page/Devolop/%E5%90%8E%E7%AB%AF/Java%20Web/Cookie.html"/>
-    <id>https://rchangl.github.io/page/Devolop/%E5%90%8E%E7%AB%AF/Java%20Web/Cookie.html</id>
-    <published>2023-10-13T11:16:20.814Z</published>
-    <updated>2023-10-13T11:21:09.446Z</updated>
+    <title>线程相关概念</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%92%8C%E5%B9%B6%E5%8F%91/%E7%BA%BF%E7%A8%8B%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%92%8C%E5%B9%B6%E5%8F%91/%E7%BA%BF%E7%A8%8B%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5.html</id>
+    <published>2023-10-21T04:48:54.311Z</published>
+    <updated>2023-10-21T04:56:49.516Z</updated>
     
-    <content type="html"><![CDATA[<p>数据保存在浏览器</p><p>Cookie 不能跨域使用（协议、IP&#x2F;域名、端口）</p><p><code>request.getCookie</code> 获取</p><p><code>response.addCookie</code> 添加</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="线程的五大状态"><a href="#线程的五大状态" class="headerlink" title="线程的五大状态"></a>线程的五大状态</h2><p>创建状态：当用new操作符创建一个线程的时候。</p><p>就绪状态：调用start方法，处于就绪状态的线程并不一定马上就执行run方法，还需要等待CPU的调度。</p><p>运行状态：CPU开始调度线程，并开始执行Run方法。</p><p>阻塞状态：线程的执行过程中可能因为一些原因进入阻塞状态，比如调用sleep方法，获取尝试得到一个锁等等。、</p><p>死亡状态：Run方法执行完或者执行中遇到异常。</p><h2 id="悲观锁和乐观锁"><a href="#悲观锁和乐观锁" class="headerlink" title="悲观锁和乐观锁"></a>悲观锁和乐观锁</h2><p>悲观锁：认为一定会有其他线程来改变他，所以每次操作就会加锁，会造成线程阻塞。</p><p>乐观锁：认为不会有线程来改变他，每次操作不会加锁，但是如果因为其他线程来改变了值，造成了冲突，会因为冲突而操作失败，但是他又会继续重试，直到成功为止，不会造成线程阻塞。</p><p>4） 线程之间的协作</p><p>线程之间的协作有：wait、notify、notifyAll等</p><p>5） Synchronized关键字（同步锁）</p><p>修饰一个代码块：被修饰的代码块称为同步语句块，作用范围是大括号{}括起来的代码，作用的对象是调用这个代码块的对象。</p><p>修饰一个方法：被修饰的方法称为同步方法，作用范围是整个方法，作用的对象是调用这个方法的对象。</p><p>修饰一个静态的方法：作用范围是整个静态方法，所用的对象是这个类中的所有对象。</p><p>修饰一个类：作用范围是synchronized后面括起来的部分，作用的对象是这个类中的所有对象</p><p>6） CAS</p><p>比较替换，是实现并发应用的一种技术，主要用于不想使线程进入阻塞的一种方式，操作包含三个操作数-内存位置V、预期原值A、新值B，如果内存位置和预期原值相匹配，处理器自动将该位置的值改为新值，否则就不做处理。</p><p>CAS三大问题：ABA问题、循环时间长开销大、只能保证一个共享变量的原子操作，即一个CAS只能处理一个。</p><h2 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h2><p>如果使用一个线程就创建一个，存在如果并发的线程量大，且每个线程执行一个任务就结束了，这样频繁的创建线程就会给系统带来很大的开销，导致系统效率大大降低，因为频繁创建线程和销毁线程是需要时间的，而线程池可以对线程进行复用，大大减少线程创建和销毁所带来的性能消耗。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;数据保存在浏览器&lt;/p&gt;
-&lt;p&gt;Cookie 不能跨域使用（协议、IP&amp;#x2F;域名、端口）&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;request.getCookie&lt;/code&gt; 获取&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;response.addCookie&lt;/code&gt; 添加&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h2 id=&quot;线程的五大状态&quot;&gt;&lt;a href=&quot;#线程的五大状态&quot; class=&quot;headerlink&quot; title=&quot;线程的五大状态&quot;&gt;&lt;/a&gt;线程的五大状态&lt;/h2&gt;&lt;p&gt;创建状态：当用new操作符创建一个线程的时候。&lt;/p&gt;
+&lt;p&gt;就绪状态：调用start方法，处于就绪</summary>
       
     
     
     
     <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
     
-    <category term="后端" scheme="https://rchangl.github.io/categories/Devolop/%E5%90%8E%E7%AB%AF/"/>
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
     
-    <category term="Java Web" scheme="https://rchangl.github.io/categories/Devolop/%E5%90%8E%E7%AB%AF/Java-Web/"/>
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Session 会话</title>
-    <link href="https://rchangl.github.io/page/Devolop/%E5%90%8E%E7%AB%AF/Java%20Web/Seesion%E4%BC%9A%E8%AF%9D.html"/>
-    <id>https://rchangl.github.io/page/Devolop/%E5%90%8E%E7%AB%AF/Java%20Web/Seesion%E4%BC%9A%E8%AF%9D.html</id>
-    <published>2023-10-13T11:12:53.342Z</published>
-    <updated>2023-10-13T11:23:34.546Z</updated>
-    
-    <content type="html"><![CDATA[<p>一个浏览器（客户端）一个会话。同一个浏览器多个请求都是一个会话</p><p>Session 只能单服务器使用，无法直接在集群服务器使用</p><h2 id="会话跟踪"><a href="#会话跟踪" class="headerlink" title="会话跟踪"></a>会话跟踪</h2><p>纯 Cookie ：最早的方式，不安全</p><p>Session ：改进</p><p>JWT 令牌 ：主流</p><h2 id="JSESSIONID"><a href="#JSESSIONID" class="headerlink" title="JSESSIONID"></a>JSESSIONID</h2><p>自动设置在 Cookie 中</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;一个浏览器（客户端）一个会话。同一个浏览器多个请求都是一个会话&lt;/p&gt;
-&lt;p&gt;Session 只能单服务器使用，无法直接在集群服务器使用&lt;/p&gt;
-&lt;h2 id=&quot;会话跟踪&quot;&gt;&lt;a href=&quot;#会话跟踪&quot; class=&quot;headerlink&quot; title=&quot;会话跟踪&quot;&gt;&lt;/</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="后端" scheme="https://rchangl.github.io/categories/Devolop/%E5%90%8E%E7%AB%AF/"/>
-    
-    <category term="Java Web" scheme="https://rchangl.github.io/categories/Devolop/%E5%90%8E%E7%AB%AF/Java-Web/"/>
+    <category term="多线程和并发" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%92%8C%E5%B9%B6%E5%8F%91/"/>
     
     
   </entry>
   
   <entry>
-    <title>配置文件</title>
-    <link href="https://rchangl.github.io/page/Devolop/%E5%90%8E%E7%AB%AF/Spring%20Boot/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html"/>
-    <id>https://rchangl.github.io/page/Devolop/%E5%90%8E%E7%AB%AF/Spring%20Boot/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html</id>
-    <published>2023-10-09T10:58:52.957Z</published>
-    <updated>2023-10-13T11:50:02.614Z</updated>
+    <title>手写字体打印</title>
+    <link href="https://rchangl.github.io/page/Computer%20Use/%E6%89%8B%E5%86%99%E5%AD%97%E4%BD%93.html"/>
+    <id>https://rchangl.github.io/page/Computer%20Use/%E6%89%8B%E5%86%99%E5%AD%97%E4%BD%93.html</id>
+    <published>2023-10-21T03:11:15.643Z</published>
+    <updated>2023-10-21T03:16:04.609Z</updated>
     
-    <content type="html"><![CDATA[<p>将 Spring 里的复杂的 xml 文件替代了</p><p>约定大于配置 CoC(Convention over Configuration) 。只需要配置不同配置的部分就好</p><h2 id="单个注入-Value"><a href="#单个注入-Value" class="headerlink" title="单个注入 @Value"></a>单个注入 <code>@Value</code></h2><p>注入属性值：</p><p><img src="/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/image.png" alt="Alt text"></p><p>yaml配置文件一样</p><h2 id="批量注入-ConfigurationProperties"><a href="#批量注入-ConfigurationProperties" class="headerlink" title="批量注入 @ConfigurationProperties"></a>批量注入 <code>@ConfigurationProperties</code></h2><p><code>@Component</code> 交给IOC容器</p><p><code>@ConfigurationProperties(prefix=&quot;aliyun.oss&quot;)</code> 注入配置，前缀</p><p><img src="/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/image-1.png" alt="Alt text"></p><h2 id="读取配置文件"><a href="#读取配置文件" class="headerlink" title="读取配置文件"></a>读取配置文件</h2><p>在SpringBoot中已封装</p><p><code>@Value</code></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;将 Spring 里的复杂的 xml 文件替代了&lt;/p&gt;
-&lt;p&gt;约定大于配置 CoC(Convention over Configuration) 。只需要配置不同配置的部分就好&lt;/p&gt;
-&lt;h2 id=&quot;单个注入-Value&quot;&gt;&lt;a href=&quot;#单个注入-Value&quot; c</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="后端" scheme="https://rchangl.github.io/categories/Devolop/%E5%90%8E%E7%AB%AF/"/>
-    
-    <category term="Spring Boot" scheme="https://rchangl.github.io/categories/Devolop/%E5%90%8E%E7%AB%AF/Spring-Boot/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>组合数</title>
-    <link href="https://rchangl.github.io/page/Devolop/Math_and_Algo_%E6%95%B0%E5%AD%A6%E5%92%8C%E7%AE%97%E6%B3%95/%E7%BB%84%E5%90%88%E6%95%B0.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Math_and_Algo_%E6%95%B0%E5%AD%A6%E5%92%8C%E7%AE%97%E6%B3%95/%E7%BB%84%E5%90%88%E6%95%B0.html</id>
-    <published>2023-10-07T15:03:49.175Z</published>
-    <updated>2023-10-07T15:10:13.982Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/%E7%BB%84%E5%90%88%E6%95%B0/image.png" alt="Alt text"></p><p>代码中使用展开式，用for循环计算（Python、Golang 中有相应的API，Java、C++、JS没有）</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">long</span> <span class="variable">ans</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> n, y = <span class="number">1</span>; y &lt; m; ++x, ++y) &#123;</span><br><span class="line">    ans = ans * x / y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Sub</span> 字体修改()</span><br><span class="line"><span class="comment">&#x27;</span></span><br><span class="line"><span class="comment">&#x27; 字体修改 宏</span></span><br><span class="line"><span class="comment">&#x27;</span></span><br><span class="line">    <span class="keyword">Dim</span> R_Character <span class="keyword">As</span> Range</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">Dim</span> FontSize(<span class="number">3</span>)</span><br><span class="line">    <span class="comment">&#x27; 字体大小在5个值之间进行波动，可以改写</span></span><br><span class="line">    FontSize(<span class="number">1</span>) = <span class="string">&quot;21&quot;</span></span><br><span class="line">    FontSize(<span class="number">2</span>) = <span class="string">&quot;21.5&quot;</span></span><br><span class="line">    FontSize(<span class="number">3</span>) = <span class="string">&quot;22&quot;</span></span><br><span class="line">    FontSize(<span class="number">4</span>) = <span class="string">&quot;22.5&quot;</span></span><br><span class="line">    FontSize(<span class="number">5</span>) = <span class="string">&quot;23&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">Dim</span> FontName(<span class="number">3</span>)</span><br><span class="line">    <span class="comment">&#x27;字体名称在三种字体之间进行波动，可改写，但需要保证系统拥有下列字体</span></span><br><span class="line">    FontName(<span class="number">1</span>) = <span class="string">&quot;陈静的字完整版&quot;</span></span><br><span class="line">    FontName(<span class="number">2</span>) = <span class="string">&quot;萌妹子体&quot;</span></span><br><span class="line">    FontName(<span class="number">3</span>) = <span class="string">&quot;李国夫手写体&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">Dim</span> ParagraphSpace(<span class="number">5</span>)</span><br><span class="line">    <span class="comment">&#x27;行间距 在一定以下值中均等分布，可改写</span></span><br><span class="line">    ParagraphSpace(<span class="number">1</span>) = <span class="string">&quot;12&quot;</span></span><br><span class="line">    ParagraphSpace(<span class="number">2</span>) = <span class="string">&quot;13&quot;</span></span><br><span class="line">    ParagraphSpace(<span class="number">3</span>) = <span class="string">&quot;20&quot;</span></span><br><span class="line">    ParagraphSpace(<span class="number">4</span>) = <span class="string">&quot;7&quot;</span></span><br><span class="line">    ParagraphSpace(<span class="number">5</span>) = <span class="string">&quot;12&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&#x27;不懂原理的话，不建议修改下列代码</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">For</span> <span class="keyword">Each</span> R_Character <span class="keyword">In</span> ActiveDocument.Characters</span><br><span class="line"></span><br><span class="line">        VBA.Randomize</span><br><span class="line"></span><br><span class="line">        R_Character.Font.Name = FontName(Int(VBA.Rnd * <span class="number">3</span>) + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">        R_Character.Font.Size = FontSize(Int(VBA.Rnd * <span class="number">5</span>) + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">        R_Character.Font.Position = Int(VBA.Rnd * <span class="number">3</span>) + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        R_Character.Font.Spacing = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">Next</span></span><br><span class="line"></span><br><span class="line">    Application.ScreenUpdating = <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">For</span> <span class="keyword">Each</span> Cur_Paragraph <span class="keyword">In</span> ActiveDocument.Paragraphs</span><br><span class="line"></span><br><span class="line">        Cur_Paragraph.LineSpacing = ParagraphSpace(Int(VBA.Rnd * <span class="number">5</span>) + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">Next</span></span><br><span class="line">        Application.ScreenUpdating = <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/%E7%BB%84%E5%90%88%E6%95%B0/image.png&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
-&lt;p&gt;代码中使用展开式，用for循环计算（Python、Golang 中有相应的API，Java、C++、JS没有）&lt;/p&gt;
-&lt;fig</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Math_and_Algo_数学和算法" scheme="https://rchangl.github.io/categories/Devolop/Math-and-Algo-%E6%95%B0%E5%AD%A6%E5%92%8C%E7%AE%97%E6%B3%95/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>排列组合之隔板法</title>
-    <link href="https://rchangl.github.io/page/Devolop/Math_and_Algo_%E6%95%B0%E5%AD%A6%E5%92%8C%E7%AE%97%E6%B3%95/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88%E4%B9%8B%E9%9A%94%E6%9D%BF%E6%B3%95.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Math_and_Algo_%E6%95%B0%E5%AD%A6%E5%92%8C%E7%AE%97%E6%B3%95/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88%E4%B9%8B%E9%9A%94%E6%9D%BF%E6%B3%95.html</id>
-    <published>2023-10-07T09:34:30.102Z</published>
-    <updated>2023-10-07T15:05:51.802Z</updated>
-    
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Math_and_Algo_数学和算法" scheme="https://rchangl.github.io/categories/Devolop/Math-and-Algo-%E6%95%B0%E5%AD%A6%E5%92%8C%E7%AE%97%E6%B3%95/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>File 文件</title>
-    <link href="https://rchangl.github.io/page/Devolop/Language/Java%20SE/%E5%86%85%E7%BD%AE%E7%B1%BB/File%E6%96%87%E4%BB%B6.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Language/Java%20SE/%E5%86%85%E7%BD%AE%E7%B1%BB/File%E6%96%87%E4%BB%B6.html</id>
-    <published>2023-10-05T13:25:49.387Z</published>
-    <updated>2023-10-05T13:31:11.865Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="keyword">package</span> com.rc;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeleteFileJava</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 此类显示如何在Java中删除文件</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> args</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">// 带路径的文件名</span></span><br><span class="line">        <span class="type">File</span> <span class="variable">file</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;tmp/tmp2/file.txt&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span>(file.delete())&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;tmp/tmp2/file.txt File deleted&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span> System.out.println(<span class="string">&quot;File tmp/tmp2/file.txt doesn&#x27;t exist&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 只提供文件名称</span></span><br><span class="line">        file = <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;file.txt&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span>(file.delete())&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;file.txt File deleted from Project root directory&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span> System.out.println(<span class="string">&quot;File file.txt doesn&#x27;t exist in the project root directory&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//relative path</span></span><br><span class="line">        file = <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;temp/file.txt&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span>(file.delete())&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;temp/file.txt File deleted from Project root directory&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span> System.out.println(<span class="string">&quot;File temp/file.txt doesn&#x27;t exist in the project root directory&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 删除空的目录</span></span><br><span class="line">        file = <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;temp&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span>(file.delete())&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;temp directory deleted from Project root directory&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span> System.out.println(<span class="string">&quot;temp directory doesn&#x27;t exist or not empty in the project root directory&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 试图删除非空目录</span></span><br><span class="line">        file = <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;D:/user/maxsu/project&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span>(file.delete())&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;D:/user/maxsu/project directory deleted from Project root directory&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span> System.out.println(<span class="string">&quot;D:/user/maxsu/project directory doesn&#x27;t exist or not empty&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//更多请阅读：https://www.yiibai.com/java/java-delete-file-directory.html</span></span><br></pre></td></tr></table></figure><p>delete方法不会抛出IOException异常</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">JavaDeleteDirectory</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">File</span> <span class="variable">dir</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;D:/worksp/java/log&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(dir.isDirectory() == <span class="literal">false</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;Not a directory. Do nothing&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        File[] listFiles = dir.listFiles();</span><br><span class="line">        <span class="keyword">for</span>(File file : listFiles)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;Deleting &quot;</span>+file.getName());</span><br><span class="line">            file.delete();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//现在目录为空，所以可以删除它</span></span><br><span class="line">        System.out.println(<span class="string">&quot;Deleting Directory. Success = &quot;</span>+dir.delete());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//更多请阅读：https://www.yiibai.com/java/java-delete-file-directory.html</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;删除文件&quot;&gt;&lt;a href=&quot;#删除文件&quot; class=&quot;headerlink&quot; title=&quot;删除文件&quot;&gt;&lt;/a&gt;删除文件&lt;/h2&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Language" scheme="https://rchangl.github.io/categories/Devolop/Language/"/>
-    
-    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Language/Java-SE/"/>
-    
-    <category term="内置类" scheme="https://rchangl.github.io/categories/Devolop/Language/Java-SE/%E5%86%85%E7%BD%AE%E7%B1%BB/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MY-Easy-Pic-Bed 简易本地图床</title>
-    <link href="https://rchangl.github.io/page/Devolop/%E5%B0%8F%E5%B7%A5%E5%85%B7/MY-Easy-Pic-Bed%E7%AE%80%E6%98%93%E6%9C%AC%E5%9C%B0%E5%9B%BE%E5%BA%8A.html"/>
-    <id>https://rchangl.github.io/page/Devolop/%E5%B0%8F%E5%B7%A5%E5%85%B7/MY-Easy-Pic-Bed%E7%AE%80%E6%98%93%E6%9C%AC%E5%9C%B0%E5%9B%BE%E5%BA%8A.html</id>
-    <published>2023-10-04T16:35:45.804Z</published>
-    <updated>2023-10-04T17:08:48.033Z</updated>
-    
-    <content type="html"><![CDATA[<p>Github: <a href="https://github.com/fslongjin/My-Easy-Pic-Bed">https://github.com/fslongjin/My-Easy-Pic-Bed</a></p><h2 id="使用："><a href="#使用：" class="headerlink" title="使用："></a>使用：</h2><p>安装python 3.8</p><p>然后：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install flask</span><br></pre></td></tr></table></figure><p>Github上下载项目：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/fslongjin/My-Easy-Pic-Bed.git</span><br></pre></td></tr></table></figure><p>运行即可</p><h2 id="上传和访问图片"><a href="#上传和访问图片" class="headerlink" title="上传和访问图片"></a>上传和访问图片</h2><p>直接打开链接可开启一个引导页面。</p><p>手动管理图片，将图片放到 <code>./pics</code> 下，访问使用 <code>.../uploads/xxx.xxx</code></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Github: &lt;a href=&quot;https://github.com/fslongjin/My-Easy-Pic-Bed&quot;&gt;https://github.com/fslongjin/My-Easy-Pic-Bed&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;使用：&quot;&gt;&lt;a href=</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="小工具" scheme="https://rchangl.github.io/categories/Devolop/%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>环境配置</title>
-    <link href="https://rchangl.github.io/page/Devolop/Secondary/Python/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Secondary/Python/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html</id>
-    <published>2023-10-04T16:03:17.177Z</published>
-    <updated>2023-10-04T16:15:33.472Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="修改镜像源"><a href="#修改镜像源" class="headerlink" title="修改镜像源"></a>修改镜像源</h2><h3 id="临时使用："><a href="#临时使用：" class="headerlink" title="临时使用："></a>临时使用：</h3><p>Linux Mac Windows 通用命令</p><p>可以在使用pip的时候在后面加上-i参数，指定pip源</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure><h3 id="永久修改："><a href="#永久修改：" class="headerlink" title="永久修改："></a>永久修改：</h3><h4 id="Linux"><a href="#Linux" class="headerlink" title="Linux:"></a>Linux:</h4><p>修改 pip.conf 文件 (没有就创建一个)</p><p><code>$HOME/.config/pip/pip.conf</code></p><p>修改内容如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line"></span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple12</span><br></pre></td></tr></table></figure><h4 id="Mac"><a href="#Mac" class="headerlink" title="Mac:"></a>Mac:</h4><p>修改 pip.conf 文件</p><p>$HOME&#x2F;Library&#x2F;Application Support&#x2F;pip&#x2F;pip.conf</p><p>如果没有上面的目录,在如下目录创建 pip.conf</p><p>$HOME&#x2F;.config&#x2F;pip&#x2F;pip.conf</p><p>修改内容如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line"></span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple12</span><br></pre></td></tr></table></figure><h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows:"></a>Windows:</h4><p>修改 pip.conf 文件 (没有就创建一个)</p><p><code>%APPDATA%\pip\pip.ini</code> (<code>%APPDATA%</code>为用户目录)</p><p>修改内容如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line"></span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure><h4 id="pip-10-以后版本可进行的设置"><a href="#pip-10-以后版本可进行的设置" class="headerlink" title="pip 10 以后版本可进行的设置"></a>pip 10 以后版本可进行的设置</h4><p>升级 pip 到最新的版本 (&gt;&#x3D;10.0.0) 后进行配置：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br><span class="line">pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;修改镜像源&quot;&gt;&lt;a href=&quot;#修改镜像源&quot; class=&quot;headerlink&quot; title=&quot;修改镜像源&quot;&gt;&lt;/a&gt;修改镜像源&lt;/h2&gt;&lt;h3 id=&quot;临时使用：&quot;&gt;&lt;a href=&quot;#临时使用：&quot; class=&quot;headerlink&quot; title=&quot;临时使</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Secondary" scheme="https://rchangl.github.io/categories/Devolop/Secondary/"/>
-    
-    <category term="Python" scheme="https://rchangl.github.io/categories/Devolop/Secondary/Python/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>File 文件</title>
-    <link href="https://rchangl.github.io/page/Devolop/Language/Java%20SE/Base%20and%20Grammer/File%E6%96%87%E4%BB%B6.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Language/Java%20SE/Base%20and%20Grammer/File%E6%96%87%E4%BB%B6.html</id>
-    <published>2023-10-03T12:31:24.207Z</published>
-    <updated>2023-10-03T12:40:02.688Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="class-File"><a href="#class-File" class="headerlink" title="class File"></a>class File</h2><p><code>public long length()</code> 返回文件字节数</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;class-File&quot;&gt;&lt;a href=&quot;#class-File&quot; class=&quot;headerlink&quot; title=&quot;class File&quot;&gt;&lt;/a&gt;class File&lt;/h2&gt;&lt;p&gt;&lt;code&gt;public long length()&lt;/code&gt; 返回文件</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Language" scheme="https://rchangl.github.io/categories/Devolop/Language/"/>
-    
-    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Language/Java-SE/"/>
-    
-    <category term="Base and Grammer" scheme="https://rchangl.github.io/categories/Devolop/Language/Java-SE/Base-and-Grammer/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>match</title>
-    <link href="https://rchangl.github.io/page/Devolop/Main/Rust/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/match.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Main/Rust/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/match.html</id>
-    <published>2023-09-30T03:20:42.733Z</published>
-    <updated>2023-09-30T11:57:40.484Z</updated>
-    
-    <content type="html"><![CDATA[<p><code>match</code> 表达式是一个控制结构，其接收一个表达式，然后将表达式的结果与多个模式进行匹配，一旦匹配了某个模式，则该模式相关联的代码将被执行:</p><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">match</span> target &#123;</span><br><span class="line">    模式<span class="number">1</span> =&gt; 表达式<span class="number">1</span>,</span><br><span class="line">    模式<span class="number">2</span> =&gt; &#123;</span><br><span class="line">        语句<span class="number">1</span>;</span><br><span class="line">        语句<span class="number">2</span>;</span><br><span class="line">        表达式<span class="number">2</span></span><br><span class="line">    &#125;,</span><br><span class="line">    _ =&gt; 表达式<span class="number">3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> <span class="title class_">Coin</span> &#123;</span><br><span class="line">    Penny,</span><br><span class="line">    Nickel,</span><br><span class="line">    Dime,</span><br><span class="line">    Quarter,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">value_in_cents</span>(coin: Coin) <span class="punctuation">-&gt;</span> <span class="type">u8</span> &#123;</span><br><span class="line">    <span class="keyword">match</span> coin &#123;</span><br><span class="line">        Coin::Penny =&gt;  &#123;</span><br><span class="line">            <span class="built_in">println!</span>(<span class="string">&quot;Lucky penny!&quot;</span>);</span><br><span class="line">            <span class="number">1</span></span><br><span class="line">        &#125;,</span><br><span class="line">        Coin::Nickel =&gt; <span class="number">5</span>,</span><br><span class="line">        Coin::Dime =&gt; <span class="number">10</span>,</span><br><span class="line">        Coin::Quarter =&gt; <span class="number">25</span>,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;code&gt;match&lt;/code&gt; 表达式是一个控制结构，其接收一个表达式，然后将表达式的结果与多个模式进行匹配，一旦匹配了某个模式，则该模式相关联的代码将被执行:&lt;/p&gt;
-&lt;figure class=&quot;highlight rust&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cla</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Main" scheme="https://rchangl.github.io/categories/Devolop/Main/"/>
-    
-    <category term="Rust" scheme="https://rchangl.github.io/categories/Devolop/Main/Rust/"/>
-    
-    <category term="基本语法" scheme="https://rchangl.github.io/categories/Devolop/Main/Rust/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    
-    <category term="模式匹配" scheme="https://rchangl.github.io/categories/Devolop/Main/Rust/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>断言 assertion</title>
-    <link href="https://rchangl.github.io/page/Devolop/Main/Rust/%E6%B5%8B%E8%AF%95/%E6%96%AD%E8%A8%80assertion.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Main/Rust/%E6%B5%8B%E8%AF%95/%E6%96%AD%E8%A8%80assertion.html</id>
-    <published>2023-09-29T16:30:12.981Z</published>
-    <updated>2023-09-29T16:34:23.524Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="断言列表"><a href="#断言列表" class="headerlink" title="断言列表"></a>断言列表</h2><p>在正式开始前，来看看常用的断言有哪些:</p><ul><li>assert!, assert_eq!, assert_ne!, 它们会在所有模式下运行</li><li>debug_assert!, debug_assert_eq!, debug_assert_ne!, 它们只会在 Debug 模式下运行</li></ul><h2 id="assert-eq"><a href="#assert-eq" class="headerlink" title="assert_eq!"></a>assert_eq!</h2><p>assert_eq! 宏可以用于判断两个表达式返回的值是否相等 :</p><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">a</span> = <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">b</span> = <span class="number">1</span> + <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">assert_eq!</span>(a, b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>当不相等时，当前线程会直接 panic:</p><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">a</span> = <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">b</span> = <span class="number">1</span> + <span class="number">3</span>;</span><br><span class="line">    <span class="built_in">assert_eq!</span>(a, b, <span class="string">&quot;我们在测试两个数之和&#123;&#125; + &#123;&#125;，这是额外的错误信息&quot;</span>, a, b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;断言列表&quot;&gt;&lt;a href=&quot;#断言列表&quot; class=&quot;headerlink&quot; title=&quot;断言列表&quot;&gt;&lt;/a&gt;断言列表&lt;/h2&gt;&lt;p&gt;在正式开始前，来看看常用的断言有哪些:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;assert!, assert_eq!, assert_n</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Main" scheme="https://rchangl.github.io/categories/Devolop/Main/"/>
-    
-    <category term="Rust" scheme="https://rchangl.github.io/categories/Devolop/Main/Rust/"/>
-    
-    <category term="测试" scheme="https://rchangl.github.io/categories/Devolop/Main/Rust/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>动态数组 Vector</title>
-    <link href="https://rchangl.github.io/page/Devolop/Main/Rust/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84Vector.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Main/Rust/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84Vector.html</id>
-    <published>2023-09-29T16:17:43.216Z</published>
-    <updated>2023-09-29T16:24:09.723Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="创建动态数组"><a href="#创建动态数组" class="headerlink" title="创建动态数组"></a>创建动态数组</h2><h3 id="Vec-new"><a href="#Vec-new" class="headerlink" title="Vec::new"></a>Vec::new</h3><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">v</span> = Vec::<span class="title function_ invoke__">new</span>();</span><br><span class="line">v.<span class="title function_ invoke__">push</span>(<span class="number">1</span>);</span><br></pre></td></tr></table></figure><h3 id="vec-宏"><a href="#vec-宏" class="headerlink" title="vec![] 宏"></a>vec![] 宏</h3><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">v</span> = <span class="built_in">vec!</span>[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;创建动态数组&quot;&gt;&lt;a href=&quot;#创建动态数组&quot; class=&quot;headerlink&quot; title=&quot;创建动态数组&quot;&gt;&lt;/a&gt;创建动态数组&lt;/h2&gt;&lt;h3 id=&quot;Vec-new&quot;&gt;&lt;a href=&quot;#Vec-new&quot; class=&quot;headerlink&quot; ti</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Main" scheme="https://rchangl.github.io/categories/Devolop/Main/"/>
-    
-    <category term="Rust" scheme="https://rchangl.github.io/categories/Devolop/Main/Rust/"/>
-    
-    <category term="基本语法" scheme="https://rchangl.github.io/categories/Devolop/Main/Rust/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Macro 宏</title>
-    <link href="https://rchangl.github.io/page/Devolop/Main/Rust/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/Macro%E5%AE%8F.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Main/Rust/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/Macro%E5%AE%8F.html</id>
-    <published>2023-09-29T14:48:39.276Z</published>
-    <updated>2023-09-30T03:07:46.720Z</updated>
-    
-    <content type="html"><![CDATA[<p>从调用上看，最显著的是，宏多了一个 <code>!</code>，如 <code>println!(&quot;aaa&quot;);</code></p><h2 id="宏的参数"><a href="#宏的参数" class="headerlink" title="宏的参数"></a>宏的参数</h2><p>宏的参数可以使用 <code>()</code> 、<code>[]</code> 以及 <code>&#123;&#125;</code> :</p><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;aaaa&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>[<span class="string">&quot;aaaa&quot;</span>];</span><br><span class="line">    <span class="built_in">println!</span>&#123;<span class="string">&quot;aaaa&quot;</span>&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>虽然三种使用形式皆可，但是 Rust 内置的宏都有自己约定俗成的使用方式，例如 <code>vec![...]</code> 、<code>assert_eq!(...)</code> 等。</p><p>参数数量：函数的参数数量是固定的，而宏就可以拥有可变数量的参数。如 <code>println!(&quot;hello&quot;)</code> ，也可以调用两个参数的 <code>println!(&quot;hello &#123;&#125;&quot;, name)</code> 。</p><h2 id="宏的分类"><a href="#宏的分类" class="headerlink" title="宏的分类"></a>宏的分类</h2><p>在 Rust 中宏分为两大类：声明式宏( declarative macros ) <code>macro_rules!</code> 和三种过程宏( procedural macros ):</p><p><code>#[derive]</code> ，在之前多次见到的派生宏，可以为目标结构体或枚举派生指定的代码，例如 <code>Debug</code> 特征<br>类属性宏(Attribute-like macro)，用于为目标添加自定义的属性<br>类函数宏(Function-like macro)，看上去就像是函数调用</p><h2 id="声明式宏-macro-rules"><a href="#声明式宏-macro-rules" class="headerlink" title="声明式宏 macro_rules!"></a>声明式宏 macro_rules!</h2>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;从调用上看，最显著的是，宏多了一个 &lt;code&gt;!&lt;/code&gt;，如 &lt;code&gt;println!(&amp;quot;aaa&amp;quot;);&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&quot;宏的参数&quot;&gt;&lt;a href=&quot;#宏的参数&quot; class=&quot;headerlink&quot; title=&quot;宏的</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Main" scheme="https://rchangl.github.io/categories/Devolop/Main/"/>
-    
-    <category term="Rust" scheme="https://rchangl.github.io/categories/Devolop/Main/Rust/"/>
-    
-    <category term="基本语法" scheme="https://rchangl.github.io/categories/Devolop/Main/Rust/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>安装配置环境</title>
-    <link href="https://rchangl.github.io/page/Devolop/Main/Rust/Slint/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Main/Rust/Slint/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html</id>
-    <published>2023-09-29T13:25:43.620Z</published>
-    <updated>2023-10-06T06:26:13.811Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cargo add slint</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;依赖&quot;&gt;&lt;a href=&quot;#依赖&quot; class=&quot;headerlink&quot; title=&quot;依赖&quot;&gt;&lt;/a&gt;依赖&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span </summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Main" scheme="https://rchangl.github.io/categories/Devolop/Main/"/>
-    
-    <category term="Rust" scheme="https://rchangl.github.io/categories/Devolop/Main/Rust/"/>
-    
-    <category term="Slint" scheme="https://rchangl.github.io/categories/Devolop/Main/Rust/Slint/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>FastDFS</title>
-    <link href="https://rchangl.github.io/page/Devolop/Main/Linux%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83/FastDFS.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Main/Linux%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83/FastDFS.html</id>
-    <published>2023-09-26T13:12:48.791Z</published>
-    <updated>2023-10-05T10:03:40.634Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Docker部署FastDFS"><a href="#Docker部署FastDFS" class="headerlink" title="Docker部署FastDFS"></a>Docker部署FastDFS</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 搜索镜像</span><br><span class="line">docker search fastdfs</span><br><span class="line"></span><br><span class="line"># 拉取镜像（已经内置Nginx）</span><br><span class="line">docker pull delron/fastdfs</span><br></pre></td></tr></table></figure><h3 id="Tracker"><a href="#Tracker" class="headerlink" title="Tracker"></a>Tracker</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name tracker --network=host -v /mydata/fastdfs/tracker:/var/fdfs delron/fastdfs tracker</span><br></pre></td></tr></table></figure><p>服务默认的端口为22122，-v 实现了容器和本地目录的挂载操作。</p><h3 id="Storage"><a href="#Storage" class="headerlink" title="Storage"></a>Storage</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name storage --network=host  -e TRACKER_SERVER=10.0.2.15:22122 -v /mydata/fastdfs/storage:/var/fdfs -e GROUP_NAME=group1 delron/fastdfs storage</span><br></pre></td></tr></table></figure><p>在执行上面命令的时候要注意对应的修改下，其中TRACKER_SERVER中的ip要修改为你的Tracker服务所在的服务IP地址。</p><h3 id="默认端口："><a href="#默认端口：" class="headerlink" title="默认端口："></a>默认端口：</h3><table><thead><tr><th>服务</th><th>默认端口</th></tr></thead><tbody><tr><td>Tracker</td><td>22122</td></tr><tr><td>Storage</td><td>23000</td></tr><tr><td>Nginx</td><td>8888</td></tr></tbody></table><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 导入 FastDFS 的依赖包</span></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">  &lt;groupId&gt;org.csource.fastdfs&lt;/groupId&gt;</span><br><span class="line">  &lt;artifactId&gt;fastdfs&lt;/artifactId&gt;</span><br><span class="line">  &lt;version&gt;<span class="number">1.2</span>&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建 FastDFS 的客户端对象</span></span><br><span class="line"><span class="type">FastDFSClient</span> <span class="variable">client</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FastDFSClient</span>(<span class="string">&quot;classpath:config/fdfs_client.conf&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 完成上传，获得 fileId</span></span><br><span class="line"><span class="type">String</span> <span class="variable">fileId</span> <span class="operator">=</span> client.uploadFile(uploadFile.getBytes(), exeName);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 拼接文件的访问路径并返回到前端页面</span></span><br><span class="line"><span class="type">String</span> <span class="variable">filePath</span> <span class="operator">=</span> server_url + fileId;</span><br><span class="line"></span><br></pre></td></tr></table></figure><img src="/page/Devolop/Main/Linux%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83/FastDFS/image.png" class="" title="Alt text">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;Docker部署FastDFS&quot;&gt;&lt;a href=&quot;#Docker部署FastDFS&quot; class=&quot;headerlink&quot; title=&quot;Docker部署FastDFS&quot;&gt;&lt;/a&gt;Docker部署FastDFS&lt;/h2&gt;&lt;figure class=&quot;highli</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Main" scheme="https://rchangl.github.io/categories/Devolop/Main/"/>
-    
-    <category term="Linux和项目环境" scheme="https://rchangl.github.io/categories/Devolop/Main/Linux%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Docker</title>
-    <link href="https://rchangl.github.io/page/Devolop/Main/Linux%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83/Docker.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Main/Linux%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83/Docker.html</id>
-    <published>2023-09-26T01:20:59.159Z</published>
-    <updated>2023-10-05T09:41:55.536Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="镜像仓库-Docker-Hub"><a href="#镜像仓库-Docker-Hub" class="headerlink" title="镜像仓库 Docker Hub"></a>镜像仓库 Docker Hub</h2><p>镜像仓库的国内镜像源（阿里云）：</p><p><a href="https://developer.aliyun.com/article/1309641">【Ubuntu18.04】Docker配置镜像源-阿里云开发者社区</a></p><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p><code>systemctl start docker</code> 启动服务</p><h2 id="镜像管理"><a href="#镜像管理" class="headerlink" title="镜像管理"></a>镜像管理</h2><p><code>docker search xxx</code> 搜索xxx镜像</p><p><code>docker pull aaa/xxx</code> 拉取镜像</p><h3 id="创建并运行-run命令"><a href="#创建并运行-run命令" class="headerlink" title="创建并运行 run命令"></a>创建并运行 run命令</h3><p><code>docker run</code> 创建并运行一个容器</p><p>常用参数：</p><ul><li><code>-d</code>: 后台运行容器，并返回容器ID；<ul><li>不加 <code>-d</code> 会卡在那，等待输出日志</li></ul></li><li><code>--name=&quot;nginx-lb&quot;:</code> 为容器指定一个名称；<ul><li>必须唯一</li></ul></li><li><code>-p</code>: 指定<strong>端口映射</strong>，格式为：<strong>主机(宿主)端口:容器端口</strong></li><li><code>-e username=&quot;ritchie&quot;</code>: 镜像环境变量；<ul><li>由镜像的制作者决定的，查阅镜像文档可知如何配置</li></ul></li><li><code>--volume</code> , <code>-v</code>: 绑定一个卷<ul><li>更多见数据卷部分</li></ul></li><li>指定运行镜像的名字<ul><li>完整写法： <code>mysql:8.0</code> 没写默认最新版本</li></ul></li></ul><p>其它参数：</p><ul><li>-a stdin: 指定标准输入输出内容类型，可选 STDIN&#x2F;STDOUT&#x2F;STDERR 三项；</li><li>-i: 以交互模式运行容器，通常与 -t 同时使用；</li><li>-P: 随机端口映射，容器内部端口<strong>随机</strong>映射到主机的端口</li><li>-t: 为容器重新分配一个伪输入终端，通常与 -i 同时使用；</li><li>–dns 8.8.8.8: 指定容器使用的DNS服务器，默认和宿主一致；</li><li>–dns-search example.com: 指定容器DNS搜索域名，默认和宿主一致；</li><li>-h “mars”: 指定容器的hostname；</li><li>–env-file&#x3D;[]: 从指定文件读入环境变量；</li><li>–cpuset&#x3D;”0-2” or –cpuset&#x3D;”0,1,2”: 绑定容器到指定CPU运行；</li><li>-m : 设置容器使用内存最大值；</li><li>–net&#x3D;”bridge”: 指定容器的网络连接类型，支持 bridge&#x2F;host&#x2F;none&#x2F;container: 四种类型；</li><li>–link&#x3D;[]: 添加链接到另一个容器；</li><li>–expose&#x3D;[]: 开放一个端口或一组端口；</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker -d \</span><br><span class="line">--name</span><br></pre></td></tr></table></figure><h2 id="常见命令"><a href="#常见命令" class="headerlink" title="常见命令"></a>常见命令</h2><p>官网：<a href="https://docs.docker.com/">Docker Docs</a></p><p><code>docker xxx --help</code> 查看具体命令帮助</p><p>镜像管理：</p><ul><li><code>docker pull</code> 下载到本地<ul><li><code>docker pull nginx</code></li></ul></li><li><code>docker push</code> 推送镜像到云端</li><li><code>docker images</code> 查看本地镜像</li><li><code>docker rmi</code> 删除本地镜像  </li><li><code>docker build</code> 通过 dockerfile 构建镜像</li><li><code>docker save</code> 保存镜像为压缩包<ul><li><code>docker save -o nginx.tar nginx:latest</code> -o 文件名</li></ul></li><li><code>docker load</code> 将save保存的压缩包，加载为本地镜像</li></ul><p>容器：</p><p><code>docker run</code> 创建运行容器</p><p><code>docker stop</code> 停止容器内部的进程</p><p><code>docker start</code> 启动容器内部的进程</p><ul><li><p><code>docker ps</code> 查看容器运行状态</p><ul><li><code>docker ps -a --format &quot;table &#123;&#123;.ID&#125;&#125;\t&#123;&#123;.Image&#125;&#125;\t&#123;&#123;.Names&#125;&#125;\t&#123;&#123;.Ports&#125;&#125;\t&#123;&#123;.Status&#125;&#125;&quot;</code></li><li><code>-a</code> 显示所有容器，包括未运行的道容器</li></ul></li><li><p><code>docker rm</code> 删除容器</p><ul><li><code>-f</code> 强制删除</li></ul></li><li><p><code>docker logs</code> 查看日志</p><ul><li><code>docker logs nginx</code></li></ul></li><li><p><code>docker exec</code> 进入容器内部</p><ul><li><code>-it nginx bash</code> 可交互终端，命令行</li></ul></li><li><p><code>docker inspect nginx</code> 查看容器信息（Mounts处有数据卷信息）</p></li></ul><h2 id="数据卷"><a href="#数据卷" class="headerlink" title="数据卷"></a>数据卷</h2><p>主机中数据卷固定目录： <code>/var/lib/docker/volumes/</code></p><img src="/page/Devolop/Main/Linux%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83/Docker/image.png" class="" title="数据卷命令"><p><code>docker run -v 数据卷名:容器内目录</code> 数据卷挂载，如果数据卷不存在，则自动创建  </p><p><code>docker run -v 本地目录:容器内目录</code> 挂载到本地目录。 目录以 <code>/</code> <code>./</code> 开头</p><h2 id="自定义镜像"><a href="#自定义镜像" class="headerlink" title="自定义镜像"></a>自定义镜像</h2><h3 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h3><h2 id="network-网络"><a href="#network-网络" class="headerlink" title="network 网络"></a>network 网络</h2><p>host 为IP地址为主机地址一样</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;镜像仓库-Docker-Hub&quot;&gt;&lt;a href=&quot;#镜像仓库-Docker-Hub&quot; class=&quot;headerlink&quot; title=&quot;镜像仓库 Docker Hub&quot;&gt;&lt;/a&gt;镜像仓库 Docker Hub&lt;/h2&gt;&lt;p&gt;镜像仓库的国内镜像源（阿里云）：&lt;/</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Main" scheme="https://rchangl.github.io/categories/Devolop/Main/"/>
-    
-    <category term="Linux和项目环境" scheme="https://rchangl.github.io/categories/Devolop/Main/Linux%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>内置函数</title>
-    <link href="https://rchangl.github.io/page/Devolop/%E5%90%8E%E7%AB%AF/MySQL/%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html"/>
-    <id>https://rchangl.github.io/page/Devolop/%E5%90%8E%E7%AB%AF/MySQL/%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.html</id>
-    <published>2023-09-18T09:53:26.960Z</published>
-    <updated>2023-09-18T09:54:03.623Z</updated>
-    
-    <content type="html"><![CDATA[<p><code>CONCAT(s1,s2...sn)</code> 字符串 s1,s2 等多个字符串合并为一个字符串</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;code&gt;CONCAT(s1,s2...sn)&lt;/code&gt; 字符串 s1,s2 等多个字符串合并为一个字符串&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="后端" scheme="https://rchangl.github.io/categories/Devolop/%E5%90%8E%E7%AB%AF/"/>
-    
-    <category term="MySQL" scheme="https://rchangl.github.io/categories/Devolop/%E5%90%8E%E7%AB%AF/MySQL/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown</title>
-    <link href="https://rchangl.github.io/page/Computer%20Use/Markdown.html"/>
-    <id>https://rchangl.github.io/page/Computer%20Use/Markdown.html</id>
-    <published>2023-09-18T08:11:32.330Z</published>
-    <updated>2023-09-18T08:12:46.107Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h1><p>在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行(<code>&lt;br&gt;</code>)。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;换行&quot;&gt;&lt;a href=&quot;#换行&quot; class=&quot;headerlink&quot; title=&quot;换行&quot;&gt;&lt;/a&gt;换行&lt;/h1&gt;&lt;p&gt;在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行(&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;)。&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;figure class=&quot;highlight vb&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</summary>
       
     
     
@@ -531,31 +284,269 @@
   </entry>
   
   <entry>
-    <title>record</title>
-    <link href="https://rchangl.github.io/page/Devolop/Language/Java%20SE/Java9-11%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/record.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Language/Java%20SE/Java9-11%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/record.html</id>
-    <published>2023-09-18T08:09:15.380Z</published>
-    <updated>2023-09-18T08:52:32.842Z</updated>
+    <title>年假</title>
+    <link href="https://rchangl.github.io/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E6%9D%83%E7%9B%8A/%E5%B9%B4%E5%81%87.html"/>
+    <id>https://rchangl.github.io/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E6%9D%83%E7%9B%8A/%E5%B9%B4%E5%81%87.html</id>
+    <published>2023-10-19T12:39:29.161Z</published>
+    <updated>2023-10-19T12:40:08.672Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://www.zhihu.com/question/497623999">jdk17 record关键字的作用是什么? - 知乎</a></p><p>声明一个record类：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.dayangshuo.recordclass;</span><br><span class="line"></span><br><span class="line"><span class="comment">//没错，就这一行代码</span></span><br><span class="line"><span class="keyword">record</span> <span class="title class_">User2</span><span class="params">(String name, Integer age)</span> &#123;&#125;</span><br></pre></td></tr></table></figure><h2 id="record特点"><a href="#record特点" class="headerlink" title="record特点"></a>record特点</h2><ul><li>提供<ul><li>全参构造方法</li><li>public 访问器<ul><li>访问器方法相当于getter，只不过省略了get前缀，这样可以简化代码和提高可读性</li></ul></li><li>equals方法</li><li>hashCode方法</li><li>toString方法</li></ul></li><li>public final 类</li><li>final 属性，不可修改</li><li>能声明 static 成员，不能声明实例属性</li><li>可以覆盖构造方法、创建静态方法、定义自己的方法</li><li>无 set，get 方法。没有遵循 Bean 的命名规范</li></ul><p><a href="https://www.cnblogs.com/kohler21/p/17555985.html">JDK有用的新特性-Java Record - 愚生浅末 - 博客园</a></p>]]></content>
+    <content type="html"><![CDATA[<p>年假不能清零</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/497623999&quot;&gt;jdk17 record关键字的作用是什么? - 知乎&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;声明一个record类：&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;</summary>
+    <summary type="html">&lt;p&gt;年假不能清零&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="劳动" scheme="https://rchangl.github.io/categories/%E5%8A%B3%E5%8A%A8/"/>
+    
+    <category term="劳动权益" scheme="https://rchangl.github.io/categories/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E6%9D%83%E7%9B%8A/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>OkHttpClient_HTTP客户端</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E7%BD%91%E7%BB%9C/OkHttpClient_HTTP%E5%AE%A2%E6%88%B7%E7%AB%AF.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E7%BD%91%E7%BB%9C/OkHttpClient_HTTP%E5%AE%A2%E6%88%B7%E7%AB%AF.html</id>
+    <published>2023-10-19T12:32:19.037Z</published>
+    <updated>2023-10-19T12:48:48.640Z</updated>
+    
+    <content type="html"><![CDATA[<p>OkHttpClient是一个高效的HTTP客户端</p><p><a href="https://blog.csdn.net/workingman_li/article/details/91651156">OkhttpClient的使用详解-CSDN博客</a></p><h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.squareup.okhttp3<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>okhttp<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.14.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;OkHttpClient是一个高效的HTTP客户端&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/workingman_li/article/details/91651156&quot;&gt;OkhttpClient的使用详解-CSDN博客&lt;/a&gt;&lt;/p&gt;
+</summary>
       
     
     
     
     <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
     
-    <category term="Language" scheme="https://rchangl.github.io/categories/Devolop/Language/"/>
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
     
-    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Language/Java-SE/"/>
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
     
-    <category term="Java9-11的新特性" scheme="https://rchangl.github.io/categories/Devolop/Language/Java-SE/Java9-11%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    <category term="网络" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/%E4%BA%8B%E5%8A%A1.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/%E4%BA%8B%E5%8A%A1.html</id>
+    <published>2023-10-19T05:05:41.961Z</published>
+    <updated>2023-10-19T15:50:46.196Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h2 id="title-事务"><a href="#title-事务" class="headerlink" title="title: 事务"></a>title: 事务</h2><p>类似 MySQL 的事务，在一个事务内，要么同时成功，要么同时失败。</p><h2 id="Transactional"><a href="#Transactional" class="headerlink" title="@Transactional"></a><code>@Transactional</code></h2><p>作用在 service 层的 方法 或 类 或 接口</p><p><img src="/%E4%BA%8B%E5%8A%A1/image.png" alt="Alt text"></p><h2 id="回滚"><a href="#回滚" class="headerlink" title="回滚"></a>回滚</h2><p>默认只有 RuntimeException 才回滚异常</p><p><code>rollbackFor</code> 属性控制出现，设置所有异常都回滚：</p><p><img src="/%E4%BA%8B%E5%8A%A1/image-1.png" alt="所有异常都回滚"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;h2 id=&quot;title-事务&quot;&gt;&lt;a href=&quot;#title-事务&quot; class=&quot;headerlink&quot; title=&quot;title: 事务&quot;&gt;&lt;/a&gt;title: 事务&lt;/h2&gt;&lt;p&gt;类似 MySQL 的事务，在一个事务内，要么同时成功，要么同时失败。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    
+    <category term="Spring Boot" scheme="https://rchangl.github.io/categories/Devolop/Java/Spring-Boot/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>异常-全局异常处理器</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/%E5%BC%82%E5%B8%B8-%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%99%A8.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/%E5%BC%82%E5%B8%B8-%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%99%A8.html</id>
+    <published>2023-10-18T16:37:43.698Z</published>
+    <updated>2023-10-18T16:40:31.199Z</updated>
+    
+    <content type="html"><![CDATA[<p>加注解，使其向上抛出，自动捕获异常</p><p><img src="/%E5%BC%82%E5%B8%B8-%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%99%A8/image.png" alt="Alt text"></p><p>捕获异常类：</p><p><img src="/%E5%BC%82%E5%B8%B8-%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%99%A8/image-1.png" alt="Alt text"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;加注解，使其向上抛出，自动捕获异常&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/%E5%BC%82%E5%B8%B8-%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%99%A8/image.png&quot; alt=&quot;Al</summary>
+      
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    
+    <category term="Spring Boot" scheme="https://rchangl.github.io/categories/Devolop/Java/Spring-Boot/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Interceptor 拦截器</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8.html</id>
+    <published>2023-10-18T16:29:09.328Z</published>
+    <updated>2023-10-18T16:33:58.650Z</updated>
+    
+    <content type="html"><![CDATA[<p>功能类似 Filter。</p><p>Filter 在Spring容器外， Interceptor 在Spring容器里。而 Filter 在 Spring 容器之前。</p><p>顺序是： Filter -&gt; Spring(DispatcherServlet -&gt; Interceptor -&gt; Controller)</p><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p><img src="/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8/image.png" alt="Alt text"></p><h2 id="配置类"><a href="#配置类" class="headerlink" title="配置类"></a>配置类</h2><p><img src="/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8/image-1.png" alt="Alt text"></p><h3 id="拦截路径"><a href="#拦截路径" class="headerlink" title="拦截路径"></a>拦截路径</h3><p><img src="/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8/image-2.png" alt="Alt text"></p><p><img src="/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8/image-3.png" alt="Alt text"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;功能类似 Filter。&lt;/p&gt;
+&lt;p&gt;Filter 在Spring容器外， Interceptor 在Spring容器里。而 Filter 在 Spring 容器之前。&lt;/p&gt;
+&lt;p&gt;顺序是： Filter -&amp;gt; Spring(DispatcherServlet -</summary>
+      
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    
+    <category term="Spring Boot" scheme="https://rchangl.github.io/categories/Devolop/Java/Spring-Boot/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Fillter</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20Web/Fillter.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Java%20Web/Fillter.html</id>
+    <published>2023-10-18T16:11:04.624Z</published>
+    <updated>2023-10-18T16:36:30.703Z</updated>
+    
+    <content type="html"><![CDATA[<p>拦截和放行请求</p><p>是JavaWeb的组件，不是SpringBoot的组件，在SpringBoot中使用，需要在SpringBoot启动类中添加注解：</p><img src="/page/Devolop/Java/Java%20Web/Fillter/image.png" class="" title="Alt text"><img src="/page/Devolop/Java/Java%20Web/Fillter/image-1.png" class="" title="Alt text"><img src="/page/Devolop/Java/Java%20Web/Fillter/image-2.png" class="" title="Alt text"><p>拦截路径：</p><img src="/page/Devolop/Java/Java%20Web/Fillter/image-3.png" class="" title="Alt text"><h2 id="过滤器链"><a href="#过滤器链" class="headerlink" title="过滤器链"></a>过滤器链</h2><p>多个过滤器，按照过滤器类名排序执行</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;拦截和放行请求&lt;/p&gt;
+&lt;p&gt;是JavaWeb的组件，不是SpringBoot的组件，在SpringBoot中使用，需要在SpringBoot启动类中添加注解：&lt;/p&gt;
+&lt;img src=&quot;/page/Devolop/Java/Java%20Web/Fillter/imag</summary>
+      
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    
+    <category term="Java Web" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-Web/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>bat</title>
+    <link href="https://rchangl.github.io/page/Computer%20Use/Windows/bat.html"/>
+    <id>https://rchangl.github.io/page/Computer%20Use/Windows/bat.html</id>
+    <published>2023-10-16T11:31:46.779Z</published>
+    <updated>2023-10-16T11:44:53.294Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="执行CMD命令"><a href="#执行CMD命令" class="headerlink" title="执行CMD命令"></a>执行CMD命令</h2><p>cmd &#x2F;c 执行完命令后<strong>关闭</strong>命令窗口。 </p><p>cmd &#x2F;k 执行完命令后<strong>不关闭</strong>命令窗口。 </p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cmd</span> /k &quot;<span class="built_in">cd</span> /d E:\机器学习\d2l-zh\pytorch&amp;&amp;activate torch&amp;&amp;jupyter notebook&quot;</span><br></pre></td></tr></table></figure><h2 id="在多个窗口中执行"><a href="#在多个窗口中执行" class="headerlink" title="在多个窗口中执行"></a>在多个窗口中执行</h2><p>加上 start</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span> /k &quot;<span class="built_in">cd</span> /d 路径&amp;&amp;命令<span class="number">1</span>&quot;</span><br><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span> /k &quot;<span class="built_in">cd</span> /d 路径&amp;&amp;命令<span class="number">1</span>&amp;&amp;命令<span class="number">2</span>&quot;</span><br></pre></td></tr></table></figure><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span> /c &quot;<span class="built_in">cd</span> /d 路径&amp;&amp;命令<span class="number">1</span>&quot;</span><br><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span> /c &quot;<span class="built_in">cd</span> /d 路径&amp;&amp;命令<span class="number">1</span>&amp;&amp;命令<span class="number">2</span>&quot;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;执行CMD命令&quot;&gt;&lt;a href=&quot;#执行CMD命令&quot; class=&quot;headerlink&quot; title=&quot;执行CMD命令&quot;&gt;&lt;/a&gt;执行CMD命令&lt;/h2&gt;&lt;p&gt;cmd &amp;#x2F;c 执行完命令后&lt;strong&gt;关闭&lt;/strong&gt;命令窗口。 &lt;/p&gt;
+&lt;p</summary>
+      
+    
+    
+    
+    <category term="Computer Use" scheme="https://rchangl.github.io/categories/Computer-Use/"/>
+    
+    <category term="Windows" scheme="https://rchangl.github.io/categories/Computer-Use/Windows/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Object</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E5%86%85%E7%BD%AE%E7%B1%BB/Object.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E5%86%85%E7%BD%AE%E7%B1%BB/Object.html</id>
+    <published>2023-10-16T01:07:49.060Z</published>
+    <updated>2023-10-16T01:32:26.833Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html">Object - Java 17 Doc</a></p><h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p>clone() 深拷贝</p><p>equals(obj) 默认比较地址是否相同 <code>return (this == obj)</code></p><p><code>int hashCode()</code> 返回对象的 hash code 值</p><p><code>String toString()</code></p><h3 id="final-method"><a href="#final-method" class="headerlink" title="final method:"></a>final method:</h3><p><code>final Class&lt;?&gt; getClass()</code> 返回此 Object 的 runtime class</p><p>线程的等待和唤醒：</p><p><code>wait()</code></p><p><code>wait(long timeoutMillis)</code></p><p><code>wait(long timeoutMillis, int nanos)</code></p><p><code>notify()</code></p><p><code>notifyAll()</code></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html&quot;&gt;Object - Java 17 Doc&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Method&quot;</summary>
+      
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
+    
+    <category term="内置类" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/%E5%86%85%E7%BD%AE%E7%B1%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SOA（面向服务的架构）</title>
+    <link href="https://rchangl.github.io/page/Devolop/Main/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/SOA%EF%BC%88%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%9E%B6%E6%9E%84%EF%BC%89.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Main/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/SOA%EF%BC%88%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%9E%B6%E6%9E%84%EF%BC%89.html</id>
+    <published>2023-10-16T00:54:10.731Z</published>
+    <updated>2023-10-16T00:54:18.197Z</updated>
+    
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Main" scheme="https://rchangl.github.io/categories/Devolop/Main/"/>
+    
+    <category term="项目开发" scheme="https://rchangl.github.io/categories/Devolop/Main/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Listener</title>
+    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20Web/Listener.html"/>
+    <id>https://rchangl.github.io/page/Devolop/Java/Java%20Web/Listener.html</id>
+    <published>2023-10-15T13:43:58.207Z</published>
+    <updated>2023-10-16T00:52:14.033Z</updated>
+    
+    <content type="html"><![CDATA[<p>JavaWeb的3大组件之一，用来监听Servlet容器产生的事件并进行相应的处理。</p><img src="/page/Devolop/Java/Java%20Web/Listener/image.png" class="" title="Alt text">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;JavaWeb的3大组件之一，用来监听Servlet容器产生的事件并进行相应的处理。&lt;/p&gt;
+&lt;img src=&quot;/page/Devolop/Java/Java%20Web/Listener/image.png&quot; class=&quot;&quot; title=&quot;Alt text&quot;&gt;
+
+</summary>
+      
+    
+    
+    
+    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    
+    <category term="Java Web" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-Web/"/>
     
     
   </entry>

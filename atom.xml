@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>RC 的博客</title>
+  <title>RC&#39;s blogs</title>
   
   
   <link href="https://rchangl.github.io/atom.xml" rel="self"/>
   
   <link href="https://rchangl.github.io/"/>
-  <updated>2023-10-24T15:36:27.098Z</updated>
+  <updated>2023-11-25T13:43:03.127Z</updated>
   <id>https://rchangl.github.io/</id>
   
   <author>
@@ -17,536 +17,552 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>调度算法</title>
-    <link href="https://rchangl.github.io/page/Computer_Theory/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95.html"/>
-    <id>https://rchangl.github.io/page/Computer_Theory/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95.html</id>
-    <published>2023-10-24T14:17:14.445Z</published>
-    <updated>2023-10-24T15:36:27.098Z</updated>
+    <title></title>
+    <link href="https://rchangl.github.io/page/Coding/Git/%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8Git.html"/>
+    <id>https://rchangl.github.io/page/Coding/Git/%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8Git.html</id>
+    <published>2023-11-25T04:24:50.752Z</published>
+    <updated>2023-11-25T13:43:03.127Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="FCFS-First-Come-First-Serve"><a href="#FCFS-First-Come-First-Serve" class="headerlink" title="FCFS - First Come First Serve"></a>FCFS - First Come First Serve</h2><h2 id="SJF-Shortest-Job-First"><a href="#SJF-Shortest-Job-First" class="headerlink" title="SJF - Shortest Job First"></a>SJF - Shortest Job First</h2><h2 id="RR-Round-Robin"><a href="#RR-Round-Robin" class="headerlink" title="RR - Round Robin"></a>RR - Round Robin</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="基本使用Git"><a href="#基本使用Git" class="headerlink" title="基本使用Git"></a>基本使用Git</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p><code>git init</code> 初始化 当前目录<br><code>git init newrepo</code> newrepo目录下初始化</p><h2 id="远程仓库操作"><a href="#远程仓库操作" class="headerlink" title="远程仓库操作"></a>远程仓库操作</h2><h3 id="clone-拷贝远程仓库"><a href="#clone-拷贝远程仓库" class="headerlink" title="clone 拷贝远程仓库"></a>clone 拷贝远程仓库</h3><p><code>git clone &lt;repo&gt;</code><br>例： <code>git clone https://github.com/rchangl/hexo-autotitle.git</code></p><h3 id="关联远程仓库"><a href="#关联远程仓库" class="headerlink" title="关联远程仓库"></a>关联远程仓库</h3><p><code>git remote add origin 地址（设置远程remote地址）；</code><br>例： <code>git remote add hexo-autotitle https://github.com/rchangl/hexo-autotitle.git</code></p><h3 id="删除远程仓库"><a href="#删除远程仓库" class="headerlink" title="删除远程仓库"></a>删除远程仓库</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote rm name  # 删除远程仓库</span><br></pre></td></tr></table></figure><h3 id="修改-仓库名"><a href="#修改-仓库名" class="headerlink" title="修改 仓库名"></a>修改 仓库名</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote rename old_name new_name  # 修改仓库名</span><br></pre></td></tr></table></figure><h3 id="查看远程仓库信息"><a href="#查看远程仓库信息" class="headerlink" title="查看远程仓库信息"></a>查看远程仓库信息</h3><p><code>git remote</code> 查看远程仓库，列出名字<br><code>--verbose</code> <code>-v</code> 列出对应的仓库地址</p><p><code>git remote show [remote-name]</code> 查看具体的某个远程仓库信息</p><h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><p><code>git branch</code> 列出分支</p><p><code>git branch -m &lt;oldbranch&gt; &lt;newbranch&gt;</code> 重命名分支<br><code>-M</code> 强制重命名</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;FCFS-First-Come-First-Serve&quot;&gt;&lt;a href=&quot;#FCFS-First-Come-First-Serve&quot; class=&quot;headerlink&quot; title=&quot;FCFS - First Come First Serve&quot;&gt;&lt;/a&gt;FCF</summary>
+    <summary type="html">&lt;h1 id=&quot;基本使用Git&quot;&gt;&lt;a href=&quot;#基本使用Git&quot; class=&quot;headerlink&quot; title=&quot;基本使用Git&quot;&gt;&lt;/a&gt;基本使用Git&lt;/h1&gt;&lt;h2 id=&quot;创建仓库&quot;&gt;&lt;a href=&quot;#创建仓库&quot; class=&quot;headerlink&quot; titl</summary>
+      
+    
+    
+    
+    <category term="Coding" scheme="https://rchangl.github.io/categories/Coding/"/>
+    
+    <category term="Git" scheme="https://rchangl.github.io/categories/Coding/Git/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>npm发布包</title>
+    <link href="https://rchangl.github.io/page/Coding/Nodejs/npm%E5%8F%91%E5%B8%83%E5%8C%85.html"/>
+    <id>https://rchangl.github.io/page/Coding/Nodejs/npm%E5%8F%91%E5%B8%83%E5%8C%85.html</id>
+    <published>2023-11-25T00:13:51.890Z</published>
+    <updated>2023-11-25T13:56:20.708Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="npm发布包"><a href="#npm发布包" class="headerlink" title="npm发布包"></a>npm发布包</h1><h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>如果配置了第三方镜像源，需改回默认源才可使用</p><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p><code>npm login</code> 发布前需登录，并保证帐号验证了邮箱</p><p><code>npm publish --access public</code> 默认值： ‘restricted’ 用于范围包</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;npm发布包&quot;&gt;&lt;a href=&quot;#npm发布包&quot; class=&quot;headerlink&quot; title=&quot;npm发布包&quot;&gt;&lt;/a&gt;npm发布包&lt;/h1&gt;&lt;h2 id=&quot;环境&quot;&gt;&lt;a href=&quot;#环境&quot; class=&quot;headerlink&quot; title=&quot;环境&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="Coding" scheme="https://rchangl.github.io/categories/Coding/"/>
+    
+    <category term="Nodejs" scheme="https://rchangl.github.io/categories/Coding/Nodejs/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式</title>
+    <link href="https://rchangl.github.io/page/Coding/JavaScript/%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E5%92%8CAPI/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html"/>
+    <id>https://rchangl.github.io/page/Coding/JavaScript/%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E5%92%8CAPI/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html</id>
+    <published>2023-11-24T12:51:09.105Z</published>
+    <updated>2023-11-24T15:05:25.704Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="创建-RegExp-对象"><a href="#创建-RegExp-对象" class="headerlink" title="创建 RegExp 对象"></a>创建 RegExp 对象</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/ab+c/i; <span class="comment">//字面量形式</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">RegExp</span>(<span class="string">&quot;ab+c&quot;</span>, <span class="string">&quot;i&quot;</span>); <span class="comment">// 首个参数为字符串模式的构造函数</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">RegExp</span>(<span class="regexp">/ab+c/</span>, <span class="string">&quot;i&quot;</span>); <span class="comment">// 首个参数为常规字面量的构造函数</span></span><br></pre></td></tr></table></figure><h3 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h3><p>默认没有</p><p><code>i</code> 不区分大小写<br><code>g</code> 全局搜索<br><code>m</code> 多行搜索</p><h2 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h2><h3 id="match-regex"><a href="#match-regex" class="headerlink" title="match(regex)"></a>match(regex)</h3><p>para:<br>如果不是 RegExp 而是 String ，其将会被隐式转换为 RegExp </p><p>return:<br>Array&#x2F;null</p><h3 id="replace函数"><a href="#replace函数" class="headerlink" title="replace函数"></a>replace函数</h3><ul><li><p><code>$$</code> 表示直接量符号，就是当做 ‘$’ 字符用。</p></li><li><p><code>$&amp;</code> 表示与正则表达式相匹配的字符串。</p></li><li><p>$&#96; 表示匹配字符串左边的字符。</p></li><li><p><code>$&#39;</code> 表示匹配字符串右边的字符。</p></li><li><p><code>$1, $2, ..., $n</code> 表示与正则表达式中的第 1 到第 n 个子表达式相匹配的文本。</p></li></ul><p>子表达式， <code>()</code> 包围起来的部分</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;创建-RegExp-对象&quot;&gt;&lt;a href=&quot;#创建-RegExp-对象&quot; class=&quot;headerlink&quot; title=&quot;创建 RegExp 对象&quot;&gt;&lt;/a&gt;创建 RegExp 对象&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;tab</summary>
+      
+    
+    
+    
+    <category term="Coding" scheme="https://rchangl.github.io/categories/Coding/"/>
+    
+    <category term="JavaScript" scheme="https://rchangl.github.io/categories/Coding/JavaScript/"/>
+    
+    <category term="内置对象和API" scheme="https://rchangl.github.io/categories/Coding/JavaScript/%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E5%92%8CAPI/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>filter</title>
+    <link href="https://rchangl.github.io/page/Computer%20Use/Hexo_plugin_dev/filter.html"/>
+    <id>https://rchangl.github.io/page/Computer%20Use/Hexo_plugin_dev/filter.html</id>
+    <published>2023-11-24T07:14:19.989Z</published>
+    <updated>2023-11-24T08:37:37.806Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h2><p>Hexo 将数据按顺序传递给过滤器，然后过滤器依次修改数据。</p><p><code>hexo.extend.filter.register</code></p><p>根据不同阶段执行：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo.<span class="property">extend</span>.<span class="property">filter</span>.<span class="title function_">register</span>(type, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 方法体</span></span><br><span class="line">&#125;, priority);</span><br></pre></td></tr></table></figure><p>参数：  </p><ul><li><code>type</code> 过滤器类型<ul><li><code>after_init</code></li><li><code>before_generate</code></li><li><code>before_post_render</code></li><li><code>after_post_render</code></li><li><code>after_generate</code></li><li><code>before_exit</code> 调用 hexo.exit 后立即运行</li><li><code>template_locals</code></li><li><code>new_post_path</code></li><li><code>server_middleware</code></li><li><code>after_clean</code> hexo clean 命令后执行</li></ul></li><li><code>priority</code> 优先级<ul><li>值小优先，默认10</li></ul></li></ul><h3 id="Execute-Filters-执行过滤器"><a href="#Execute-Filters-执行过滤器" class="headerlink" title="Execute Filters 执行过滤器"></a>Execute Filters 执行过滤器</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo.<span class="property">extend</span>.<span class="property">filter</span>.<span class="title function_">exec</span>(type, data, options);</span><br><span class="line">hexo.<span class="property">extend</span>.<span class="property">filter</span>.<span class="title function_">execSync</span>(type, data, options);</span><br></pre></td></tr></table></figure><ul><li>option<ul><li><code>context</code></li><li><code>args</code> 必须是数组</li></ul></li></ul><p>方式2:</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo.<span class="title function_">execFilter</span>(type, data, options);</span><br><span class="line">hexo.<span class="title function_">execFilterSync</span>(type, data, options);</span><br></pre></td></tr></table></figure><h3 id="data"><a href="#data" class="headerlink" title="data"></a>data</h3><p><code>data</code> 在 fliter 之间传递，第一个参数就是 <code>data</code> ，可通过返回值修改，不返回任何内容，代表 data 不变</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">hexo.<span class="property">extend</span>.<span class="property">filter</span>.<span class="title function_">register</span>(<span class="string">&#x27;test&#x27;</span>, <span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)&#123;</span><br><span class="line">  <span class="comment">// data === &#x27;some data&#x27;</span></span><br><span class="line">  <span class="comment">// arg1 === &#x27;foo&#x27;</span></span><br><span class="line">  <span class="comment">// arg2 === &#x27;bar&#x27;</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="string">&#x27;something&#x27;</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">hexo.<span class="property">extend</span>.<span class="property">filter</span>.<span class="title function_">register</span>(<span class="string">&#x27;test&#x27;</span>, <span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)&#123;</span><br><span class="line">  <span class="comment">// data === &#x27;something&#x27;</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">hexo.<span class="property">extend</span>.<span class="property">filter</span>.<span class="title function_">exec</span>(<span class="string">&#x27;test&#x27;</span>, <span class="string">&#x27;some data&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">args</span>: [<span class="string">&#x27;foo&#x27;</span>, <span class="string">&#x27;bar&#x27;</span>]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;filter&quot;&gt;&lt;a href=&quot;#filter&quot; class=&quot;headerlink&quot; title=&quot;filter&quot;&gt;&lt;/a&gt;filter&lt;/h2&gt;&lt;p&gt;Hexo 将数据按顺序传递给过滤器，然后过滤器依次修改数据。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hexo.exten</summary>
+      
+    
+    
+    
+    <category term="Computer Use" scheme="https://rchangl.github.io/categories/Computer-Use/"/>
+    
+    <category term="Hexo_plugin_dev" scheme="https://rchangl.github.io/categories/Computer-Use/Hexo-plugin-dev/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>执行过程</title>
+    <link href="https://rchangl.github.io/page/Computer%20Use/Hexo_plugin_dev/%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B.html"/>
+    <id>https://rchangl.github.io/page/Computer%20Use/Hexo_plugin_dev/%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B.html</id>
+    <published>2023-11-24T07:13:50.152Z</published>
+    <updated>2023-11-24T07:23:51.628Z</updated>
+    
+    <content type="html"><![CDATA[<p>也就是 <code>Hexo g</code> 命令是如何执行的</p><ul><li>Initialization<ul><li>读取配置，加载主题和插件，创建一个 Hexo 实例。</li></ul></li><li>Load source files<ul><li>载入 <code>source</code> 目录下的所有文件。</li><li>然后调用相应的处理器 (Processor) 来解析文件的元数据和内容，生成一个文件对象，存储在 Hexo 实例的 <code>locals</code> 属性中。</li></ul></li><li>Execute generators<ul><li>遍历所有已注册的生成器 (Generator) ，根据文件对象的元数据和内容，生成一个或多个路由对象，存储在 Hexo 实例的 <code>route</code> 属性中。</li></ul></li><li>Render templates<ul><li>根据路由对象的数据，调用相应的渲染器 (Renderer) 来渲染模板文件，生成 HTML 代码，存储在路由对象的数据中。</li></ul></li><li>Write files<ul><li>遍历所有的路由对象，将它们的数据写入到 <code>public</code> 目录下的对应路径中，生成静态文件。</li></ul></li><li>Deploy<ul><li>根据配置文件中的 <code>deploy</code> 选项，调用相应的部署器 (Deployer) 来将 public 目录下的静态文件部署到指定的服务器上。</li></ul></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;也就是 &lt;code&gt;Hexo g&lt;/code&gt; 命令是如何执行的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Initialization&lt;ul&gt;
+&lt;li&gt;读取配置，加载主题和插件，创建一个 Hexo 实例。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Load source files&lt;ul</summary>
+      
+    
+    
+    
+    <category term="Computer Use" scheme="https://rchangl.github.io/categories/Computer-Use/"/>
+    
+    <category term="Hexo_plugin_dev" scheme="https://rchangl.github.io/categories/Computer-Use/Hexo-plugin-dev/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows和Linux的基本命令.md</title>
+    <link href="https://rchangl.github.io/page/Computer%20Use/OS/Windows%E5%92%8CLinux%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.html"/>
+    <id>https://rchangl.github.io/page/Computer%20Use/OS/Windows%E5%92%8CLinux%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.html</id>
+    <published>2023-11-24T06:52:17.838Z</published>
+    <updated>2023-11-24T07:10:46.126Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Windows-CMD"><a href="#Windows-CMD" class="headerlink" title="Windows CMD"></a>Windows CMD</h2><p>CMD 命令本身不区分大小写</p><p><code>python /?</code> 获取命令使用帮助 <code>/?</code>  </p><p><code>cd</code> <code>chdir</code> change directory 的缩写<br><code>cd \</code> 跳转到 当前盘符根目录<br><code>cd C:\WINDOWS</code> 跳转到 当前盘符的文件夹<br><code>cd d:</code> 跳转到 其它盘符<br><code>cd /d e:\software</code> 跳转到 其它盘符的文件夹，必须加 <code>/d</code> 参数<br><code>cd ..</code> 跳转到 上层目录 （相对路径）</p><p><code>dir</code> 查看当前目录下的文件</p><p><code>md 目录名</code> <code>mkdir</code> 创建目录<br><code>rd 目录名</code> <code>rmdir</code> 删除目录</p><p><code>del 文件名</code> 删除文件（仅能删除文件，不能删除文件夹）</p><p><code>cls</code> 清屏</p><p><code>ipconfig</code> 查看IP信息<br><code>ping</code> ping</p><h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><p><code>ls</code> 查看当前目录下的文件</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Windows-CMD&quot;&gt;&lt;a href=&quot;#Windows-CMD&quot; class=&quot;headerlink&quot; title=&quot;Windows CMD&quot;&gt;&lt;/a&gt;Windows CMD&lt;/h2&gt;&lt;p&gt;CMD 命令本身不区分大小写&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python</summary>
+      
+    
+    
+    
+    <category term="Computer Use" scheme="https://rchangl.github.io/categories/Computer-Use/"/>
+    
+    <category term="OS" scheme="https://rchangl.github.io/categories/Computer-Use/OS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>创建插件</title>
+    <link href="https://rchangl.github.io/page/Computer%20Use/Hexo_plugin_dev/%E5%88%9B%E5%BB%BA%E6%8F%92%E4%BB%B6.html"/>
+    <id>https://rchangl.github.io/page/Computer%20Use/Hexo_plugin_dev/%E5%88%9B%E5%BB%BA%E6%8F%92%E4%BB%B6.html</id>
+    <published>2023-11-24T06:43:01.501Z</published>
+    <updated>2023-11-24T06:51:03.346Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="scripts-脚本"><a href="#scripts-脚本" class="headerlink" title="scripts 脚本"></a>scripts 脚本</h2><p>在主目录下创建 <code>scripts</code> 文件夹，里面放上待执行的JS脚本。</p><p>在内容较少时可以使用这种方式</p><h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>所有的 hexo 插件必须以 <code>hexo-</code> 开头，否则 hexo 不会加载。</p><p>在主目录下的 <code>node_modules</code> 新建一个文件夹，作为项目文件夹。然后在 项目文件夹里执行 <code>npm init</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir your_mod</span><br><span class="line">cd your_mod</span><br><span class="line">npm init</span><br></pre></td></tr></table></figure><p>之后根据提示输入信息，就创建好了 <code>package.json</code> ，这里也可以手动创建文件，效果相同</p><p><code>package.json</code> 必须的三个配置项：</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;hexo-xxx&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;main&quot;</span><span class="punctuation">:</span> <span class="string">&quot;index.js&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>接着创建文件 <code>index.js</code> 作为入口代码文件</p><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>index.js 输入测试代码：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo.<span class="property">extend</span>.<span class="property">filter</span>.<span class="title function_">register</span>(<span class="string">&#x27;before_generate&#x27;</span>,<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Plugin is running&quot;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>hexo 项目的 package.json ,新增一行 dependency:<br><code>&quot;hexo-xxx&quot;: &quot;^1.0.0&quot;,</code></p><p>然后，每次执行 hexo g 或者 hexo s, 都会看到插件的 log， 证明插件已经运行了。</p><h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p>如果你要发布到 NPM, 那么遵循 npm 的流程即可。</p><p>发布流程为，到插件目录上使用 cmd &#x2F;git base，执行 npm login，如果还没有 npm 账号，需要先到 npm.com 上注册一个，再执行该命令。</p><p>提供账号名、密码、邮箱之后就可以登录成功，再执行 npm publish，即可将插件发布到 npm 上。</p><p>再到项目中通过 npm &#x2F;cnpm 安装插件。</p><p>如果你使用 taobao 的 registry，npm login 和 npm publish 可能会失败。</p><p>npm config list<br>需要恢复默认 registry:</p><p>npm config set registry ‘<a href="http://registry.npmjs.org&/#39;">http://registry.npmjs.org&#39;</a><br>当你的包发布好以后，只需要回到你的 blog 目录</p><p>npm install hexo-your-plugin –save<br>本地 package.json dependency 会对应修改。<br>你可以试试是否已经生效。</p><p>升级发布的 npm 插件<br>首先修改 package.json 文件的 version 版本号，然后更新源码，最后执行一下命令</p><p>npm publish –registry <a href="http://registry.npmjs.org/">http://registry.npmjs.org</a><br>项目中使用这个插件的时候（即使用 npm install 安装过），升级命令</p><p>npm update 插件名</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;scripts-脚本&quot;&gt;&lt;a href=&quot;#scripts-脚本&quot; class=&quot;headerlink&quot; title=&quot;scripts 脚本&quot;&gt;&lt;/a&gt;scripts 脚本&lt;/h2&gt;&lt;p&gt;在主目录下创建 &lt;code&gt;scripts&lt;/code&gt; 文件夹，里面放上待</summary>
+      
+    
+    
+    
+    <category term="Computer Use" scheme="https://rchangl.github.io/categories/Computer-Use/"/>
+    
+    <category term="Hexo_plugin_dev" scheme="https://rchangl.github.io/categories/Computer-Use/Hexo-plugin-dev/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>空指针</title>
+    <link href="https://rchangl.github.io/page/Coding/Java/Java%20SE/%E5%BC%82%E5%B8%B8/%E7%A9%BA%E6%8C%87%E9%92%88.html"/>
+    <id>https://rchangl.github.io/page/Coding/Java/Java%20SE/%E5%BC%82%E5%B8%B8/%E7%A9%BA%E6%8C%87%E9%92%88.html</id>
+    <published>2023-11-24T02:14:40.940Z</published>
+    <updated>2023-11-24T02:14:52.007Z</updated>
+    
+    
+    
+    
+    <category term="Coding" scheme="https://rchangl.github.io/categories/Coding/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Coding/Java/"/>
+    
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/"/>
+    
+    <category term="异常" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/%E5%BC%82%E5%B8%B8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Controller-请求处理</title>
+    <link href="https://rchangl.github.io/page/Coding/Java/Spring%20Boot/Controller-%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86.html"/>
+    <id>https://rchangl.github.io/page/Coding/Java/Spring%20Boot/Controller-%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86.html</id>
+    <published>2023-11-23T09:05:37.381Z</published>
+    <updated>2023-11-23T09:52:30.209Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="参数注解"><a href="#参数注解" class="headerlink" title="参数注解"></a>参数注解</h2><h3 id="RequestParam-映射参数"><a href="#RequestParam-映射参数" class="headerlink" title="@RequestParam 映射参数"></a><code>@RequestParam</code> 映射参数</h3><h4 id="Simple-Mapping-简单映射"><a href="#Simple-Mapping-简单映射" class="headerlink" title="Simple Mapping 简单映射"></a>Simple Mapping 简单映射</h4><p>从URL参数 映射到函数参数。 必须保持参数名一致</p><p>例：</p><p>URL: <code>http://localhost:8080/spring-mvc-basics/api/foos?id=abc</code></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@GetMapping(&quot;/api/foos&quot;)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">getFoos</span><span class="params">(<span class="meta">@RequestParam</span> String id)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;ID: &quot;</span> + id;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="name-属性-Specifying-the-Request-Parameter-Name-指定请求参数名"><a href="#name-属性-Specifying-the-Request-Parameter-Name-指定请求参数名" class="headerlink" title="name 属性 - Specifying the Request Parameter Name 指定请求参数名"></a><code>name</code> 属性 - Specifying the Request Parameter Name 指定请求参数名</h4><p>参数名不一致时，手动指定对应的请求参数名 <code>name = &quot;id&quot;</code></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostMapping(&quot;/api/foos&quot;)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">addFoo</span><span class="params">(<span class="meta">@RequestParam(name = &quot;id&quot;)</span> String fooId, <span class="meta">@RequestParam</span> String name)</span> &#123; </span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;ID: &quot;</span> + fooId + <span class="string">&quot; Name: &quot;</span> + name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>省略写法： <code>@RequestParam(“id”)</code></p><p>使用属性 <code>name</code> 或 <code>value</code>都可以</p><h4 id="required-属性-Optional-Request-Parameters-可选请求参数"><a href="#required-属性-Optional-Request-Parameters-可选请求参数" class="headerlink" title="required 属性 - Optional Request Parameters 可选请求参数"></a><code>required</code> 属性 - Optional Request Parameters 可选请求参数</h4><p><code>required</code> 缺省为 <code>true</code> ，<br>缺少参数时 会抛出 MissingServletRequestParameterException 异常，返回 400 错误码</p><p><code>required = false</code> 缺少参数时， 方法参数 值为 null ，</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@GetMapping(&quot;/api/foos&quot;)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">getFoos</span><span class="params">(<span class="meta">@RequestParam(required = false)</span> String id)</span> &#123; </span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;ID: &quot;</span> + id;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;参数注解&quot;&gt;&lt;a href=&quot;#参数注解&quot; class=&quot;headerlink&quot; title=&quot;参数注解&quot;&gt;&lt;/a&gt;参数注解&lt;/h2&gt;&lt;h3 id=&quot;RequestParam-映射参数&quot;&gt;&lt;a href=&quot;#RequestParam-映射参数&quot; class=&quot;he</summary>
+      
+    
+    
+    
+    <category term="Coding" scheme="https://rchangl.github.io/categories/Coding/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Coding/Java/"/>
+    
+    <category term="Spring Boot" scheme="https://rchangl.github.io/categories/Coding/Java/Spring-Boot/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Structural 结构模式</title>
+    <link href="https://rchangl.github.io/page/Computer_Theory/Coding_Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/Structural-%E7%BB%93%E6%9E%84%E6%A8%A1%E5%BC%8F.html"/>
+    <id>https://rchangl.github.io/page/Computer_Theory/Coding_Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/Structural-%E7%BB%93%E6%9E%84%E6%A8%A1%E5%BC%8F.html</id>
+    <published>2023-11-23T01:25:51.915Z</published>
+    <updated>2023-11-23T02:44:27.954Z</updated>
+    
+    <content type="html"><![CDATA[<p>7种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。</p><h2 id="Adapter-Pattern-适配器模式"><a href="#Adapter-Pattern-适配器模式" class="headerlink" title="Adapter Pattern 适配器模式"></a>Adapter Pattern 适配器模式</h2><p>一个或多个接口转换成想要的接口</p><ul><li>class XxxAdaper <ul><li>实现接口</li><li>空实现接口所有方法</li></ul></li><li>子类<ul><li>继承 XxxAdaper ，重写需要的方法</li></ul></li></ul><h2 id="Composite-组合"><a href="#Composite-组合" class="headerlink" title="Composite 组合"></a>Composite 组合</h2><p>将对象组合成树形结构</p><h2 id="Proxy-代理"><a href="#Proxy-代理" class="headerlink" title="Proxy 代理"></a>Proxy 代理</h2><p>为其他对象提供代理，以控制对该对象的访问。</p><h2 id="Flyweight-享元"><a href="#Flyweight-享元" class="headerlink" title="Flyweight 享元"></a>Flyweight 享元</h2><p>多个对象之间状态共享</p><h2 id="Facade-外观"><a href="#Facade-外观" class="headerlink" title="Facade 外观"></a>Facade 外观</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;7种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。&lt;/p&gt;
+&lt;h2 id=&quot;Adapter-Pattern-适配器模式&quot;&gt;&lt;a href=&quot;#Adapter-Pattern-适配器模式&quot; class=&quot;headerlink&quot; title=&quot;Ad</summary>
       
     
     
     
     <category term="Computer_Theory" scheme="https://rchangl.github.io/categories/Computer-Theory/"/>
     
-    <category term="操作系统" scheme="https://rchangl.github.io/categories/Computer-Theory/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="Coding_Theory" scheme="https://rchangl.github.io/categories/Computer-Theory/Coding-Theory/"/>
+    
+    <category term="设计模式" scheme="https://rchangl.github.io/categories/Computer-Theory/Coding-Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
   </entry>
   
   <entry>
-    <title>遥远的她-张学友</title>
-    <link href="https://rchangl.github.io/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/%E9%81%A5%E8%BF%9C%E7%9A%84%E5%A5%B9-%E5%BC%A0%E5%AD%A6%E5%8F%8B.html"/>
-    <id>https://rchangl.github.io/page/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/%E9%81%A5%E8%BF%9C%E7%9A%84%E5%A5%B9-%E5%BC%A0%E5%AD%A6%E5%8F%8B.html</id>
-    <published>2023-10-24T13:06:42.239Z</published>
-    <updated>2023-10-24T15:43:29.388Z</updated>
-    
-    <content type="html"><![CDATA[<p>让晚风轻轻吹送了落霞<br>我已习惯每个傍晚去想她<br>在远方的她 此刻可知道<br>这段情在我心始终记挂<br>在这半山<br>那天我知我知快将要别离没说话<br>望向她 却听到她说不要相约<br>纵使分隔 相爱不会害怕<br>遥遥万里 心声有否偏差<br>正是让这爱试出真与假<br>遥远的她 仿佛借风声跟我话<br>热情若无变 哪管它沧桑变化  </p><p>但这天收到她爸爸的一封信<br>信里面说血癌已带走她<br>但觉得空虚的心 仿佛已僵化<br>过去事像炮弹 心中爆炸<br>在这半山<br>这天我悲痛悲痛不已 在胡乱说话<br>夜雨中似听到 她说不要相约<br>纵使分隔 相爱不会害怕<br>人无觅处 心声有否偏差<br>正是让这爱试出真与假<br>遥远的她 仿佛借风声跟我话<br>热情若无变 哪管它沧桑变化<br>遥远的她 不可以再归家<br>我在梦里却始终只有她<br>遥远的她 可知我心中的说话<br>热情并冇变 哪管它沧桑变化<br>遥远的她 不可以再归家<br>我在梦里却始终只有她<br>遥远的她 可知我心中的说话<br>热情并冇变 哪管它沧桑变化</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;让晚风轻轻吹送了落霞&lt;br&gt;我已习惯每个傍晚去想她&lt;br&gt;在远方的她 此刻可知道&lt;br&gt;这段情在我心始终记挂&lt;br&gt;在这半山&lt;br&gt;那天我知我知快将要别离没说话&lt;br&gt;望向她 却听到她说不要相约&lt;br&gt;纵使分隔 相爱不会害怕&lt;br&gt;遥遥万里 心声有否偏差&lt;br&gt;正是让这爱试</summary>
-      
+    <title>行为模式</title>
+    <link href="https://rchangl.github.io/page/Computer_Theory/Coding_Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/Behavioral-%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F.html"/>
+    <id>https://rchangl.github.io/page/Computer_Theory/Coding_Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/Behavioral-%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F.html</id>
+    <published>2023-11-22T03:25:11.105Z</published>
+    <updated>2023-11-23T01:52:33.908Z</updated>
     
     
     
-    <category term="音乐" scheme="https://rchangl.github.io/categories/%E9%9F%B3%E4%B9%90/"/>
     
-    <category term="歌词" scheme="https://rchangl.github.io/categories/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E8%AF%8D/"/>
+    <category term="Computer_Theory" scheme="https://rchangl.github.io/categories/Computer-Theory/"/>
+    
+    <category term="Coding_Theory" scheme="https://rchangl.github.io/categories/Computer-Theory/Coding-Theory/"/>
+    
+    <category term="设计模式" scheme="https://rchangl.github.io/categories/Computer-Theory/Coding-Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
   </entry>
   
   <entry>
-    <title>org.json</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Third_party_packages/org.json.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Third_party_packages/org.json.html</id>
-    <published>2023-10-22T16:57:41.414Z</published>
-    <updated>2023-10-24T08:43:34.798Z</updated>
+    <title>Creational Design Pattern 创建型模式</title>
+    <link href="https://rchangl.github.io/page/Computer_Theory/Coding_Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/Structural-%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%BC%8F.html"/>
+    <id>https://rchangl.github.io/page/Computer_Theory/Coding_Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/Structural-%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%BC%8F.html</id>
+    <published>2023-11-22T03:22:41.240Z</published>
+    <updated>2023-11-22T16:06:07.677Z</updated>
     
-    <content type="html"><![CDATA[<p>Doc: <a href="http://stleary.github.io/JSON-java/index.html">http://stleary.github.io/JSON-java/index.html</a></p><p>一个流行的JSON库，另一个流行的JSON库是 <code>org.json.simple</code> <a href="https://cliftonlabs.github.io/json-simple/">https://cliftonlabs.github.io/json-simple/</a> Maven仓库最后更新时间为2019年</p><p>Maven: </p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.json/json --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.json<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>json<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>20231013<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="JSONObject"><a href="#JSONObject" class="headerlink" title="JSONObject"></a>JSONObject</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">myString = <span class="keyword">new</span> <span class="title class_">JSONObject</span>()</span><br><span class="line">        .put(<span class="string">&quot;JSON&quot;</span>, <span class="string">&quot;Hello, World!&quot;</span>).toString();</span><br><span class="line"><span class="comment">// &#123;&quot;JSON&quot;: &quot;Hello, World&quot;&#125;</span></span><br></pre></td></tr></table></figure><h3 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h3><p><code>put(String key, value)</code> 添加一个键值对</p><p>value 可以是 <code>boolean</code> <code>Collection&lt;?&gt;</code> <code>double</code> <code>float</code> <code>int</code> <code>long</code> <code>Map&lt;?,?&gt;</code> <code>Object</code></p><p><code>toString()</code> 返回无 whitespace 的JSON字符串</p><p><code>toString(int indentFactor)</code> 返回 pretty-printed JSON 字符串<br>indentFactor 每个层级的缩进空格数</p>]]></content>
+    <content type="html"><![CDATA[<p>创建型模式，共五种：  </p><ul><li>工厂方法模式、</li><li>抽象工厂模式、</li><li>单例模式、</li><li>建造者模式、</li><li>原型模式。</li></ul><h2 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h2><h3 id="简单工厂模式"><a href="#简单工厂模式" class="headerlink" title="简单工厂模式"></a>简单工厂模式</h3><p>工厂类根据参数，创建产品类。</p><p>当产品类型增加时，需要修改工厂类的代码，违反了开闭原则。</p><h3 id="工厂方法模式"><a href="#工厂方法模式" class="headerlink" title="工厂方法模式"></a>工厂方法模式</h3><p>定义抽象的工厂方法，将对象的实例化推迟到子类。</p><p>缺点是每增加一个产品类型，就需要增加一个工厂类，导致类的个数增加，增加了系统的复杂度。</p><h3 id="抽象工厂模式"><a href="#抽象工厂模式" class="headerlink" title="抽象工厂模式"></a>抽象工厂模式</h3><p>抽象工厂（Abstract Factory）：接口，一套产品构造器。</p><p>抽象产品（Abstract Product）：一类产品</p><p>具体产品（Concrete Product）：实现了抽象产品接口， 定义了具体产品</p><p>具体工厂（Concrete Factory）：实现了抽象工厂接口， 不同具体工厂 生成 不同系列产品</p><h2 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h2><ul><li>保证一个类只有一个实例</li><li>为该实例提供一个全局访问节点。</li></ul><p>违反 单一职责原则   </p><p>实现：</p><ul><li>将默认构造函数设为私有</li><li>创建静态方法，获取内部 private的实例</li></ul><p>预加载、懒加载、线程安全、线程不安全</p><p><a href="https://www.runoob.com/design-pattern/singleton-pattern.html">https://www.runoob.com/design-pattern/singleton-pattern.html</a></p><h2 id="Builder-Pattern-建造者模式-生成器模式"><a href="#Builder-Pattern-建造者模式-生成器模式" class="headerlink" title="Builder Pattern 建造者模式 (生成器模式)"></a>Builder Pattern 建造者模式 (生成器模式)</h2><p>由 Builder 接管创建，并嵌套创建</p><p>产品 (Product) ：具有复杂结构的对象，每个部件可能有不同的表现。</p><p>抽象生成器 (Builder) ：接口，规定了 产品的构建步骤 和结果获取方法。</p><p>具体生成器 (ConcreteBuilder) ：实现了抽象生成器接口的类，它提供了具体的创建产品对象各个部件的方法，并返回最终的产品对象。</p><p>指挥者 (Director) ：负责调用生成器接口的类，它控制了产品对象的创建过程，保证各个部件按照一定顺序创建。</p><h2 id="Prototype-Pattern-原型模式"><a href="#Prototype-Pattern-原型模式" class="headerlink" title="Prototype Pattern 原型模式"></a>Prototype Pattern 原型模式</h2><p>通过复制现有对象创建，而不是直接创建新对象，</p><p>组成：  </p><ul><li>Prototype：接口（抽象类），声明具备clone能力，例如java中得Cloneable接口</li><li>ConcretePrototype：具体的原型类</li><li>Client：使用者</li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Doc: &lt;a href=&quot;http://stleary.github.io/JSON-java/index.html&quot;&gt;http://stleary.github.io/JSON-java/index.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;一个流行的JSON库，另一个流行的JS</summary>
+    <summary type="html">&lt;p&gt;创建型模式，共五种：  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;工厂方法模式、&lt;/li&gt;
+&lt;li&gt;抽象工厂模式、&lt;/li&gt;
+&lt;li&gt;单例模式、&lt;/li&gt;
+&lt;li&gt;建造者模式、&lt;/li&gt;
+&lt;li&gt;原型模式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;工厂模式&quot;&gt;&lt;a href=&quot;#工厂模式&quot;</summary>
       
     
     
     
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    <category term="Computer_Theory" scheme="https://rchangl.github.io/categories/Computer-Theory/"/>
     
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    <category term="Coding_Theory" scheme="https://rchangl.github.io/categories/Computer-Theory/Coding-Theory/"/>
     
-    <category term="Third_party_packages" scheme="https://rchangl.github.io/categories/Devolop/Java/Third-party-packages/"/>
+    <category term="设计模式" scheme="https://rchangl.github.io/categories/Computer-Theory/Coding-Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
   </entry>
   
   <entry>
-    <title>项目依赖管理</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/Base%20and%20Grammer/%E9%A1%B9%E7%9B%AE%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/Base%20and%20Grammer/%E9%A1%B9%E7%9B%AE%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86.html</id>
-    <published>2023-10-22T15:13:33.480Z</published>
-    <updated>2023-10-22T16:41:25.828Z</updated>
+    <title>TreeSet</title>
+    <link href="https://rchangl.github.io/page/Coding/Java/Java%20SE/Collection-%E9%9B%86%E5%90%88/Collection/Set/TreeSet.html"/>
+    <id>https://rchangl.github.io/page/Coding/Java/Java%20SE/Collection-%E9%9B%86%E5%90%88/Collection/Set/TreeSet.html</id>
+    <published>2023-11-21T08:20:59.347Z</published>
+    <updated>2023-11-21T08:24:32.728Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="使用第三方包"><a href="#使用第三方包" class="headerlink" title="使用第三方包"></a>使用第三方包</h2><h3 id="classpath"><a href="#classpath" class="headerlink" title="classpath"></a>classpath</h3><p>修改 CLASSPATH 系统环境变量，使其包含所需的 JAR</p><p>或在命令行上执行操作：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -classpath C:\java\thirdpartjars\thirdparty.jar MyProgram</span><br></pre></td></tr></table></figure><p>也可以在 <code>javac</code> 命令中使用</p><h3 id="使用-Maven-项目"><a href="#使用-Maven-项目" class="headerlink" title="使用 Maven 项目"></a>使用 Maven 项目</h3><p>IDEA 中 右键项目，  <code>Add Framework</code> -&gt; <code>Maven</code> 可将普通项目转为 Maven 项目</p><h3 id="IDEA中使用第三方包"><a href="#IDEA中使用第三方包" class="headerlink" title="IDEA中使用第三方包"></a>IDEA中使用第三方包</h3><h4 id="右键添加"><a href="#右键添加" class="headerlink" title="右键添加"></a>右键添加</h4><p>将 Jar 文件放入工程中，右键添加</p><h4 id=""><a href="#" class="headerlink" title=""></a></h4><p><code>File</code> -&gt; <code>Project Structure</code><br>-&gt; <code>Modules</code> -&gt; <code>Dependencies</code> -&gt; <code>+</code> -&gt; <code>Jars or directories</code></p><p>选择 Jar 包所在的目录</p>]]></content>
+    <content type="html"><![CDATA[<p>有序</p><p>比较规则：<br>数值：大小排序<br>字符串：ASCII 表序</p><h2 id="自定对象比较规则："><a href="#自定对象比较规则：" class="headerlink" title="自定对象比较规则："></a>自定对象比较规则：</h2><p>实现</p><p>com</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;使用第三方包&quot;&gt;&lt;a href=&quot;#使用第三方包&quot; class=&quot;headerlink&quot; title=&quot;使用第三方包&quot;&gt;&lt;/a&gt;使用第三方包&lt;/h2&gt;&lt;h3 id=&quot;classpath&quot;&gt;&lt;a href=&quot;#classpath&quot; class=&quot;headerlink</summary>
+    <summary type="html">&lt;p&gt;有序&lt;/p&gt;
+&lt;p&gt;比较规则：&lt;br&gt;数值：大小排序&lt;br&gt;字符串：ASCII 表序&lt;/p&gt;
+&lt;h2 id=&quot;自定对象比较规则：&quot;&gt;&lt;a href=&quot;#自定对象比较规则：&quot; class=&quot;headerlink&quot; title=&quot;自定对象比较规则：&quot;&gt;&lt;/a&gt;自定对象比较规则：</summary>
       
     
     
     
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    <category term="Coding" scheme="https://rchangl.github.io/categories/Coding/"/>
     
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    <category term="Java" scheme="https://rchangl.github.io/categories/Coding/Java/"/>
     
-    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/"/>
     
-    <category term="Base and Grammer" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/Base-and-Grammer/"/>
+    <category term="Collection-集合" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/Collection-%E9%9B%86%E5%90%88/"/>
+    
+    <category term="Collection" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/Collection-%E9%9B%86%E5%90%88/Collection/"/>
+    
+    <category term="Set" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/Collection-%E9%9B%86%E5%90%88/Collection/Set/"/>
     
     
   </entry>
   
   <entry>
-    <title>StringUtils</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Spring_Framework/StringUtils.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Spring_Framework/StringUtils.html</id>
-    <published>2023-10-22T14:43:42.586Z</published>
-    <updated>2023-10-22T14:56:08.445Z</updated>
+    <title>HashSet</title>
+    <link href="https://rchangl.github.io/page/Coding/Java/Java%20SE/Collection-%E9%9B%86%E5%90%88/Collection/Set/HashSet.html"/>
+    <id>https://rchangl.github.io/page/Coding/Java/Java%20SE/Collection-%E9%9B%86%E5%90%88/Collection/Set/HashSet.html</id>
+    <published>2023-11-21T03:18:45.695Z</published>
+    <updated>2023-11-21T03:19:56.645Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/StringUtils.html">StringUtils (Spring Framework 6.0.13 API)</a></p><p>Spring 提供的对 String 的工具类</p><h2 id="判空"><a href="#判空" class="headerlink" title="判空"></a>判空</h2><p><code>boolean hasLength(CharSequence str)</code></p><p><code>boolean hasLength(String str)</code></p><p>neither null nor of length 0<br>不是 null 也不是 长度为0</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/StringUtils.html&quot;&gt;StringUtils (Spring </summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
-    
-    <category term="Spring_Framework" scheme="https://rchangl.github.io/categories/Devolop/Java/Spring-Framework/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>包装类</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/Base%20and%20Grammer/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E5%8C%85%E8%A3%85%E7%B1%BB.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/Base%20and%20Grammer/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E5%8C%85%E8%A3%85%E7%B1%BB.html</id>
-    <published>2023-10-21T08:35:18.014Z</published>
-    <updated>2023-10-24T16:37:20.990Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="包装类间的关系"><a href="#包装类间的关系" class="headerlink" title="包装类间的关系"></a>包装类间的关系</h2><p><img src="/%E5%8C%85%E8%A3%85%E7%B1%BB/image-1.png" alt="包装类间的关系"></p><h2 id="自动装箱和自动拆箱"><a href="#自动装箱和自动拆箱" class="headerlink" title="自动装箱和自动拆箱"></a>自动装箱和自动拆箱</h2><p>JDK1.5以后，基础类型和包装类可以自动转换</p><p>自动装箱：基本-&gt;包装 ； 调用 <code>包装类.valueOf(基本类型)</code><br>自动拆箱：包装-&gt;基本 ； 调用 <code>**Value()</code></p><h3 id="自动拆装箱的原理"><a href="#自动拆装箱的原理" class="headerlink" title="自动拆装箱的原理"></a>自动拆装箱的原理</h3><p>自动调用方法转换</p><p>自动装箱： <code>Integer.valueOf(1)</code></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer integer=<span class="number">1</span>;</span><br><span class="line">Integer integer=Integer.valueOf(<span class="number">1</span>);</span><br></pre></td></tr></table></figure><p>自动拆箱： <code>integer.intValue();</code></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i=integer;</span><br><span class="line"><span class="type">int</span> i=integer.intValue();</span><br></pre></td></tr></table></figure><h3 id="触发自动拆装箱"><a href="#触发自动拆装箱" class="headerlink" title="触发自动拆装箱"></a>触发自动拆装箱</h3><h3 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h3><p>包装类与基础类型的对应关系及其<strong>缓存范围</strong>：</p><p><img src="/%E5%8C%85%E8%A3%85%E7%B1%BB/image.png" alt="包装类与基础类型的对应关系及其缓存范围"></p><p>包装类在缓存范围内时，会调用缓存。比较两个包装类相等，如果使用 <code>==</code> ，包装类不会自动拆箱，在缓存范围内外的结果可能会不一致。</p><p>比较两个包装类不使用 <code>==</code> ， 使用 <code>equals(obj)</code> 。<code>==</code> 比较的是<strong>地址</strong>，在缓存之外地址不同；而 equals 比较的始终是<strong>具体值</strong></p>]]></content>
+    <content type="html"><![CDATA[<p>底层采用 哈希表</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;包装类间的关系&quot;&gt;&lt;a href=&quot;#包装类间的关系&quot; class=&quot;headerlink&quot; title=&quot;包装类间的关系&quot;&gt;&lt;/a&gt;包装类间的关系&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/%E5%8C%85%E8%A3%85%E7%B1%BB/image-1.png</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
-    
-    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
-    
-    <category term="Base and Grammer" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/Base-and-Grammer/"/>
-    
-    <category term="数据类型" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/Base-and-Grammer/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>内存模型</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/JVM/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/JVM/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.html</id>
-    <published>2023-10-21T07:39:50.621Z</published>
-    <updated>2023-10-21T08:16:33.709Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="内存区域"><a href="#内存区域" class="headerlink" title="内存区域"></a>内存区域</h2><h3 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h3><p>方法运行时进栈，执行完毕出栈</p><h3 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h3><p>new 出来的对象</p><h3 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h3><p>字节码文件</p><h2 id="字符串-内存"><a href="#字符串-内存" class="headerlink" title="字符串 内存"></a>字符串 内存</h2><h3 id="String-Table-串池"><a href="#String-Table-串池" class="headerlink" title="String Table 串池"></a>String Table 串池</h3><p>JDK7 开始，串池在堆内存当中</p><p>使用<strong>字符串常量</strong>时，先在串池当中找是否有需要的字符串，若没有则创建，有则直接使用</p><h3 id="字符串对象"><a href="#字符串对象" class="headerlink" title="字符串对象"></a>字符串对象</h3><p>new String 的方式创建字符串，在堆内存当中，不会复用</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;内存区域&quot;&gt;&lt;a href=&quot;#内存区域&quot; class=&quot;headerlink&quot; title=&quot;内存区域&quot;&gt;&lt;/a&gt;内存区域&lt;/h2&gt;&lt;h3 id=&quot;栈&quot;&gt;&lt;a href=&quot;#栈&quot; class=&quot;headerlink&quot; title=&quot;栈&quot;&gt;&lt;/a&gt;栈&lt;/h3&gt;&lt;p</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
-    
-    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
-    
-    <category term="JVM" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/JVM/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>新特性</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/Java9-18%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/%E6%96%B0%E7%89%B9%E6%80%A7.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/Java9-18%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/%E6%96%B0%E7%89%B9%E6%80%A7.html</id>
-    <published>2023-10-21T06:29:24.508Z</published>
-    <updated>2023-10-21T06:29:55.757Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/390679021">java9到18版本中的新特性 - 知乎</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/390679021&quot;&gt;java9到18版本中的新特性 - 知乎&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;底层采用 哈希表&lt;/p&gt;
 </summary>
       
     
     
     
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    <category term="Coding" scheme="https://rchangl.github.io/categories/Coding/"/>
     
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    <category term="Java" scheme="https://rchangl.github.io/categories/Coding/Java/"/>
     
-    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/"/>
     
-    <category term="Java9-18的新特性" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/Java9-18%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    <category term="Collection-集合" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/Collection-%E9%9B%86%E5%90%88/"/>
     
+    <category term="Collection" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/Collection-%E9%9B%86%E5%90%88/Collection/"/>
     
-  </entry>
-  
-  <entry>
-    <title>线程相关概念</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%92%8C%E5%B9%B6%E5%8F%91/%E7%BA%BF%E7%A8%8B%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%92%8C%E5%B9%B6%E5%8F%91/%E7%BA%BF%E7%A8%8B%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5.html</id>
-    <published>2023-10-21T04:48:54.311Z</published>
-    <updated>2023-10-21T04:56:49.516Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="线程的五大状态"><a href="#线程的五大状态" class="headerlink" title="线程的五大状态"></a>线程的五大状态</h2><p>创建状态：当用new操作符创建一个线程的时候。</p><p>就绪状态：调用start方法，处于就绪状态的线程并不一定马上就执行run方法，还需要等待CPU的调度。</p><p>运行状态：CPU开始调度线程，并开始执行Run方法。</p><p>阻塞状态：线程的执行过程中可能因为一些原因进入阻塞状态，比如调用sleep方法，获取尝试得到一个锁等等。、</p><p>死亡状态：Run方法执行完或者执行中遇到异常。</p><h2 id="悲观锁和乐观锁"><a href="#悲观锁和乐观锁" class="headerlink" title="悲观锁和乐观锁"></a>悲观锁和乐观锁</h2><p>悲观锁：认为一定会有其他线程来改变他，所以每次操作就会加锁，会造成线程阻塞。</p><p>乐观锁：认为不会有线程来改变他，每次操作不会加锁，但是如果因为其他线程来改变了值，造成了冲突，会因为冲突而操作失败，但是他又会继续重试，直到成功为止，不会造成线程阻塞。</p><p>4） 线程之间的协作</p><p>线程之间的协作有：wait、notify、notifyAll等</p><p>5） Synchronized关键字（同步锁）</p><p>修饰一个代码块：被修饰的代码块称为同步语句块，作用范围是大括号{}括起来的代码，作用的对象是调用这个代码块的对象。</p><p>修饰一个方法：被修饰的方法称为同步方法，作用范围是整个方法，作用的对象是调用这个方法的对象。</p><p>修饰一个静态的方法：作用范围是整个静态方法，所用的对象是这个类中的所有对象。</p><p>修饰一个类：作用范围是synchronized后面括起来的部分，作用的对象是这个类中的所有对象</p><p>6） CAS</p><p>比较替换，是实现并发应用的一种技术，主要用于不想使线程进入阻塞的一种方式，操作包含三个操作数-内存位置V、预期原值A、新值B，如果内存位置和预期原值相匹配，处理器自动将该位置的值改为新值，否则就不做处理。</p><p>CAS三大问题：ABA问题、循环时间长开销大、只能保证一个共享变量的原子操作，即一个CAS只能处理一个。</p><h2 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h2><p>如果使用一个线程就创建一个，存在如果并发的线程量大，且每个线程执行一个任务就结束了，这样频繁的创建线程就会给系统带来很大的开销，导致系统效率大大降低，因为频繁创建线程和销毁线程是需要时间的，而线程池可以对线程进行复用，大大减少线程创建和销毁所带来的性能消耗。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;线程的五大状态&quot;&gt;&lt;a href=&quot;#线程的五大状态&quot; class=&quot;headerlink&quot; title=&quot;线程的五大状态&quot;&gt;&lt;/a&gt;线程的五大状态&lt;/h2&gt;&lt;p&gt;创建状态：当用new操作符创建一个线程的时候。&lt;/p&gt;
-&lt;p&gt;就绪状态：调用start方法，处于就绪</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
-    
-    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
-    
-    <category term="多线程和并发" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%92%8C%E5%B9%B6%E5%8F%91/"/>
+    <category term="Set" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/Collection-%E9%9B%86%E5%90%88/Collection/Set/"/>
     
     
   </entry>
   
   <entry>
-    <title>手写字体打印</title>
-    <link href="https://rchangl.github.io/page/Computer%20Use/%E6%89%8B%E5%86%99%E5%AD%97%E4%BD%93.html"/>
-    <id>https://rchangl.github.io/page/Computer%20Use/%E6%89%8B%E5%86%99%E5%AD%97%E4%BD%93.html</id>
-    <published>2023-10-21T03:11:15.643Z</published>
-    <updated>2023-10-21T03:16:04.609Z</updated>
+    <title>哈希表</title>
+    <link href="https://rchangl.github.io/page/Coding/Java/Java%20SE/%E5%86%85%E7%BD%AE%E5%B8%B8%E7%94%A8API/%E5%93%88%E5%B8%8C%E8%A1%A8.html"/>
+    <id>https://rchangl.github.io/page/Coding/Java/Java%20SE/%E5%86%85%E7%BD%AE%E5%B8%B8%E7%94%A8API/%E5%93%88%E5%B8%8C%E8%A1%A8.html</id>
+    <published>2023-11-21T03:08:00.802Z</published>
+    <updated>2023-11-21T08:56:57.408Z</updated>
     
-    <content type="html"><![CDATA[<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Sub</span> 字体修改()</span><br><span class="line"><span class="comment">&#x27;</span></span><br><span class="line"><span class="comment">&#x27; 字体修改 宏</span></span><br><span class="line"><span class="comment">&#x27;</span></span><br><span class="line">    <span class="keyword">Dim</span> R_Character <span class="keyword">As</span> Range</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">Dim</span> FontSize(<span class="number">3</span>)</span><br><span class="line">    <span class="comment">&#x27; 字体大小在5个值之间进行波动，可以改写</span></span><br><span class="line">    FontSize(<span class="number">1</span>) = <span class="string">&quot;21&quot;</span></span><br><span class="line">    FontSize(<span class="number">2</span>) = <span class="string">&quot;21.5&quot;</span></span><br><span class="line">    FontSize(<span class="number">3</span>) = <span class="string">&quot;22&quot;</span></span><br><span class="line">    FontSize(<span class="number">4</span>) = <span class="string">&quot;22.5&quot;</span></span><br><span class="line">    FontSize(<span class="number">5</span>) = <span class="string">&quot;23&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">Dim</span> FontName(<span class="number">3</span>)</span><br><span class="line">    <span class="comment">&#x27;字体名称在三种字体之间进行波动，可改写，但需要保证系统拥有下列字体</span></span><br><span class="line">    FontName(<span class="number">1</span>) = <span class="string">&quot;陈静的字完整版&quot;</span></span><br><span class="line">    FontName(<span class="number">2</span>) = <span class="string">&quot;萌妹子体&quot;</span></span><br><span class="line">    FontName(<span class="number">3</span>) = <span class="string">&quot;李国夫手写体&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">Dim</span> ParagraphSpace(<span class="number">5</span>)</span><br><span class="line">    <span class="comment">&#x27;行间距 在一定以下值中均等分布，可改写</span></span><br><span class="line">    ParagraphSpace(<span class="number">1</span>) = <span class="string">&quot;12&quot;</span></span><br><span class="line">    ParagraphSpace(<span class="number">2</span>) = <span class="string">&quot;13&quot;</span></span><br><span class="line">    ParagraphSpace(<span class="number">3</span>) = <span class="string">&quot;20&quot;</span></span><br><span class="line">    ParagraphSpace(<span class="number">4</span>) = <span class="string">&quot;7&quot;</span></span><br><span class="line">    ParagraphSpace(<span class="number">5</span>) = <span class="string">&quot;12&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&#x27;不懂原理的话，不建议修改下列代码</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">For</span> <span class="keyword">Each</span> R_Character <span class="keyword">In</span> ActiveDocument.Characters</span><br><span class="line"></span><br><span class="line">        VBA.Randomize</span><br><span class="line"></span><br><span class="line">        R_Character.Font.Name = FontName(Int(VBA.Rnd * <span class="number">3</span>) + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">        R_Character.Font.Size = FontSize(Int(VBA.Rnd * <span class="number">5</span>) + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">        R_Character.Font.Position = Int(VBA.Rnd * <span class="number">3</span>) + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        R_Character.Font.Spacing = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">Next</span></span><br><span class="line"></span><br><span class="line">    Application.ScreenUpdating = <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">For</span> <span class="keyword">Each</span> Cur_Paragraph <span class="keyword">In</span> ActiveDocument.Paragraphs</span><br><span class="line"></span><br><span class="line">        Cur_Paragraph.LineSpacing = ParagraphSpace(Int(VBA.Rnd * <span class="number">5</span>) + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">Next</span></span><br><span class="line">        Application.ScreenUpdating = <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="哈希值"><a href="#哈希值" class="headerlink" title="哈希值"></a>哈希值</h2><p>定义在 Object 中 ， <code>int hashCode()</code></p><p>默认使用地址值进行计算，一般会重写此方法，利用对象内属性值进行计算</p><p>重写后，只要属性值相同，哈希值就相同</p><p>哈希碰撞：有小概率，重写后不同对象的计算出来的哈希值相同</p><h2 id="哈希表"><a href="#哈希表" class="headerlink" title="哈希表"></a>哈希表</h2><p>JDK7： 数组+链表<br>JDK8： 数组+链表+红黑树</p><p>哈希查找需要通过 哈希表 进行</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;figure class=&quot;highlight vb&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</summary>
+    <summary type="html">&lt;h2 id=&quot;哈希值&quot;&gt;&lt;a href=&quot;#哈希值&quot; class=&quot;headerlink&quot; title=&quot;哈希值&quot;&gt;&lt;/a&gt;哈希值&lt;/h2&gt;&lt;p&gt;定义在 Object 中 ， &lt;code&gt;int hashCode()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;默认使用地址值进行计算，一般会重</summary>
       
     
     
     
-    <category term="Computer Use" scheme="https://rchangl.github.io/categories/Computer-Use/"/>
+    <category term="Coding" scheme="https://rchangl.github.io/categories/Coding/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Coding/Java/"/>
+    
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/"/>
+    
+    <category term="内置常用API" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/%E5%86%85%E7%BD%AE%E5%B8%B8%E7%94%A8API/"/>
     
     
   </entry>
   
   <entry>
-    <title>年假</title>
-    <link href="https://rchangl.github.io/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E6%9D%83%E7%9B%8A/%E5%B9%B4%E5%81%87.html"/>
-    <id>https://rchangl.github.io/page/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E6%9D%83%E7%9B%8A/%E5%B9%B4%E5%81%87.html</id>
-    <published>2023-10-19T12:39:29.161Z</published>
-    <updated>2023-10-19T12:40:08.672Z</updated>
+    <title>设计模式概览</title>
+    <link href="https://rchangl.github.io/page/Computer_Theory/Coding_Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%A6%82%E8%A7%88.html"/>
+    <id>https://rchangl.github.io/page/Computer_Theory/Coding_Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%A6%82%E8%A7%88.html</id>
+    <published>2023-11-21T02:41:59.176Z</published>
+    <updated>2023-11-23T01:52:22.232Z</updated>
     
-    <content type="html"><![CDATA[<p>年假不能清零</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><p>共二十三种</p><p>创建型模式，共五种：  </p><ul><li>工厂方法模式、</li><li>抽象工厂模式、</li><li>单例模式、</li><li>建造者模式、</li><li>原型模式。</li></ul><p>结构型模式，共七种：  </p><ul><li>适配器模式、</li><li>装饰器模式、</li><li>代理模式、</li><li>外观模式、</li><li>桥接模式、</li><li>组合模式、</li><li>享元模式。</li></ul><p>行为型模式，共十一种：  </p><ul><li>策略模式、</li><li>模板方法模式、</li><li>观察者模式、</li><li>迭代子模式、</li><li>责任链模式、</li><li>命令模式、</li><li>备忘录模式、</li><li>状态模式、</li><li>访问者模式、</li><li>中介者模式、</li><li>解释器模式。</li></ul><h2 id="六大原则"><a href="#六大原则" class="headerlink" title="六大原则"></a>六大原则</h2><ul><li><strong>开闭原则</strong>：对扩展开放，对修改关闭。可以在不修改其源代码的情况下进行扩展。</li><li><strong>里氏替换原则</strong>：任何基类可以出现的地方，子类也可以出现。子类应该完全遵循基类的约定，不改变基类的功能和语义，也不破坏基类与其他类的协作关系。</li><li><strong>依赖倒置原则</strong>：要依赖于抽象，而不是依赖于具体。</li><li><strong>接口隔离原则</strong>：使用多个专门的接口，而不使用单一的总接口。</li><li><strong>迪米特法则</strong>：只与你的直接朋友交谈，不跟“陌生人”说话。一个对象应该尽量减少与其他对象的交互，只与它的直接关联对象进行通信。</li><li><strong>合成复用原则</strong>：尽量使用合成&#x2F;聚合的方式，而不是使用继承的方式来达到复用的目的。在设计类的时候，应该优先考虑将其他类作为自己的成员变量或者组合关系，而不是通过继承关系来扩展自己的功能。这样可以避免继承带来的层次复杂性和脆弱性，提高类的稳定性和灵活性。</li></ul><h3 id="单一职责原则-SRP"><a href="#单一职责原则-SRP" class="headerlink" title="单一职责原则 SRP"></a>单一职责原则 SRP</h3><p>单一职责原则 SRP：Single responsibility principle</p><h2 id="Adapter-Pattern-适配器设计模式"><a href="#Adapter-Pattern-适配器设计模式" class="headerlink" title="Adapter Pattern 适配器设计模式"></a>Adapter Pattern 适配器设计模式</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;年假不能清零&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;分类&quot;&gt;&lt;a href=&quot;#分类&quot; class=&quot;headerlink&quot; title=&quot;分类&quot;&gt;&lt;/a&gt;分类&lt;/h2&gt;&lt;p&gt;共二十三种&lt;/p&gt;
+&lt;p&gt;创建型模式，共五种：  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;工厂方法模式、&lt;/li&gt;
+&lt;li&gt;抽象工厂模式、&lt;/li&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="Computer_Theory" scheme="https://rchangl.github.io/categories/Computer-Theory/"/>
+    
+    <category term="Coding_Theory" scheme="https://rchangl.github.io/categories/Computer-Theory/Coding-Theory/"/>
+    
+    <category term="设计模式" scheme="https://rchangl.github.io/categories/Computer-Theory/Coding-Theory/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tree 树</title>
+    <link href="https://rchangl.github.io/page/Computer_Theory/algo/Tree.html"/>
+    <id>https://rchangl.github.io/page/Computer_Theory/algo/Tree.html</id>
+    <published>2023-11-20T02:13:51.056Z</published>
+    <updated>2023-11-22T12:21:46.609Z</updated>
+    
+    <content type="html"><![CDATA[<p>Node 节点 &#x2F; 结点</p><p>父节点 左子节点 右子节点</p><p>子节点：直接子节点</p><p>度：每一个节点的子节点数量</p><h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2><p>二叉树：任意节点的 <code>度&lt;=2</code></p><p>根节点</p><p>根节点的左子树 &#x2F; 根节点的右子树 </p><p>二叉查找树 &#x3D;&#x3D; 二叉排序树 &#x3D;&#x3D; 二叉搜索树 &#x3D; Binary search tree</p><h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><p>前序遍历： 中 -&gt; 左 -&gt; 右</p><p>中序遍历： 左 -&gt; 中 -&gt; 右 （常见）</p><p>后序遍历： 左 -&gt; 右 -&gt; 中</p><p>层序遍历： 当前层 -&gt; 下一层</p><h3 id="平衡二叉树"><a href="#平衡二叉树" class="headerlink" title="平衡二叉树"></a>平衡二叉树</h3><p>特殊的 Binary search tree</p><p><strong>任意节点</strong>左右子树高度不超过1</p><h4 id="旋转机制"><a href="#旋转机制" class="headerlink" title="旋转机制"></a>旋转机制</h4><p>触发：当添加一个节点之后 不再是平衡二叉树， <strong>旋转机制</strong> 调整</p><p>确定支点：从添加的节点开始，往上找</p><p>左旋：<br>支点 -&gt; 左子,<br>右子 -&gt; 支点,<br>原右子的左子 -&gt; 新左子的右子</p><p>右旋：支点降为右子节点<br>支点 -&gt; 右子,<br>左子 -&gt; 支点,<br>原左子的右子 -&gt; 新右子的左子</p><p>添加节点在子树 -&gt; 旋转<br>左左 -&gt; 右<br>右右 -&gt; 左<br>左右 -&gt; 左右<br>右左 -&gt; 右左</p><h3 id="红黑树"><a href="#红黑树" class="headerlink" title="红黑树"></a>红黑树</h3><p>最开始叫 平衡二叉B树 ，后来改名</p><p>红黑规则：  </p><ul><li>每个 Node 仅是 红色 或 黑色</li><li>根 Node 必是 黑色</li><li>最末端的空指针处，为 Nil &#x2F; 黑Node &#x2F; 叶Node</li></ul><p>主要看后两个规则：  </p><ul><li>两红Node 不能相连</li><li>每一Node 到其下方的 每一叶Node ， 每一路径包含的 黑Node 数相同</li></ul><p>添加节点：<br>默认红色（效率高）</p><p>添加节点规则：</p><p>预设添加的节点为 Red</p><img src="/page/Computer_Theory/algo/Tree/2023-11-21-10-21-46.png" class=""><p>红黑树的增删改查性能较好，因为其旋转次数较少</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Node 节点 &amp;#x2F; 结点&lt;/p&gt;
+&lt;p&gt;父节点 左子节点 右子节点&lt;/p&gt;
+&lt;p&gt;子节点：直接子节点&lt;/p&gt;
+&lt;p&gt;度：每一个节点的子节点数量&lt;/p&gt;
+&lt;h2 id=&quot;二叉树&quot;&gt;&lt;a href=&quot;#二叉树&quot; class=&quot;headerlink&quot; title=&quot;二叉</summary>
+      
+    
+    
+    
+    <category term="Computer_Theory" scheme="https://rchangl.github.io/categories/Computer-Theory/"/>
+    
+    <category term="algo" scheme="https://rchangl.github.io/categories/Computer-Theory/algo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Iterator 迭代器</title>
+    <link href="https://rchangl.github.io/page/Coding/Java/Java%20SE/Collection-%E9%9B%86%E5%90%88/Collection/Iterator.html"/>
+    <id>https://rchangl.github.io/page/Coding/Java/Java%20SE/Collection-%E9%9B%86%E5%90%88/Collection/Iterator.html</id>
+    <published>2023-11-19T07:50:30.537Z</published>
+    <updated>2023-11-19T14:04:36.115Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Interable"><a href="#Interable" class="headerlink" title="Interable"></a>Interable</h2><p><code>Iterator&lt;T&gt; iterator()</code> 集合调用，获取迭代器对象</p><h2 id="Iterator-迭代器"><a href="#Iterator-迭代器" class="headerlink" title="Iterator 迭代器"></a>Iterator 迭代器</h2><p><code>boolean hasNext()</code></p><p><code>E next()</code> 返回元素，并移动指针<br>空元素异常： <code>NoSuchElementException</code></p><h2 id="迭代器遍历"><a href="#迭代器遍历" class="headerlink" title="迭代器遍历"></a>迭代器遍历</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(c.hasNext())&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>遍历内不能直接删除集合，否则会产生： 并发修改异常 <code>ConcurrentModificationException</code></p><p><code>iterator.remove()</code> 使用此方法遍历时删除元素</p><h2 id="foreach-遍历"><a href="#foreach-遍历" class="headerlink" title="foreach 遍历"></a>foreach 遍历</h2><p>见语法控制流部分</p><h2 id="forEach-函数遍历"><a href="#forEach-函数遍历" class="headerlink" title="forEach 函数遍历"></a>forEach 函数遍历</h2><p>等价于 foreach语句遍历</p><p>匿名函数方式：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">c.forEach(Consumer&lt;? <span class="built_in">super</span> E&gt;()&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">accept</span><span class="params">(E e)</span> &#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>Lambda 方式：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">c.forEach(e-&gt;&#123;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h2 id="ListIterator"><a href="#ListIterator" class="headerlink" title="ListIterator"></a>ListIterator</h2><p>extends Iterator</p><p><code>void add(E e)</code></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Interable&quot;&gt;&lt;a href=&quot;#Interable&quot; class=&quot;headerlink&quot; title=&quot;Interable&quot;&gt;&lt;/a&gt;Interable&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Iterator&amp;lt;T&amp;gt; iterator()&lt;/code&gt; </summary>
+      
+    
+    
+    
+    <category term="Coding" scheme="https://rchangl.github.io/categories/Coding/"/>
+    
+    <category term="Java" scheme="https://rchangl.github.io/categories/Coding/Java/"/>
+    
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/"/>
+    
+    <category term="Collection-集合" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/Collection-%E9%9B%86%E5%90%88/"/>
+    
+    <category term="Collection" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/Collection-%E9%9B%86%E5%90%88/Collection/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Objects</title>
+    <link href="https://rchangl.github.io/page/Coding/Java/Java%20SE/%E5%86%85%E7%BD%AE%E5%B8%B8%E7%94%A8API/Objects.html"/>
+    <id>https://rchangl.github.io/page/Coding/Java/Java%20SE/%E5%86%85%E7%BD%AE%E5%B8%B8%E7%94%A8API/Objects.html</id>
+    <published>2023-11-19T03:26:32.400Z</published>
+    <updated>2023-11-19T03:30:03.792Z</updated>
+    
+    <content type="html"><![CDATA[<p>equals(Object a, Object b)</p><p>isNull(Object obj)</p><p>nonNull(Object obj)</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;equals(Object a, Object b)&lt;/p&gt;
+&lt;p&gt;isNull(Object obj)&lt;/p&gt;
+&lt;p&gt;nonNull(Object obj)&lt;/p&gt;
 </summary>
       
     
     
     
-    <category term="劳动" scheme="https://rchangl.github.io/categories/%E5%8A%B3%E5%8A%A8/"/>
+    <category term="Coding" scheme="https://rchangl.github.io/categories/Coding/"/>
     
-    <category term="劳动权益" scheme="https://rchangl.github.io/categories/%E5%8A%B3%E5%8A%A8/%E5%8A%B3%E5%8A%A8%E6%9D%83%E7%9B%8A/"/>
+    <category term="Java" scheme="https://rchangl.github.io/categories/Coding/Java/"/>
     
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/"/>
     
-  </entry>
-  
-  <entry>
-    <title>OkHttpClient_HTTP客户端</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E7%BD%91%E7%BB%9C/OkHttpClient_HTTP%E5%AE%A2%E6%88%B7%E7%AB%AF.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E7%BD%91%E7%BB%9C/OkHttpClient_HTTP%E5%AE%A2%E6%88%B7%E7%AB%AF.html</id>
-    <published>2023-10-19T12:32:19.037Z</published>
-    <updated>2023-10-19T12:48:48.640Z</updated>
-    
-    <content type="html"><![CDATA[<p>OkHttpClient是一个高效的HTTP客户端</p><p><a href="https://blog.csdn.net/workingman_li/article/details/91651156">OkhttpClient的使用详解-CSDN博客</a></p><h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.squareup.okhttp3<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>okhttp<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.14.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;OkHttpClient是一个高效的HTTP客户端&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/workingman_li/article/details/91651156&quot;&gt;OkhttpClient的使用详解-CSDN博客&lt;/a&gt;&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
-    
-    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
-    
-    <category term="网络" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/%E7%BD%91%E7%BB%9C/"/>
+    <category term="内置常用API" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/%E5%86%85%E7%BD%AE%E5%B8%B8%E7%94%A8API/"/>
     
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/%E4%BA%8B%E5%8A%A1.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/%E4%BA%8B%E5%8A%A1.html</id>
-    <published>2023-10-19T05:05:41.961Z</published>
-    <updated>2023-10-19T15:50:46.196Z</updated>
+    <title>Runtime</title>
+    <link href="https://rchangl.github.io/page/Coding/Java/Java%20SE/%E5%86%85%E7%BD%AE%E5%B8%B8%E7%94%A8API/Runtime.html"/>
+    <id>https://rchangl.github.io/page/Coding/Java/Java%20SE/%E5%86%85%E7%BD%AE%E5%B8%B8%E7%94%A8API/Runtime.html</id>
+    <published>2023-11-18T09:53:22.606Z</published>
+    <updated>2023-11-18T12:47:29.756Z</updated>
     
-    <content type="html"><![CDATA[<hr><h2 id="title-事务"><a href="#title-事务" class="headerlink" title="title: 事务"></a>title: 事务</h2><p>类似 MySQL 的事务，在一个事务内，要么同时成功，要么同时失败。</p><h2 id="Transactional"><a href="#Transactional" class="headerlink" title="@Transactional"></a><code>@Transactional</code></h2><p>作用在 service 层的 方法 或 类 或 接口</p><p><img src="/%E4%BA%8B%E5%8A%A1/image.png" alt="Alt text"></p><h2 id="回滚"><a href="#回滚" class="headerlink" title="回滚"></a>回滚</h2><p>默认只有 RuntimeException 才回滚异常</p><p><code>rollbackFor</code> 属性控制出现，设置所有异常都回滚：</p><p><img src="/%E4%BA%8B%E5%8A%A1/image-1.png" alt="所有异常都回滚"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;hr&gt;
-&lt;h2 id=&quot;title-事务&quot;&gt;&lt;a href=&quot;#title-事务&quot; class=&quot;headerlink&quot; title=&quot;title: 事务&quot;&gt;&lt;/a&gt;title: 事务&lt;/h2&gt;&lt;p&gt;类似 MySQL 的事务，在一个事务内，要么同时成功，要么同时失败。&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
-    
-    <category term="Spring Boot" scheme="https://rchangl.github.io/categories/Devolop/Java/Spring-Boot/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>异常-全局异常处理器</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/%E5%BC%82%E5%B8%B8-%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%99%A8.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/%E5%BC%82%E5%B8%B8-%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%99%A8.html</id>
-    <published>2023-10-18T16:37:43.698Z</published>
-    <updated>2023-10-18T16:40:31.199Z</updated>
-    
-    <content type="html"><![CDATA[<p>加注解，使其向上抛出，自动捕获异常</p><p><img src="/%E5%BC%82%E5%B8%B8-%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%99%A8/image.png" alt="Alt text"></p><p>捕获异常类：</p><p><img src="/%E5%BC%82%E5%B8%B8-%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%99%A8/image-1.png" alt="Alt text"></p>]]></content>
+    <content type="html"><![CDATA[<p><code>java.lang.Runtime</code></p><p>代表当前虚拟机的运行环境</p><h2 id="method"><a href="#method" class="headerlink" title="method"></a>method</h2><p>获取：<br><code>static Runtime getRuntime()</code> 只能如此获得对象</p><p><code>exit(int status)</code> 停止虚拟机<br>System.exit() 的源码原理</p><p><code>int availableProcessors()</code> CPU线程数</p><p><code>long maxMemory()</code> JVM能够获取的最大内存（单位Byte）<br><code>long totalMemory()</code> JVM已经获取的内存<br><code>long freeMemory()</code> JVM剩余内存</p><p><code>Process exec(String command)</code> 执行CMD命令<br><code>exec(String[] cmdarray)</code><br><code>exec(String[] cmdarray, String[] envp)</code><br><code>exec(String[] cmdarray, String[] envp, File dir)</code><br><code>exec(String command, String[] envp)</code><br><code>exec(String command, String[] envp, File dir)</code></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;加注解，使其向上抛出，自动捕获异常&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/%E5%BC%82%E5%B8%B8-%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%99%A8/image.png&quot; alt=&quot;Al</summary>
+    <summary type="html">&lt;p&gt;&lt;code&gt;java.lang.Runtime&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;代表当前虚拟机的运行环境&lt;/p&gt;
+&lt;h2 id=&quot;method&quot;&gt;&lt;a href=&quot;#method&quot; class=&quot;headerlink&quot; title=&quot;method&quot;&gt;&lt;/a&gt;method&lt;/h2</summary>
       
     
     
     
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
+    <category term="Coding" scheme="https://rchangl.github.io/categories/Coding/"/>
     
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
+    <category term="Java" scheme="https://rchangl.github.io/categories/Coding/Java/"/>
     
-    <category term="Spring Boot" scheme="https://rchangl.github.io/categories/Devolop/Java/Spring-Boot/"/>
+    <category term="Java SE" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Interceptor 拦截器</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Spring%20Boot/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8.html</id>
-    <published>2023-10-18T16:29:09.328Z</published>
-    <updated>2023-10-18T16:33:58.650Z</updated>
-    
-    <content type="html"><![CDATA[<p>功能类似 Filter。</p><p>Filter 在Spring容器外， Interceptor 在Spring容器里。而 Filter 在 Spring 容器之前。</p><p>顺序是： Filter -&gt; Spring(DispatcherServlet -&gt; Interceptor -&gt; Controller)</p><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p><img src="/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8/image.png" alt="Alt text"></p><h2 id="配置类"><a href="#配置类" class="headerlink" title="配置类"></a>配置类</h2><p><img src="/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8/image-1.png" alt="Alt text"></p><h3 id="拦截路径"><a href="#拦截路径" class="headerlink" title="拦截路径"></a>拦截路径</h3><p><img src="/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8/image-2.png" alt="Alt text"></p><p><img src="/Interceptor%E6%8B%A6%E6%88%AA%E5%99%A8/image-3.png" alt="Alt text"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;功能类似 Filter。&lt;/p&gt;
-&lt;p&gt;Filter 在Spring容器外， Interceptor 在Spring容器里。而 Filter 在 Spring 容器之前。&lt;/p&gt;
-&lt;p&gt;顺序是： Filter -&amp;gt; Spring(DispatcherServlet -</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
-    
-    <category term="Spring Boot" scheme="https://rchangl.github.io/categories/Devolop/Java/Spring-Boot/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Fillter</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20Web/Fillter.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Java%20Web/Fillter.html</id>
-    <published>2023-10-18T16:11:04.624Z</published>
-    <updated>2023-10-18T16:36:30.703Z</updated>
-    
-    <content type="html"><![CDATA[<p>拦截和放行请求</p><p>是JavaWeb的组件，不是SpringBoot的组件，在SpringBoot中使用，需要在SpringBoot启动类中添加注解：</p><img src="/page/Devolop/Java/Java%20Web/Fillter/image.png" class="" title="Alt text"><img src="/page/Devolop/Java/Java%20Web/Fillter/image-1.png" class="" title="Alt text"><img src="/page/Devolop/Java/Java%20Web/Fillter/image-2.png" class="" title="Alt text"><p>拦截路径：</p><img src="/page/Devolop/Java/Java%20Web/Fillter/image-3.png" class="" title="Alt text"><h2 id="过滤器链"><a href="#过滤器链" class="headerlink" title="过滤器链"></a>过滤器链</h2><p>多个过滤器，按照过滤器类名排序执行</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;拦截和放行请求&lt;/p&gt;
-&lt;p&gt;是JavaWeb的组件，不是SpringBoot的组件，在SpringBoot中使用，需要在SpringBoot启动类中添加注解：&lt;/p&gt;
-&lt;img src=&quot;/page/Devolop/Java/Java%20Web/Fillter/imag</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
-    
-    <category term="Java Web" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-Web/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>bat</title>
-    <link href="https://rchangl.github.io/page/Computer%20Use/Windows/bat.html"/>
-    <id>https://rchangl.github.io/page/Computer%20Use/Windows/bat.html</id>
-    <published>2023-10-16T11:31:46.779Z</published>
-    <updated>2023-10-16T11:44:53.294Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="执行CMD命令"><a href="#执行CMD命令" class="headerlink" title="执行CMD命令"></a>执行CMD命令</h2><p>cmd &#x2F;c 执行完命令后<strong>关闭</strong>命令窗口。 </p><p>cmd &#x2F;k 执行完命令后<strong>不关闭</strong>命令窗口。 </p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cmd</span> /k &quot;<span class="built_in">cd</span> /d E:\机器学习\d2l-zh\pytorch&amp;&amp;activate torch&amp;&amp;jupyter notebook&quot;</span><br></pre></td></tr></table></figure><h2 id="在多个窗口中执行"><a href="#在多个窗口中执行" class="headerlink" title="在多个窗口中执行"></a>在多个窗口中执行</h2><p>加上 start</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span> /k &quot;<span class="built_in">cd</span> /d 路径&amp;&amp;命令<span class="number">1</span>&quot;</span><br><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span> /k &quot;<span class="built_in">cd</span> /d 路径&amp;&amp;命令<span class="number">1</span>&amp;&amp;命令<span class="number">2</span>&quot;</span><br></pre></td></tr></table></figure><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span> /c &quot;<span class="built_in">cd</span> /d 路径&amp;&amp;命令<span class="number">1</span>&quot;</span><br><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span> /c &quot;<span class="built_in">cd</span> /d 路径&amp;&amp;命令<span class="number">1</span>&amp;&amp;命令<span class="number">2</span>&quot;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;执行CMD命令&quot;&gt;&lt;a href=&quot;#执行CMD命令&quot; class=&quot;headerlink&quot; title=&quot;执行CMD命令&quot;&gt;&lt;/a&gt;执行CMD命令&lt;/h2&gt;&lt;p&gt;cmd &amp;#x2F;c 执行完命令后&lt;strong&gt;关闭&lt;/strong&gt;命令窗口。 &lt;/p&gt;
-&lt;p</summary>
-      
-    
-    
-    
-    <category term="Computer Use" scheme="https://rchangl.github.io/categories/Computer-Use/"/>
-    
-    <category term="Windows" scheme="https://rchangl.github.io/categories/Computer-Use/Windows/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Object</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E5%86%85%E7%BD%AE%E7%B1%BB/Object.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Java%20SE/%E5%86%85%E7%BD%AE%E7%B1%BB/Object.html</id>
-    <published>2023-10-16T01:07:49.060Z</published>
-    <updated>2023-10-16T01:32:26.833Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html">Object - Java 17 Doc</a></p><h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p>clone() 深拷贝</p><p>equals(obj) 默认比较地址是否相同 <code>return (this == obj)</code></p><p><code>int hashCode()</code> 返回对象的 hash code 值</p><p><code>String toString()</code></p><h3 id="final-method"><a href="#final-method" class="headerlink" title="final method:"></a>final method:</h3><p><code>final Class&lt;?&gt; getClass()</code> 返回此 Object 的 runtime class</p><p>线程的等待和唤醒：</p><p><code>wait()</code></p><p><code>wait(long timeoutMillis)</code></p><p><code>wait(long timeoutMillis, int nanos)</code></p><p><code>notify()</code></p><p><code>notifyAll()</code></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html&quot;&gt;Object - Java 17 Doc&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Method&quot;</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
-    
-    <category term="Java SE" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/"/>
-    
-    <category term="内置类" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-SE/%E5%86%85%E7%BD%AE%E7%B1%BB/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>SOA（面向服务的架构）</title>
-    <link href="https://rchangl.github.io/page/Devolop/Main/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/SOA%EF%BC%88%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%9E%B6%E6%9E%84%EF%BC%89.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Main/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/SOA%EF%BC%88%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%9E%B6%E6%9E%84%EF%BC%89.html</id>
-    <published>2023-10-16T00:54:10.731Z</published>
-    <updated>2023-10-16T00:54:18.197Z</updated>
-    
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Main" scheme="https://rchangl.github.io/categories/Devolop/Main/"/>
-    
-    <category term="项目开发" scheme="https://rchangl.github.io/categories/Devolop/Main/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Listener</title>
-    <link href="https://rchangl.github.io/page/Devolop/Java/Java%20Web/Listener.html"/>
-    <id>https://rchangl.github.io/page/Devolop/Java/Java%20Web/Listener.html</id>
-    <published>2023-10-15T13:43:58.207Z</published>
-    <updated>2023-10-16T00:52:14.033Z</updated>
-    
-    <content type="html"><![CDATA[<p>JavaWeb的3大组件之一，用来监听Servlet容器产生的事件并进行相应的处理。</p><img src="/page/Devolop/Java/Java%20Web/Listener/image.png" class="" title="Alt text">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;JavaWeb的3大组件之一，用来监听Servlet容器产生的事件并进行相应的处理。&lt;/p&gt;
-&lt;img src=&quot;/page/Devolop/Java/Java%20Web/Listener/image.png&quot; class=&quot;&quot; title=&quot;Alt text&quot;&gt;
-
-</summary>
-      
-    
-    
-    
-    <category term="Devolop" scheme="https://rchangl.github.io/categories/Devolop/"/>
-    
-    <category term="Java" scheme="https://rchangl.github.io/categories/Devolop/Java/"/>
-    
-    <category term="Java Web" scheme="https://rchangl.github.io/categories/Devolop/Java/Java-Web/"/>
+    <category term="内置常用API" scheme="https://rchangl.github.io/categories/Coding/Java/Java-SE/%E5%86%85%E7%BD%AE%E5%B8%B8%E7%94%A8API/"/>
     
     
   </entry>
